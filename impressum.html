@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impressum | SO LONG COVID</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburgerBtn = document.getElementById("hamburgerBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const closeMenu = document.getElementById("closeMenu");
+
+      hamburgerBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("open");
+      });
+
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+      });
+
+      document.querySelectorAll(".mobile-nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("open");
+        });
+      });
+    });
+  </script>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-area">
+          <a href="index.html" class="logo-link">
+            <img
+              src="assets/img/SLCLogoOBOrange.png"
+              alt="SO LONG COVID"
+              class="brain-logo logo-orange"
+            />
+            <img
+              src="assets/img/SLCLogoNBBlue.png"
+              alt="SO LONG COVID"
+              class="brain-logo logo-blue"
+            />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ressourcen.html">Ressourcen</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+        <!-- Hamburger Button (mobile only) -->
+        <button class="hamburger-btn" id="hamburgerBtn">
+          <img src="assets/img/SLCHamburger.png" alt="Menu" />
+        </button>
+      </nav>
+      <!-- Mobile Overlay Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" id="closeMenu">×</button>
+
+        <ul class="mobile-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ressourcen.html">Ressourcen</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero-blue story-hero">
+        <p class="story-hero-intro">
+          Infos, Datenschutz und Haftungsausschluss
+        </p>
+        <br />
+      </section>
+      <section class="story-container">
+        <!-- BACK LINK -->
+        <a href="javascript:history.back()" class="back-link"> ← Zurück </a>
+
+        <h3 class="story-title">IMPRESSUM</h3>
+        <br />
+        <br />
+        <div class="story-text">
+          <p>
+            <strong>Herausgeber:</strong> SO LONG COVID | Verein Shift Studio |
+            solongcovid@proton.me
+          </p>
+
+          <p><strong>Webdesign:</strong> Jann Zosso</p>
+
+          <p>
+            <strong>Rechtlicher Hinweis:</strong><br />
+            Mit dem Aufrufen von Informationen, Angaben und Dokumenten auf
+            dieser Website erklären Sie sich mit den nachstehenden Bedingungen
+            einverstanden.
+          </p>
+
+          <p>
+            <strong>Urheberrechte:</strong><br />
+            Die Urheberrechte sowie alle weiteren Rechte an Inhalten, Bildern,
+            Fotos oder anderen Dateien auf dieser Website gehören
+            ausschliesslich Shift Studio oder den speziell genannten
+            Rechteinhaber:innen. Für die Reproduktion jeglicher Elemente ist die
+            schriftliche Zustimmung der jeweiligen Urheberrechtsträger:innen im
+            Voraus einzuholen.
+          </p>
+
+          <p>
+            <strong>Haftungsausschluss:</strong><br />
+            Shift Studio übernimmt keinerlei Gewähr hinsichtlich der
+            inhaltlichen Richtigkeit, Aktualität, Zuverlässigkeit und
+            Vollständigkeit der bereitgestellten Informationen.
+            Haftungsansprüche gegen die Autoren wegen Schäden materieller oder
+            immaterieller Art, welche aus dem Zugriff oder der Nutzung
+            beziehungsweise der Nichtnutzung der veröffentlichten Informationen,
+            durch Missbrauch der Verbindung oder durch technische Störungen
+            entstanden sind, werden ausgeschlossen. Shift Studio behält es sich
+            ausdrücklich vor, Teile der Website oder das gesamte Angebot ohne
+            besondere Ankündigung zu verändern, zu ergänzen, zu löschen oder die
+            Veröffentlichung zeitweise oder endgültig einzustellen.
+          </p>
+
+          <p>
+            <strong>Haftung für Links:</strong><br />
+            Verweise und Links auf Websites Dritter liegen ausserhalb des
+            Verantwortungsbereichs der Betreiber. Jegliche Verantwortung für
+            solche Inhalte wird abgelehnt. Der Zugriff und die Nutzung externer
+            Websites erfolgen auf eigene Gefahr der Nutzer:innen.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2025 SO LONG COVID</p>
+      </div>
+    </footer>
+  </body>
+</html>

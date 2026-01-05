@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team | SO LONG COVID</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburgerBtn = document.getElementById("hamburgerBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const closeMenu = document.getElementById("closeMenu");
+
+      hamburgerBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("open");
+      });
+
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+      });
+
+      document.querySelectorAll(".mobile-nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("open");
+        });
+      });
+    });
+  </script>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-area">
+          <a href="index.html" class="logo-link">
+            <img
+              src="assets/img/SLCLogoOBOrange.png"
+              alt="SO LONG COVID"
+              class="brain-logo logo-orange"
+            />
+            <img
+              src="assets/img/SLCLogoNBBlue.png"
+              alt="SO LONG COVID"
+              class="brain-logo logo-blue"
+            />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ressourcen.html">Ressourcen</a></li>
+          <li><a class="active" href="team.html">Team</a></li>
+        </ul>
+        <!-- Hamburger Button (mobile only) -->
+        <button class="hamburger-btn" id="hamburgerBtn">
+          <img src="assets/img/SLCHamburger.png" alt="Menu" />
+        </button>
+      </nav>
+      <!-- Mobile Overlay Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" id="closeMenu">×</button>
+
+        <ul class="mobile-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ressourcen.html">Ressourcen</a></li>
+          <li><a class="active" href="team.html">Team</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-orange team-section">
+        <div class="hero-intro">
+          Wir danken allen, die dieses Podcast-Abenteuer ermöglichen: Unser
+          unglaubliches Team, welches sich mit viel Engagement für SO LONG COVID
+          einsetzt. Unsere finanziellen Unterstützer:innen, die an uns und das
+          Projekt glauben. Unsere Familien und Freund:innen, die uns ermutigen,
+          mitfiebern und mitfeiern. All unseren Inspirationsquellen: Hysterical,
+          Oklou, Sauna-Gus und Velofahren in Kopenhagen, die Farben der Natur
+          und vieles mehr. Und ganz besonders alle Interviewpartner:innen, die
+          ihre Geschichten und Expertise so grosszügig mit uns teilen - ohne
+          euch alle wäre dieses Projekt nicht möglich!
+        </div>
+      </section>
+      <section class="partner-section">
+        <!-- MAIN TEAM -->
+        <h2>TEAM</h2>
+        <br />
+        <div class="container main-team-row">
+          <a
+            href="https://www.linkedin.com/in/zita-bauer-1b3b01200/?originalSubdomain=ch"
+            target="_blank"
+            rel="noopener"
+            class="team-card team-card-horizontal"
+          >
+            <img src="assets/img/ZB.jpg" alt="Zita Bauer" />
+            <div class="team-card-text">
+              <h3>Zita Bauer</h3>
+              <p>Mitgründerin, Produktion, Redaktion, Schnitt, Host.</p>
+            </div>
+          </a>
+
+          <a
+            href="https://jannzosso.ch"
+            target="_blank"
+            rel="noopener"
+            class="team-card team-card-horizontal"
+          >
+            <img src="assets/img/JZ.jpg" alt="Jann Zosso" />
+            <div class="team-card-text">
+              <h3>Jann Zosso</h3>
+              <p>Mitgründer, Redaktion, Webdesign.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- SECONDARY TEAM -->
+        <div class="container team-grid-secondary">
+          <a
+            href="https://www.mrotiz.com/"
+            target="_blank"
+            rel="noopener"
+            class="team-card team-card-simple"
+          >
+            <h3>Moritz Widrig</h3>
+            <p>Originalmusik</p>
+          </a>
+
+          <a
+            href="https://janosmijnssen.com/"
+            target="_blank"
+            rel="noopener"
+            class="team-card team-card-simple"
+          >
+            <h3>Janos Mijnssen</h3>
+            <p>Originalmusik</p>
+          </a>
+          <a
+            href="https://www.digezz.ch/author/stella-bollinger/"
+            target="_blank"
+            rel="noopener"
+            class="team-card team-card-simple"
+          >
+            <h3>Stella Bollinger</h3>
+            <p>Redaktion</p>
+          </a>
+
+          <a
+            href="https://hoerbaron.ch/ "
+            target="_blank"
+            rel="noopener"
+            class="team-card team-card-simple"
+          >
+            <h3>Christina Baron</h3>
+            <p>Mastering</p>
+          </a>
+        </div>
+        <br />
+        <div class="container team-grid-secondary">
+          <a
+            href="https://www.franziskaengelhardt.ch/ "
+            target="_blank"
+            rel="noopener"
+            class="team-card team-card-simple"
+          >
+            <h3>Franziska Engelhardt</h3>
+            <p>Beratung</p>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/silio-keiser/"
+            target="_blank"
+            rel="noopener"
+            class="team-card team-card-simple"
+          >
+            <h3>Silio Keiser</h3>
+            <p>Visuelle Identität</p>
+          </a>
+          <a
+            href=""
+            target="_blank"
+            rel="noopener"
+            class="team-card team-card-simple"
+          >
+            <h3>Nathalie Jufer</h3>
+            <p>Kommunikation</p>
+          </a>
+
+          <a
+            href=""
+            target="_blank"
+            rel="noopener"
+            class="team-card team-card-simple"
+          >
+            <h3>Martina Waldis</h3>
+            <p>Kommunikation</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="partner-section">
+        <h2>Unterstützer:innen</h2>
+
+        <div class="partner-grid">
+          <a
+            href="hhttps://www.bgbern.ch/"
+            target="_blank"
+            rel="noopener"
+            class="partner-card"
+          >
+            <img
+              src="assets/img/BGB_Logo_Screen_S.png"
+              alt="Burger Gemeinde Bern"
+            />
+          </a>
+
+          <a
+            href="https://ober-gerwern.ch/"
+            target="_blank"
+            rel="noopener"
+            class="partner-card"
+          >
+            <img
+              src="assets/img/OberGerwern.jpg"
+              alt="Gesellschaft Zu Ober-Gerwern"
+            />
+          </a>
+          <a
+            href="https://www.ting.community/de/ueber-uns"
+            target="_blank"
+            rel="noopener"
+            class="partner-card"
+          >
+            <img src="assets/img/ting-logo.jpeg" alt="Ting" />
+          </a>
+          <a
+            href="https://marlenreusser.com/"
+            target="_blank"
+            rel="noopener"
+            class="partner-card partner-card-text"
+          >
+            <span>Marlen</span>
+            <span>Reusser</span>
+          </a>
+        </div>
+
+        <section class="container home-section">
+          SO LONG COVID ist ein mehrjähriges, unabhängiges Rechercheprojekt und
+          wird mit viel Herzblut und Eigenleistung auf die Beine gestellt. Für
+          eine Deckung der Kosten sind wir auf weitere private Sponsor:innen
+          angewiesen. Über jegliche Unterstützung freuen wir uns sehr. Danke!
+        </section>
+        <div>
+          <a href="qrcode.html" class="btn-team-section">Unterstütze uns</a>
+        </div>
+        <br />
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-heading">Kontakt</p>
+
+        <a href="mailto:solongcovid@proton.me" class="footer-link">
+          solongcovid@proton.me
+        </a>
+
+        <p class="footer-note">Wir freuen uns auf deine Nachricht!</p>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/so.long.covid/?igsh=MWg1MDQwcW92dnpqeQ%3D%3D&utm_source=qr"
+          class="footer-logo"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <br />
+        <br />
+
+        <p>&copy; 2025 SO LONG COVID</p>
+        <a href="impressum.html" class="footer-link footer-impressum">
+          Impressum
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

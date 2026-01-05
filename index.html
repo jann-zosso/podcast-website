@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SO LONG COVID</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburgerBtn = document.getElementById("hamburgerBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const closeMenu = document.getElementById("closeMenu");
+
+      hamburgerBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("open");
+      });
+
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+      });
+
+      document.querySelectorAll(".mobile-nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("open");
+        });
+      });
+    });
+  </script>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-area">
+          <a href="index.html" class="logo-link">
+            <img
+              src="assets/img/SLCLogoOBOrange.png"
+              alt="SO LONG COVID"
+              class="brain-logo logo-orange"
+            />
+            <img
+              src="assets/img/SLCLogoNBBlue.png"
+              alt="SO LONG COVID"
+              class="brain-logo logo-blue"
+            />
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="ressourcen.html">Ressourcen</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+        <!-- Hamburger Button (mobile only) -->
+        <button class="hamburger-btn" id="hamburgerBtn">
+          <img src="assets/img/SLCHamburger.png" alt="Menu" />
+        </button>
+      </nav>
+      <!-- Mobile Overlay Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" id="closeMenu">×</button>
+
+        <ul class="mobile-nav-links">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="ressourcen.html">Ressourcen</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-orange">
+        <div class="hero-logo">
+          <img
+            src="assets/img/SLCLogo.png"
+            alt="SO LONG COVID Logo"
+            class="hero-logo-img hero-logo-default"
+          />
+          <img
+            src="assets/img/SLCLogoK.png"
+            alt="SO LONG COVID Logo Alternative"
+            class="hero-logo-img hero-logo-hover"
+          />
+        </div>
+        <p>
+          <b
+            >Eine Podcast-Serie von Zita Bauer und Jann Zosso <br />
+            Über die Heilung von Long Covid
+          </b>
+        </p>
+        <p>Coming soon: 15.03.2026</p>
+        <br />
+        <a href="qrcode.html" class="btn">Unterstütze uns</a>
+      </section>
+      <br />
+      <section class="container">
+        <h2>ÜBER DEN PODCAST</h2>
+        <section class="container home-section">
+          <p>
+            Die Covid-Pandemie ist vorbei, das Leben geht normal weiter - aber
+            nicht für alle. Jann, Jasna, Marlen und Patricia leiden an
+            Langzeitfolgen ihrer Covid-Infektion. Sie gehören zu den
+            schätzungsweise 400'000 Menschen in der Schweiz mit der Diagnose
+            Post Covid, umgangssprachlich Long Covid.
+          </p>
+          <br />
+          <p>
+            Fatigue, Belastungsintoleranz, Muskelschmerzen, kognitive Störungen
+            - Symptome, die den Alltag massiv einschränken und ihr Leben aus der
+            Bahn werfen. Die genaue biomedizinische Ursache? Bis heute
+            unerklärt. Die Prognose? Oft ein langer Leidensweg, bislang gilt die
+            Krankheit als unheilbar.
+          </p>
+          <br />
+          <p>
+            Und doch gibt es Menschen, die vollständig genesen - auch Jann,
+            Jasna, Marlen und Patricia. Was können wir von ihnen lernen? Ist die
+            Situation für Betroffene tatsächlich so aussichtslos, wie sie
+            scheint?
+          </p>
+          <br />
+          <p>
+            In diesem Podcast begeben wir uns auf Spurensuche. Wir stossen auf
+            Erkenntnisse aus der modernen Schmerztherapie und Neurobiologie, die
+            Hoffnung machen und für viele Betroffene zu vielversprechenden
+            Ergebnissen führen. Diese Erkenntnisse beschränken sich nicht auf
+            Long Covid, sondern betreffen auch andere bislang medizinisch
+            unerklärte Erkrankungen wie ME/CFS, Fibromyalgie, Migräne und
+            chronische Rückenschmerzen.
+          </p>
+          <br />
+          <p>
+            Diese neuen medizinischen Ansätze zielen nicht mehr nur auf
+            Symptomlinderung oder einen besseren Umgang mit der Erkrankung ab,
+            sondern eröffnen neue Perspektiven - sogar hin zu einer
+            vollständigen Genesung. Noch sind diese Erkenntnisse wenig bekannt.
+            Warum eigentlich? Und was bedeutet dieses neue Wissen für die
+            Medizin der Zukunft?
+          </p>
+        </section>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-heading">Kontakt</p>
+
+        <a href="mailto:solongcovid@proton.me" class="footer-link">
+          solongcovid@proton.me
+        </a>
+
+        <!-- <p class="footer-note">Wir freuen uns auf deine Nachricht!</p>  -->
+        <p class="footer-note">
+          Willst du über die Veröffentlichung benachrichtigt werden? <br />
+          Schreibe uns mit dem Betreff "nicht verpassen" oder folge uns auf
+          Instagram!
+        </p>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/so.long.covid/?igsh=MWg1MDQwcW92dnpqeQ%3D%3D&utm_source=qr"
+          class="footer-logo"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <br />
+        <br />
+        <p>&copy; 2025 SO LONG COVID</p>
+        <a href="impressum.html" class="footer-link footer-impressum">
+          Impressum
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

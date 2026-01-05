@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ressourcen | SO LONG COVID</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburgerBtn = document.getElementById("hamburgerBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const closeMenu = document.getElementById("closeMenu");
+
+      hamburgerBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("open");
+      });
+
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+      });
+
+      document.querySelectorAll(".mobile-nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("open");
+        });
+      });
+    });
+  </script>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-area">
+          <a href="index.html" class="logo-link">
+            <img
+              src="assets/img/SLCLogoOBOrange.png"
+              alt="SO LONG COVID"
+              class="brain-logo logo-orange"
+            />
+            <img
+              src="assets/img/SLCLogoNBBlue.png"
+              alt="SO LONG COVID"
+              class="brain-logo logo-blue"
+            />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="ressourcen.html">Ressourcen</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+        <!-- Hamburger Button (mobile only) -->
+        <button class="hamburger-btn" id="hamburgerBtn">
+          <img src="assets/img/SLCHamburger.png" alt="Menu" />
+        </button>
+      </nav>
+      <!-- Mobile Overlay Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" id="closeMenu">×</button>
+
+        <ul class="mobile-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="ressourcen.html">Ressourcen</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero-blue resources-hero">
+        <div class="hero-content">
+          <blockquote class="hero-quote">
+            <p>
+              „Ein erstes Therapieelement ist die Edukation: über das <br />
+              neuroplastische Entstehen von Beschwerden zu informieren.“
+            </p>
+            <cite>
+              Prof. Dr. med. Rainer Schäfert, Universitätsspital Basel
+            </cite>
+          </blockquote>
+
+          <p class="hero-intro-ressourcen">
+            Zusammenstellung von ausgewählten Ressourcen über die Genesung von
+            Long Covid und die neuen wissenschaftlichen Erkenntnisse zu
+            chronischen Krankheiten und Beschwerden. Dieses Wissen stammt aus
+            der Neurobiologie und der modernen Schmerztherapie.
+          </p>
+        </div>
+      </section>
+
+      <!-- FEATURED RECOVERY STORY -->
+      <section class="featured-recovery">
+        <a href="genesung-jann.html" class="recovery-o-card">
+          <div class="recovery-text-bg">
+            Der Schmerz verschwand nicht über Nacht, sondern zog sich langsam
+            zurück, als das Nervensystem begann, wieder Sicherheit zu erfahren.
+            Mit jedem kleinen Fortschritt kehrte Vertrauen in den eigenen Körper
+            zurück, und alte Bewegungen fühlten sich weniger bedrohlich an.
+            Gedanken wurden ruhiger, Alarmzustände seltener, und die ständige
+            innere Anspannung verlor an Intensität. Symptome, die lange den
+            Alltag bestimmt hatten, traten immer mehr in den Hintergrund und
+            verloren ihre Macht. Schritt für Schritt entstand Raum für
+            Zuversicht, Stabilität und die Erkenntnis, dass nachhaltige
+            Veränderung möglich ist.
+          </div>
+
+          <div class="recovery-content">
+            <h3>Genesungsgeschichte von Jann</h3>
+            <p>Die Geschichte am Ursprung vom Podcast SO LONG COVID</p>
+          </div>
+        </a>
+      </section>
+
+      <!-- RESOURCES -->
+      <section class="resources-wrapper">
+        <!-- GENESUNG -->
+        <div class="resource-block">
+          <h2>Weitere Genesungsgeschichten</h2>
+
+          <h3>WEBSEITEN</h3>
+          <br />
+          <div class="resource-grid centered">
+            <a
+              href="https://www.longcovidcured.com/"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              Long Covid Cured
+            </a>
+            <a
+              href="https://longcovid-genesen.de/"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              Long Covid Genesen
+            </a>
+            <a
+              href="https://www.recoverynorway.org/"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              Recovery Norway
+            </a>
+          </div>
+          <br />
+          <h3>VIDEOS</h3>
+          <br />
+          <div class="resource-grid centered">
+            <a
+              href="https://www.youtube.com/watch?v=nUNHl8OqHOw"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              Recovery story of Leon
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=EajVIOTCnEo"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              Recovery story of Sarah
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=9wcJlsU_jbM"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              Recovery story of Katrin
+            </a>
+          </div>
+        </div>
+
+        <!-- WISSEN & THERAPIE -->
+        <div class="resource-block">
+          <h2>Wissen und Therapie</h2>
+
+          <h3>APPS</h3>
+          <br />
+          <div class="resource-grid centered">
+            <a
+              href="https://www.gethelpapp.de/"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              HELP (Deutsch)
+            </a>
+            <a
+              href="https://www.help-app.de/"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              Curable
+            </a>
+          </div>
+          <br />
+          <h3>WEBSEITEN</h3>
+          <br />
+          <div class="resource-grid centered">
+            <a
+              href="https://www.chronischbesser.ch/"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              Chronischbesser
+            </a>
+            <a
+              href="https://www.neurojackpot.com/"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              Neurojackpot
+            </a>
+            <a
+              href="https://mind-body-ressourcen.de/"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              Mind-Body-Ressourcen
+            </a>
+          </div>
+          <br />
+          <div class="resource-grid centered">
+            <a
+              href="https://unlearnyourpain.com/mind-body-syndrome/"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              Mind Body Syndrome
+            </a>
+
+            <a
+              href="https://www.painreprocessingtherapy.com/"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              Pain Reprocessing Therapy
+            </a>
+            <a
+              href="https://www.thismighthurtfilm.com/long-covid"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              This Might Hurt - Resources
+            </a>
+          </div>
+          <br />
+          <h3>VIDEOS</h3>
+          <br />
+          <div class="resource-grid centered">
+            <a
+              href="https://www.youtube.com/watch?v=4vF0XNBTv9A"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              Interview with Dr. Howard Schubiner
+            </a>
+
+            <a
+              href="https://www.youtube.com/watch?v=We0ZIH7kHxY"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              How to reverse chronic pain
+            </a>
+          </div>
+          <br />
+          <h3>BÜCHER</h3>
+          <br />
+          <div class="resource-grid centered">
+            <a
+              href="https://www.unlearningsyourpain.com/"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              Unlearn Your Pain<br /><small>Dr. Howard Schubiner</small>
+            </a>
+            <a
+              href="https://www.thewayoutbook.com/"
+              target="_blank"
+              rel="noopener"
+              class="resource-card"
+            >
+              Wege aus dem Schmerz<br /><small>Alan Gordon & Alon Ziv</small>
+            </a>
+          </div>
+        </div>
+
+        <!-- DOCUMENTARIES -->
+        <div class="resource-block">
+          <h2>Dokumentarfilme & Podcasts</h2>
+
+          <div class="resource-grid">
+            <a
+              href="https://painbrainfilm.com/"
+              target="_blank"
+              rel="noopener"
+              class="resource-card resource-card-text"
+            >
+              <strong>Pain Brain</strong><br />
+              <small>Dokumentarfilm, 2023</small>
+              <p>
+                Der Film begleitet die Boulder-Back-Pain-Studie und zeigt anhand
+                persönlicher Geschichten die transformative Wirkung
+                neuroplastischer Behandlungsansätze.
+              </p>
+            </a>
+
+            <a
+              href="https://www.thismighthurtfilm.com/"
+              target="_blank"
+              rel="noopener"
+              class="resource-card resource-card-text"
+            >
+              <strong>This Might Hurt</strong><br />
+              <small>Dokumentarfilm, 2021</small>
+              <p>
+                Ein Einblick in die Arbeit von Dr. Howard Schubiner hin zu einem
+                neuen Verständnis von chronischen Krankheiten und Schmerzen und
+                einer erfolgreichen Therapie für seine Patient:innen.
+              </p>
+            </a>
+          </div>
+          <br />
+          <div class="resource-grid">
+            <a
+              href="https://www.youtube.com/watch?v=u1NiU_k5jT0"
+              target="_blank"
+              rel="noopener"
+              class="resource-card resource-card-text"
+            >
+              <strong>Tell me about your pain</strong><br />
+              <small>Podcastserie, 2021</small>
+              <p>
+                Alan Gordon und Alon Ziv gehen auf die Beschwerden von
+                chronischen Schmerzpatient:innen ein und schildern Techniken zur
+                vollständigen Genesung basierend auf Erkenntnissen der neuesten
+                Neurowissenschaften.
+              </p>
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=u1NiU_k5jT0"
+              target="_blank"
+              rel="noopener"
+              class="resource-card resource-card-text"
+            >
+              <strong>Changing Your Mind: Chronic Pain and The Brain</strong
+              ><br />
+              <small>Kurzdokumentation, 2022</small>
+              <p>
+                Wie chronischer Schmerz im Gehirn entsteht – und wieder verlernt
+                werden kann.
+              </p>
+            </a>
+          </div>
+        </div>
+        <!-- ARTICLES -->
+        <div class="resource-block">
+          <h2>Artikel in Fachzeitschriften und Zeitungen</h2>
+
+          <div class="article-list">
+            <a
+              href="https://www.bmj.com/content/389/bmj.r977"
+              target="_blank"
+              rel="noopener"
+              class="article-item"
+            >
+              <strong
+                >Patients with severe ME/CFS need hope and expert
+                multidisciplinary care</strong
+              >
+              <small>14.05.2025 – British Medical Journal</small>
+            </a>
+
+            <a
+              href="https://www.bps.org.uk/psychologist/long-covid-more-offer-coping-strategies"
+              target="_blank"
+              rel="noopener"
+              class="article-item"
+            >
+              <strong
+                >Long Covid – more to offer than coping strategies?</strong
+              >
+              <small>29.01.2025 – The British Psychological Society</small>
+            </a>
+
+            <a
+              href="https://www.theguardian.com/society/2025/jan/26/the-mindbody-revolution-how-the-division-between-mental-and-physical-illness-fails-us-all"
+              target="_blank"
+              rel="noopener"
+              class="article-item"
+            >
+              <strong>The mind/body revolution</strong>
+              <small>26.01.2025 – The Guardian</small>
+              <blockquote>
+                “[It is] a huge untapped source of possible improvement in
+                symptoms for people who are ill, and by ignoring it we are
+                directly making people more sick than they need to be.”
+              </blockquote>
+            </a>
+
+            <a
+              href="https://www.aerzteblatt.de/archiv/long-covid-und-die-psycho-ecke-wiedergeburt-eines-reduktionistischen-krankheitsverstaendnisses-3a52b6f1-4866-43e7-864c-0f8242b18e44"
+              target="_blank"
+              rel="noopener"
+              class="article-item"
+            >
+              <strong
+                >Long COVID und die Psycho-Ecke: Wiedergeburt eines
+                reduktionistischen Krankheitsverständnisses</strong
+              >
+              <small>31.03.2023 - Deutsches Ärzteblatt</small>
+              <blockquote>
+                “Die Reduktion komplexer Krankheitsbilder auf rein strukturelle
+                Ursachen greift zu kurz und behindert therapeutischen
+                Fortschritt.”
+              </blockquote>
+            </a>
+
+            <a
+              href="https://www.psychologytoday.com/us/blog/the-new-normal/202112/the-mystery-of-long-covid"
+              target="_blank"
+              rel="noopener"
+              class="article-item"
+            >
+              <strong>The Mystery of Long COVID </strong>
+              <small>07.12.2021 – Psychology Today</small>
+            </a>
+
+            <a
+              href="https://www.nytimes.com/2021/11/09/magazine/pain-neuroplasticity.html"
+              target="_blank"
+              rel="noopener"
+              class="article-item"
+            >
+              <strong>I Have to Believe This Book Cured My Pain</strong>
+              <small>09.11.2021 - The New York Times Magazine</small>
+              <blockquote>
+                “The idea that chronic pain can be unlearned challenges decades
+                of medical orthodoxy — and offers real hope to patients.”
+              </blockquote>
+            </a>
+
+            <a
+              href="https://www.washingtonpost.com/outlook/2021/10/15/chronic-pain-brain-plasticity/"
+              target="_blank"
+              rel="noopener"
+              class="article-item"
+            >
+              <strong
+                >Chronic pain is surprisingly treatable — when patients focus on
+                the brain</strong
+              >
+              <small>15.10.2021 - The Washington Post</small>
+            </a>
+
+            <a
+              href="https://www.theguardian.com/commentisfree/2021/jun/10/long-covid-hope-recovery-symptoms"
+              target="_blank"
+              rel="noopener"
+              class="article-item"
+            >
+              <strong
+                >If you have long Covid, as I did, don’t give up hope. Recovery
+                is possible</strong
+              >
+              <small>10.06.2021 – The Guardian</small>
+            </a>
+
+            <a
+              href="https://www.psychologytoday.com/us/blog/pain-rehabilitation/202105/hope-for-covid-long-haulers"
+              target="_blank"
+              rel="noopener"
+              class="article-item"
+            >
+              <strong>Hope for COVID Long-Haulers</strong>
+              <small>14.05.2021 – Psychology Today</small>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-heading">Kontakt</p>
+
+        <a href="mailto:solongcovid@proton.me" class="footer-link">
+          solongcovid@proton.me
+        </a>
+
+        <p class="footer-note">Wir freuen uns auf deine Nachricht!</p>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/so.long.covid/?igsh=MWg1MDQwcW92dnpqeQ%3D%3D&utm_source=qr"
+          class="footer-logo"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <br />
+        <br />
+
+        <p>&copy; 2025 SO LONG COVID</p>
+        <a href="impressum.html" class="footer-link footer-impressum">
+          Impressum
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
