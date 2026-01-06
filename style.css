@@ -919,9 +919,33 @@ h2 {
   margin-bottom: 0;
 }
 
-@media (max-width: 480px) {
-  .story-title small {
-    font-size: 0.65rem;
+.story-meta {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.story-meta span {
+  display: inline;
+}
+
+.story-meta .meta-update::before {
+  content: " | ";
+}
+
+@media (max-width: 600px) {
+  .story-meta {
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .story-meta span {
+    display: block;
+  }
+
+  .story-meta .meta-update::before {
+    content: "";
   }
 }
 
