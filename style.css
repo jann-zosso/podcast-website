@@ -1173,10 +1173,4 @@ h2 {
   }
 }
 
-@media (max-width: 420px) {
-  .mobile-menu {
-    width: 80vw;
-    min-width: unset;
-    max-width: unset;
-  }
-}
+/* @media (max-width: 420px) {.mobile-menu {   width: 80vw; min-width: unset; max-width: unset; }}*/
