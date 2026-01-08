@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://solongcovid.ch/</loc>
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Ressourcen overview -->
+  <url>
+    <loc>https://solongcovid.ch/ressourcen.html</loc>
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Recovery story: Jann -->
+  <url>
+    <loc>https://solongcovid.ch/genesung-jann.html</loc>
+    <lastmod>2026-01-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Team -->
+  <url>
+    <loc>https://solongcovid.ch/team.html</loc>
+    <lastmod>2026-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Support / QR Code -->
+  <url>
+    <loc>https://solongcovid.ch/qrcode.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Impressum -->
+  <url>
+    <loc>https://solongcovid.ch/impressum.html</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

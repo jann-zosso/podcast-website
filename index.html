@@ -15,6 +15,59 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://solongcovid.ch/#organization",
+            "name": "SO LONG COVID",
+            "url": "https://solongcovid.ch/",
+            "logo": "https://solongcovid.ch/assets/img/SLCLogo.png",
+            "sameAs": ["https://www.instagram.com/so.long.covid/"],
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "contactType": "general inquiries",
+                "email": "mailto:solongcovid@proton.me",
+                "availableLanguage": ["de", "en", "fr"]
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://solongcovid.ch/#website",
+            "url": "https://solongcovid.ch/",
+            "name": "SO LONG COVID",
+            "publisher": {
+              "@id": "https://solongcovid.ch/#organization"
+            }
+          },
+          {
+            "@type": "PodcastSeries",
+            "@id": "https://solongcovid.ch/#podcast",
+            "name": "SO LONG COVID",
+            "description": "Ein Podcast über Heilung von Long Covid.",
+            "url": "https://solongcovid.ch/",
+            "publisher": {
+              "@id": "https://solongcovid.ch/#organization"
+            },
+            "inLanguage": "de",
+            "author": [
+              {
+                "@type": "Person",
+                "name": "Zita Bauer"
+              },
+              {
+                "@type": "Person",
+                "name": "Jann Zosso"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
