@@ -625,9 +625,8 @@ section {
     max-height: 70px;
   }
 
-  .partner-card-text {
-    min-height: 70px;
-    justify-content: center;
+  .partner-card {
+    min-height: 110px;
   }
 }
 
