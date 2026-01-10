@@ -624,6 +624,11 @@ section {
   .partner-card img {
     max-height: 70px;
   }
+
+  .partner-card-text {
+    min-height: 70px;
+    justify-content: center;
+  }
 }
 
 /* =========================
