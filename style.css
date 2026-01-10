@@ -1004,7 +1004,7 @@ section {
 
 @media (max-width: 420px) {
   .featured-recovery .recovery-content h3 {
-    font-size: 0.95rem;
+    font-size: 0.75rem;
     margin-bottom: 4px;
   }
 }
