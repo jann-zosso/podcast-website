@@ -22,9 +22,20 @@
       rel="stylesheet"
     />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      as="style"
+      crossorigin="anonymous"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      />
+    </noscript>
+
     <link rel="stylesheet" href="style.css" />
     <script type="application/ld+json">
       {
@@ -480,8 +491,7 @@
               <blockquote>
                 “There are well-evidenced psychophysiologic therapies based on
                 this science of 'nociplastic' or 'neuroplastic' pain, including
-                Pain Reprocessing Therapy (PRT) and Emotional Awareness and
-                Expression Therapy (EAET).”
+                Pain Reprocessing Therapy (PRT) [...].”
               </blockquote>
             </a>
             <a
