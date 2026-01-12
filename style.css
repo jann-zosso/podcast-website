@@ -1017,6 +1017,21 @@ section {
    QR CODE Einzahlungsschein
 ========================= */
 
+.unterstützen-link {
+  display: block;
+  width: fit-content;
+  margin: 12px auto 0;
+  color: var(--slc-orange);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: large;
+  transition: color 0.25s ease;
+}
+
+.unterstützen-link:hover {
+  color: var(--slc-blue);
+}
+
 .qrcode {
   display: block;
   width: 100%;
