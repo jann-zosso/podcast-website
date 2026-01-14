@@ -360,6 +360,22 @@ main {
 .btn-team-section:hover {
   background: var(--slc-blue);
 }
+
+.btn-recovery-section {
+  display: inline-block;
+  padding: 8px 20px;
+  background: var(--slc-blue);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: small;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.btn-recovery-section:hover {
+  background: var(--slc-orange);
+}
 /* =========================
 ========================= */
 /* =========================
