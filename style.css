@@ -401,6 +401,11 @@ section {
   text-align: justify;
 }
 
+@media (max-width: 600px) {
+ .home-section {
+  text-align: left;
+}
+
 /* =========================
    TEAM SECTION
 ========================= */
