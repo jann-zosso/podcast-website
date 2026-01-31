@@ -354,7 +354,9 @@ main {
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-  transition: background 0.25s ease, transform 0.25s ease;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
 }
 
 .btn-team-section:hover {
@@ -370,7 +372,9 @@ main {
   border-radius: 6px;
   font-weight: bold;
   font-size: small;
-  transition: background 0.25s ease, transform 0.25s ease;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
 }
 
 .btn-recovery-section:hover {
@@ -402,8 +406,9 @@ section {
 }
 
 @media (max-width: 600px) {
- .home-section {
-  text-align: left;
+  .home-section {
+    text-align: left;
+  }
 }
 
 /* =========================
@@ -429,7 +434,9 @@ section {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
   text-decoration: none;
   color: #222; /* RESET text color */
-  transition: background 0.25s ease, transform 0.25s ease;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
 }
 
 .team-card:hover {
@@ -593,7 +600,9 @@ section {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  transition: transform 0.25s ease, background 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
 }
 
@@ -696,7 +705,9 @@ section {
 
   border-radius: 30px;
 
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
   text-align: left;
 }
 
@@ -846,7 +857,9 @@ section {
   color: #222;
   display: block;
 
-  transition: background 0.25s ease, border-color 0.25s ease,
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
     transform 0.25s ease;
 }
 
