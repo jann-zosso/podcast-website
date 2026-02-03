@@ -9,6 +9,7 @@
 
 :root {
   --slc-orange: #ff7313;
+  --slc-orange-2: #f9751b;
   --slc-blue: #272d72;
   --black: #000;
   --white: #fff;
@@ -184,15 +185,36 @@ main {
   font-size: 1.15rem;
 }
 
-/* HERO LOGO SWAP */
+.hero-orange.index-hero {
+  padding-top: 65px;
+}
+
+/* HERO Video */
 
 .hero-logo {
   position: relative;
-  width: 340px;
-  height: 220px;
+  width: 500px;
+  height: 300px;
   max-width: 92%;
-  margin: 0 auto 75px;
+  margin: 0 auto 50px;
 }
+
+.hero-logo-frame {
+  width: 100%;
+  height: 100%;
+  background: var(--slc-orange);
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.hero-logo-video {
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  margin: -1px;
+  object-fit: contain;
+}
+
+/* HERO LOGO SWAP */
 
 .hero-logo-img {
   position: absolute;
@@ -488,7 +510,7 @@ section {
 /* ---------- SECONDARY TEAM GRID ---------- */
 .team-grid-secondary {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* was 4 */
   gap: 24px;
 }
 
@@ -516,16 +538,16 @@ section {
     grid-template-columns: 1fr;
   }
 
-  .team-grid-secondary {
+  /* .team-grid-secondary {
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
   .main-team-row {
     margin-bottom: 36px;
   }
 }
 
 /* Mobile  */
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .team-card-horizontal {
     grid-template-columns: auto 1fr;
     gap: 16px;
