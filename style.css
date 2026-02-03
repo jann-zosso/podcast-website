@@ -208,9 +208,8 @@ main {
 }
 
 .hero-logo-video {
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-  margin: -1px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -334,12 +333,12 @@ main {
   }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .hero-logo {
     width: 280px;
     margin-bottom: 75px;
   }
-}
+} */
 
 @media (max-width: 600px) {
   .hero-subtitle {
