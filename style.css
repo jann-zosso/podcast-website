@@ -333,12 +333,14 @@ main {
   }
 }
 
-/* @media (max-width: 480px) {
-  .hero-logo {
-    width: 280px;
-    margin-bottom: 75px;
+@media (max-width: 480px) {
+  .hero-orange.index-hero {
+    padding-top: 35px;
   }
-} */
+  .hero-logo {
+    margin: 0 auto 20px;
+  }
+}
 
 @media (max-width: 600px) {
   .hero-subtitle {
