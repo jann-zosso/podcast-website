@@ -165,23 +165,31 @@
         </h1>
         <div class="hero-logo">
           <div class="hero-logo-frame">
-            <video class="hero-logo-video" autoplay muted playsinline loop>
+            <video
+              class="hero-logo-video"
+              autoplay
+              muted
+              playsinline
+              loop
+              preload="auto"
+            >
               <source src="assets/video/SLC logo A.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
 
-        <!-- <div class="hero-logo hero-logo-video">
-          <video
-            class="hero-logo-video-el"
-            src="assets/video/SLC_logoA.mp4"
-            autoplay
-            muted
-            loop
-            playsinline
-            aria-label="SO LONG COVID - animiertes Logo"
-          ></video>
-        </div> -->
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const video = document.querySelector(".hero-logo-video");
+            if (video) {
+              video.muted = true;
+              video.play().catch(() => {
+                console.log("Autoplay blocked, user interaction required.");
+              });
+            }
+          });
+        </script>
+
         <!-- <div class="hero-logo">
           <img
             src="assets/img/SLCLogo.png"
