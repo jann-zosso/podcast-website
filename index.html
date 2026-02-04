@@ -172,8 +172,13 @@
               playsinline
               loop
               preload="auto"
+              poster="assets/video/fallback.png"
             >
-              <source src="assets/video/SLC logo A.mp4" type="video/mp4" />
+              <source
+                src="assets/video/SLClogoA_alpha.webm"
+                type="video/webm"
+              />
+              <source src="assets/video/SLClogoA.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
@@ -225,6 +230,16 @@
       <section class="container">
         <h2>ÜBER DEN PODCAST</h2>
         <section class="container home-section">
+          <section class="podcast-trailer">
+            <div class="audio-wrapper">
+              <audio controls preload="none" style="width: 100%">
+                <source
+                  src="https://lcdn.letscast.fm/media/podcast/c718782f/episode/c7f304fe.mp3?t=1770230703"
+                  type="audio/mpeg"
+                />
+              </audio>
+            </div>
+          </section>
           <p>
             Die Covid-Pandemie ist vorbei, das Leben geht normal weiter - aber
             nicht für alle. Jann, Jasna, Marlen und Patricia leiden an
