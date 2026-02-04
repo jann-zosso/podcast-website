@@ -428,6 +428,7 @@ section {
 
 .home-section {
   text-align: justify;
+  margin-top: -30px;
 }
 
 @media (max-width: 600px) {
@@ -443,6 +444,15 @@ section {
   margin: 0 auto 90px;
   padding: 0 20px;
   text-align: center;
+}
+
+.podcast-trailer h2 {
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #222;
+  text-transform: uppercase;
 }
 
 /* Blue container */
@@ -462,11 +472,6 @@ section {
   height: 40px;
   max-width: 100%;
   accent-color: var(--slc-blue);
-}
-
-/* Reduce spacing to previous section */
-.home-section + .podcast-trailer {
-  margin-top: -30px;
 }
 
 /* Mobile */
