@@ -184,7 +184,7 @@
           // covers Safari and WebKit-based browsers on iOS (Brave/Chrome on iOS use WebKit).
           function shouldUseFallback() {
             const ua = navigator.userAgent || "";
-            const isIOS = /iPhone|iPod/.test(ua);
+            const isIOS = /iPhone|iPad|iPod/.test(ua);
             const isMacTouch =
               navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
             // Optionally detect Brave via navigator.brave (may not exist everywhere)
