@@ -223,6 +223,7 @@ main {
   display: block;
 
   transition: opacity 0.65s ease-in-out;
+  object-fit: contain;
 }
 
 .hero-logo-default {
@@ -231,6 +232,7 @@ main {
 
 .hero-logo-hover {
   opacity: 0;
+  transition-delay: 0.04s;
 }
 
 .hero-logo:hover .hero-logo-default {
@@ -239,11 +241,6 @@ main {
 
 .hero-logo:hover .hero-logo-hover {
   opacity: 1;
-}
-
-.hero-logo-hover {
-  opacity: 0;
-  transition-delay: 0.04s;
 }
 
 /* HERO TEXT EXTENSION */

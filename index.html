@@ -163,8 +163,9 @@
             >SO LONG COVID - Über Genesung von Long Covid</span
           >
         </h1>
-        <div class="hero-logo">
+        <div class="hero-logo" id="heroLogoContainer">
           <video
+            id="heroLogoVideo"
             class="hero-logo-video"
             autoplay
             muted
@@ -179,18 +180,51 @@
         </div>
 
         <script>
+          // Detect iPhone/iPad/iPod OR Mac with touch (e.g., MacBook with touch device) —
+          // covers Safari and WebKit-based browsers on iOS (Brave/Chrome on iOS use WebKit).
+          function shouldUseFallback() {
+            const ua = navigator.userAgent || "";
+            const isIOS = /iPhone|iPod/.test(ua);
+            const isMacTouch =
+              navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
+            // Optionally detect Brave via navigator.brave (may not exist everywhere)
+            // const isBrave = !!navigator.brave;
+            return isIOS || isMacTouch;
+          }
+
           document.addEventListener("DOMContentLoaded", function () {
-            const video = document.querySelector(".hero-logo-video");
+            const container = document.getElementById("heroLogoContainer");
+            const video = document.getElementById("heroLogoVideo");
+
+            // Try to apply rendering fixes and start video
             if (video) {
               video.muted = true;
               video.play().catch(() => {
-                console.log("Autoplay blocked, user interaction required.");
+                /* autoplay blocked */
               });
+            }
+
+            // If target platform needs fallback, replace video with hover-swap images
+            if (shouldUseFallback() && container) {
+              const markup = `
+            <img
+              src="assets/img/SLCLogo.png"
+              alt="SO LONG COVID Logo"
+              class="hero-logo-img hero-logo-default"
+            />
+            <img
+              src="assets/img/SLCLogoK.png"
+              alt="SO LONG COVID Logo Alternative"
+              class="hero-logo-img hero-logo-hover"
+            />
+          `;
+              container.innerHTML = markup;
             }
           });
         </script>
 
-        <!-- <div class="hero-logo">
+        <!-- 
+        <div class="hero-logo">
           <img
             src="assets/img/SLCLogo.png"
             alt="SO LONG COVID Logo"
