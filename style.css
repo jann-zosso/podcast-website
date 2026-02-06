@@ -198,20 +198,10 @@ main {
   margin: 0 auto 50px;
 }
 
-.hero-logo-frame {
-  width: 100%;
-  height: 100%;
-  background: var(--slc-orange);
-  overflow: hidden;
-  border-radius: 24px;
-}
-
 .hero-logo-video {
-  background-color: var(--slc-orange);
   width: 100%;
   height: 100%;
-  padding: 0;
-  margin: 0;
+  display: block;
   object-fit: contain;
 }
 
