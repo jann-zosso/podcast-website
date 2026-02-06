@@ -163,63 +163,54 @@
             >SO LONG COVID - Über Genesung von Long Covid</span
           >
         </h1>
-        <div class="hero-logo" id="heroLogoContainer">
-          <video
-            id="heroLogoVideo"
-            class="hero-logo-video"
-            autoplay
-            muted
-            playsinline
-            loop
-            preload="auto"
-            poster="assets/video/fallback.png"
-          >
-            <source src="assets/video/SLClogoA.webm" type="video/webm" />
-            <source src="assets/video/SLClogoA.mp4" type="video/mp4" />
-          </video>
+        <div id="heroLogoContainer" class="hero-logo">
+          <img
+            src="assets/img/SLCLogo.png"
+            alt="SO LONG COVID Logo"
+            class="hero-logo-img hero-logo-default"
+          />
+          <img
+            src="assets/img/SLCLogoK.png"
+            alt="SO LONG COVID Logo Alternative"
+            class="hero-logo-img hero-logo-hover"
+          />
         </div>
 
         <script>
-          // Detect iPhone/iPad/iPod OR Mac with touch (e.g., MacBook with touch device) —
-          // covers Safari and WebKit-based browsers on iOS (Brave/Chrome on iOS use WebKit).
-          function shouldUseFallback() {
-            const ua = navigator.userAgent || "";
-            const isIOS = /iPhone|iPad|iPod/.test(ua);
-            const isMacTouch =
-              navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
-            // Optionally detect Brave via navigator.brave (may not exist everywhere)
-            // const isBrave = !!navigator.brave;
-            return isIOS || isMacTouch;
-          }
-
-          document.addEventListener("DOMContentLoaded", function () {
+          document.addEventListener("DOMContentLoaded", () => {
             const container = document.getElementById("heroLogoContainer");
-            const video = document.getElementById("heroLogoVideo");
+            if (!container) return;
 
-            // Try to apply rendering fixes and start video
-            if (video) {
-              video.muted = true;
-              video.play().catch(() => {
-                /* autoplay blocked */
-              });
-            }
+            const ua = navigator.userAgent || "";
+            const isSafari =
+              ua.includes("Safari") &&
+              !ua.includes("Chrome") &&
+              !ua.includes("Chromium");
 
-            // If target platform needs fallback, replace video with hover-swap images
-            if (shouldUseFallback() && container) {
-              const markup = `
-            <img
-              src="assets/img/SLCLogo.png"
-              alt="SO LONG COVID Logo"
-              class="hero-logo-img hero-logo-default"
-            />
-            <img
-              src="assets/img/SLCLogoK.png"
-              alt="SO LONG COVID Logo Alternative"
-              class="hero-logo-img hero-logo-hover"
-            />
-          `;
-              container.innerHTML = markup;
-            }
+            const isIOS = /iPhone|iPad|iPod/.test(ua);
+
+            if (isSafari || isIOS) return;
+
+            const testVideo = document.createElement("video");
+            const canPlayWebM =
+              testVideo.canPlayType('video/webm; codecs="vp9"') !== "";
+
+            if (!canPlayWebM) return;
+
+            const video = document.createElement("video");
+            video.src = "assets/video/SLClogoA.webm";
+            video.autoplay = true;
+            video.muted = true;
+            video.loop = true;
+            video.playsInline = true;
+            video.className = "hero-logo-video";
+
+            video.addEventListener("error", () => {
+              // keep images
+            });
+
+            container.innerHTML = "";
+            container.appendChild(video);
           });
         </script>
 
