@@ -176,57 +176,6 @@
           />
         </div>
 
-        <script>
-          document.addEventListener("DOMContentLoaded", () => {
-            const container = document.getElementById("heroLogoContainer");
-            if (!container) return;
-
-            const ua = navigator.userAgent || "";
-            const isSafari =
-              ua.includes("Safari") &&
-              !ua.includes("Chrome") &&
-              !ua.includes("Chromium");
-
-            const isIOS = /iPhone|iPad|iPod/.test(ua);
-
-            if (isSafari || isIOS) return;
-
-            const testVideo = document.createElement("video");
-            const canPlayWebM =
-              testVideo.canPlayType('video/webm; codecs="vp9"') !== "";
-
-            if (!canPlayWebM) return;
-
-            const video = document.createElement("video");
-            video.src = "assets/video/SLClogoA.webm";
-            video.autoplay = true;
-            video.muted = true;
-            video.loop = true;
-            video.playsInline = true;
-            video.className = "hero-logo-video";
-
-            video.addEventListener("error", () => {
-              // keep images
-            });
-
-            container.innerHTML = "";
-            container.appendChild(video);
-          });
-        </script>
-
-        <!-- 
-        <div class="hero-logo">
-          <img
-            src="assets/img/SLCLogo.png"
-            alt="SO LONG COVID Logo"
-            class="hero-logo-img hero-logo-default"
-          />
-          <img
-            src="assets/img/SLCLogoK.png"
-            alt="SO LONG COVID Logo Alternative"
-            class="hero-logo-img hero-logo-hover"
-          />
-        </div> -->
         <p class="hero-subtitle">
           <b>
             <span class="hero-line-1">

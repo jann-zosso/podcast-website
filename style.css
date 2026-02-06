@@ -184,13 +184,13 @@ main {
   font-size: 1.15rem;
 }
 
-.hero-orange.index-hero {
+/* .hero-orange.index-hero {
   padding-top: 65px;
-}
+} */
 
 /* HERO Video */
 
-.hero-logo {
+/* .hero-logo {
   position: relative;
   width: 500px;
   height: 300px;
@@ -202,9 +202,17 @@ main {
   width: 100%;
   height: auto;
   display: block;
-}
+} */
 
 /* HERO LOGO SWAP */
+
+.hero-logo {
+  position: relative;
+  width: 340px;
+  height: 220px;
+  max-width: 92%;
+  margin: 0 auto 75px;
+}
 
 .hero-logo-img {
   position: absolute;
