@@ -223,7 +223,7 @@ main {
   display: block;
 
   transition: opacity 0.65s ease-in-out;
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 
 .hero-logo-default {
