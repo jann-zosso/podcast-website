@@ -1211,6 +1211,28 @@ section {
   transition: color 0.2s ease;
 }
 
+.footer-link:hover {
+  color: #fff;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 10px 0 22px;
+}
+
+.footer-social .footer-link {
+  font-size: 1.4rem;
+}
+
+.footer-separator {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
 .footer-impressum {
   display: block;
   margin-top: 6px;

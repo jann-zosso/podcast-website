@@ -21,6 +21,23 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      as="style"
+      crossorigin="anonymous"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      />
+    </noscript>
 
     <link rel="stylesheet" href="style.css" />
     <script type="application/ld+json">
@@ -132,7 +149,12 @@
         <br />
         <br />
         <br />
-        Im Februar 2026 startet die Crowdfunding-Kampagne für die Fertigstellung
+        <script
+          src="https://wemakeit.com/static-assets/widgets/project.js"
+          async="async"
+        ></script>
+        <wemakeit-project locale="de" slug="so-long-covid"></wemakeit-project>
+        <!-- Im Februar 2026 startet die Crowdfunding-Kampagne für die Fertigstellung
         unseres Podcasts SO LONG COVID. Falls wir dich darüber benachrichtigen
         dürfen, schreibe uns gerne eine E-Mail an:
         <br />
@@ -141,7 +163,7 @@
         <br />
         <a href="mailto:solongcovid@proton.me" class="unterstützen-link">
           solongcovid@proton.me
-        </a>
+        </a> -->
         <!--
         <img
           src="assets/img/QRCode.png"
@@ -158,7 +180,62 @@
 
     <footer class="site-footer">
       <div class="footer-content">
+        <p class="footer-heading">Kontakt</p>
+
+        <a href="mailto:solongcovid@proton.me" class="footer-link">
+          solongcovid@proton.me
+        </a>
+
+        <p class="footer-note">
+          Folge uns auf Instagram und deiner liebsten Podcast-Plattform!
+        </p>
+        <div class="footer-social">
+          <a
+            href="https://www.instagram.com/so.long.covid/"
+            target="_blank"
+            rel="noopener"
+            class="footer-link"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <span class="footer-separator">|</span>
+
+          <a
+            href="https://open.spotify.com/show/7ohnJlQQznvnSiCzD8qpfz?si=a09149bd7f284868"
+            target="_blank"
+            rel="noopener"
+            class="footer-link"
+            aria-label="Spotify"
+          >
+            <i class="fab fa-spotify"></i>
+          </a>
+
+          <a
+            href="https://www.youtube.com/@SOLONGCOVID"
+            target="_blank"
+            rel="noopener"
+            class="footer-link"
+            aria-label="YouTube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+
+          <a
+            href="https://podcasts.apple.com/ch/podcast/so-long-covid/id1874681051"
+            target="_blank"
+            rel="noopener"
+            class="footer-link"
+            aria-label="Apple Podcasts"
+          >
+            <i class="fas fa-podcast"></i>
+          </a>
+        </div>
         <p>&copy; 2026 SO LONG COVID</p>
+        <a href="impressum.html" class="footer-link footer-impressum">
+          Impressum
+        </a>
       </div>
     </footer>
   </body>

@@ -35,12 +35,12 @@
   </url>
 
   <!-- Support / QR Code -->
-  <url>
+  <!-- <url>
     <loc>https://solongcovid.ch/qrcode.html</loc>
     <lastmod>2026-01-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
-  </url>
+  </url> -->
 
   <!-- Impressum -->
   <url>
