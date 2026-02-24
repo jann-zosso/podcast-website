@@ -365,8 +365,8 @@ main {
 
 @media (max-width: 480px) {
   .hero-logo {
-    width: 380px;
-    margin: -150px auto -70px;
+    width: 420px;
+    margin: -170px auto -90px;
   }
 }
 
