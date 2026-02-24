@@ -94,6 +94,10 @@
         ]
       }
     </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
+      defer
+    ></script>
   </head>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -113,6 +117,42 @@
         link.addEventListener("click", () => {
           mobileMenu.classList.remove("open");
         });
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const container = document.getElementById("heroLogoAnimation");
+      if (!container || typeof lottie === "undefined") return;
+
+      const animation = lottie.loadAnimation({
+        container: container,
+        renderer: "svg",
+        loop: false,
+        autoplay: false,
+        path: " assets/video/SLC_logo.json",
+      });
+
+      const pauseDuration = 3000;
+
+      function scheduleNextPlay() {
+        setTimeout(() => {
+          animation.goToAndPlay(0, true);
+        }, pauseDuration);
+      }
+
+      animation.addEventListener("DOMLoaded", () => {
+        animation.goToAndStop(0, true);
+        scheduleNextPlay();
+      });
+
+      animation.addEventListener("complete", () => {
+        animation.goToAndStop(animation.totalFrames - 1, true);
+
+        setTimeout(() => {
+          animation.goToAndStop(0, true);
+          animation.play();
+        }, pauseDuration);
       });
     });
   </script>
@@ -164,6 +204,9 @@
           >
         </h1>
         <div id="heroLogoContainer" class="hero-logo">
+          <div id="heroLogoAnimation" class="hero-logo-animation"></div>
+        </div>
+        <!-- <div id="heroLogoContainer" class="hero-logo">
           <img
             src="assets/img/SLCLogo.png"
             alt="SO LONG COVID Logo"
@@ -174,7 +217,7 @@
             alt="SO LONG COVID Logo Alternative"
             class="hero-logo-img hero-logo-hover"
           />
-        </div>
+        </div> -->
 
         <p class="hero-subtitle">
           <b>
