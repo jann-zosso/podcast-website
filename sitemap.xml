@@ -5,15 +5,23 @@
   <!-- Home -->
   <url>
     <loc>https://solongcovid.ch/</loc>
-    <lastmod>2026-01-08</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://solongcovid.ch/about.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <!-- Ressourcen overview -->
   <url>
     <loc>https://solongcovid.ch/ressourcen.html</loc>
-    <lastmod>2026-01-08</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -29,7 +37,7 @@
   <!-- Team -->
   <url>
     <loc>https://solongcovid.ch/team.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
