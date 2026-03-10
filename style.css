@@ -312,6 +312,28 @@ main {
   font-style: normal;
 }
 
+/* About HERO IMAGE */
+.about-hero {
+  padding: 45px 0 25px 0;
+}
+
+.about-hero .hero-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-hero .hero-image-rounded {
+  width: 95%;
+  max-width: 520px;
+  border-radius: 12px;
+}
+.hero-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*Responsive */
 
 .hero-rest-mobile {
@@ -429,7 +451,8 @@ section {
 
 .home-section {
   text-align: justify;
-  margin-top: -30px;
+  max-width: 1100px;
+  margin: -30px auto 0;
 }
 
 @media (max-width: 600px) {
@@ -483,6 +506,130 @@ section {
 
   .audio-wrapper {
     padding: 18px;
+  }
+}
+
+/* =========================
+   PODCAST EPISODES
+========================= */
+
+.podcast-episodes {
+  max-width: 1100px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+}
+
+.podcast-episodes h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.episodes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.episode-card {
+  background: var(--slc-blue);
+  color: #fff;
+  border-radius: 28px;
+  padding: 26px 24px 24px;
+  text-align: left;
+}
+
+.episode-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.episode-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.episode-date {
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 18px;
+}
+
+.episode-player {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 14px;
+}
+
+/* Placeholder cards */
+.episode-card-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 180px;
+}
+
+.episode-card-placeholder h3 {
+  margin-bottom: 10px;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .home-section,
+  .podcast-trailer,
+  .podcast-episodes {
+    max-width: 92%;
+  }
+}
+@media (max-width: 800px) {
+  .episodes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   Ueber den Podcast SECTION
+========================= */
+
+/* CONTENT IMAGE */
+
+.wie-image {
+  float: right;
+  width: 260px;
+  max-width: 42%;
+  margin: 8px 0 8px 22px;
+  border-radius: 12px;
+}
+
+.wie-image-L {
+  float: left;
+  width: 260px;
+  max-width: 42%;
+  margin: 8px 22px 8px 0;
+  border-radius: 12px;
+}
+
+.about-section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.home-section a {
+  color: var(--slc-orange);
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .wie-image {
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 20px 0;
   }
 }
 
@@ -563,37 +710,42 @@ section {
 /* ---------- SECONDARY TEAM GRID ---------- */
 .team-grid-secondary {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* was 4 */
-  gap: 24px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
 }
 
 /* SIMPLE CARDS */
 .team-card-simple {
-  padding: 24px 18px;
+  padding: 20px 14px;
   text-align: center;
 }
 
 .team-card-simple h3 {
-  font-size: 1rem;
-  margin-bottom: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
   color: #222;
+  line-height: 1.3;
 }
 
 .team-card-simple p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #555;
+  line-height: 1.35;
 }
 
 /* ---------- RESPONSIVE ---------- */
 /* Tablet */
+
+@media (max-width: 1100px) {
+  .team-grid-secondary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 900px) {
   .main-team-row {
     grid-template-columns: 1fr;
   }
-
-  /* .team-grid-secondary {
-    grid-template-columns: repeat(2, 1fr);
-  } */
   .main-team-row {
     margin-bottom: 36px;
   }
@@ -652,16 +804,29 @@ section {
   padding: 70px 20px;
 }
 
+.partner-section .container {
+  max-width: 1100px;
+}
+
 .partner-section h2 {
   margin-bottom: 40px;
 }
 
 /* GRID */
 .partner-grid {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  align-items: stretch;
+}
+
+.partner-grid-S {
+  max-width: 270px;
+  margin: -20px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 32px;
   align-items: stretch;
 }

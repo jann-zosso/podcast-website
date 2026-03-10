@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Über den Podcast | SO LONG COVID</title>
+    <meta
+      name="description"
+      content="Die Hintergründe zum Podcast SO LONG COVID: Wie ist die Idee entstanden? Und warum ist er wichtig?"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon/favicon-48.png" sizes="48x48" />
+    <link rel="icon" href="/assets/favicon/favicon-96.png" sizes="96x96" />
+    <link rel="icon" href="/assets/favicon/favicon-192.png" sizes="192x192" />
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="/assets/favicon/favicon-192.png" />
+    <link rel="canonical" href="https://solongcovid.ch/uberdenpodcast.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      as="style"
+      crossorigin="anonymous"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      />
+    </noscript>
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://solongcovid.ch/#organization",
+        "name": "SO LONG COVID",
+        "url": "https://solongcovid.ch/",
+        "logo": "https://solongcovid.ch/assets/img/SLCLogo.png",
+        "sameAs": ["https://www.instagram.com/so.long.covid/"],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "general inquiries",
+            "email": "solongcovid@proton.me",
+            "availableLanguage": ["de", "en", "fr"]
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "@id": "https://solongcovid.ch/uberdenpodcast.html#about",
+        "url": "https://solongcovid.ch/uberdenpodcast.html",
+        "name": "Über den Podcast | SO LONG COVID",
+        "description": "Die Hintergründe zum Podcast SO LONG COVID: Wie ist die Idee entstanden? Und warum ist er wichtig?",
+        "isPartOf": {
+          "@id": "https://solongcovid.ch/#website"
+        },
+        "publisher": {
+          "@id": "https://solongcovid.ch/#organization"
+        },
+        "inLanguage": "de"
+      }
+    </script>
+  </head>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburgerBtn = document.getElementById("hamburgerBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const closeMenu = document.getElementById("closeMenu");
+
+      hamburgerBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("open");
+      });
+
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+      });
+
+      document.querySelectorAll(".mobile-nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("open");
+        });
+      });
+    });
+  </script>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-area">
+          <a href="index.html" class="logo-link">
+            <img
+              src="assets/img/SLCLogoOrange.png"
+              alt="SO LONG COVID"
+              class="brain-logo logo-orange"
+            />
+            <img
+              src="assets/img/SLCLogoBlue.png"
+              alt="SO LONG COVID"
+              class="brain-logo logo-blue"
+            />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a class="active" href="uberdenpodcast.html">About</a>
+          </li>
+          <li><a href="ressourcen.html">Ressourcen</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+        <!-- Hamburger Button (mobile only) -->
+        <button class="hamburger-btn" id="hamburgerBtn">
+          <img src="assets/img/SLCHamburger.png" alt="Menu" />
+        </button>
+      </nav>
+      <!-- Mobile Overlay Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" id="closeMenu">×</button>
+
+        <ul class="mobile-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a class="active" href="uberdenpodcast.html">About</a>
+          </li>
+          <li><a href="ressourcen.html">Ressourcen</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden-h1">Hintergründe zum Podcast SO LONG COVID</h1>
+
+      <section class="hero-orange team-section about-hero">
+        <div class="hero-image-wrapper">
+          <img
+            src="assets/img/ueber-hero.jpeg"
+            alt="SO LONG COVID Podcast Hintergrund"
+            class="hero-image-rounded"
+          />
+        </div>
+        <blockquote class="hero-quote">
+          <p>
+            <b>
+              SO LONG COVID ist ein unabhängiges Rechercheprojekt
+              <br />von Zita Bauer und Jann Zosso
+            </b>
+          </p>
+        </blockquote>
+      </section>
+      <section class="container">
+        <h2>ÜBER DEN PODCAST</h2>
+        <section class="container home-section">
+          <p>
+            Die Covid-Pandemie ist vorbei, das Leben geht normal weiter - aber
+            nicht für alle. Jann, Jasna, Marlen und Patricia gehören zu den
+            schätzungsweise 300'000 Menschen in der Schweiz mit Long Covid.
+            Fatigue, Belastungsintoleranz, Muskelschmerzen und kognitive
+            Störungen schränken ihren Alltag massiv ein, bislang gilt die
+            Krankheit als unheilbar.
+          </p>
+          <br />
+          <p>
+            Und doch gibt es Menschen, die vollständig genesen - auch Jann,
+            Jasna, Marlen und Patricia. Was können wir von ihnen lernen? Ist die
+            Situation für Betroffene tatsächlich so aussichtslos, wie sie
+            scheint? Jann, Jasna, Marlen und Patricia sind nicht zufällig
+            genesen, sondern auf Grundlage eines neuen Krankheitsverständnisses.
+          </p>
+          <br />
+          <p>
+            In dieser Podcast-Serie beleuchten wir Erkenntnisse aus der modernen
+            Schmerztherapie und Neurobiologie, die auch andere bislang
+            medizinisch unerklärte Erkrankungen wie chronische Rückenschmerzen,
+            Migräne oder Reizdarm betreffen. Diese neuen Ansätze lindern nicht
+            mehr nur die Symptome, sondern eröffnen neue Perspektiven - bis hin
+            zu einer vollständigen Heilung. Doch warum verbreiten sich diese
+            Ansätze nur langsam? Und was bedeutet dieses neue Wissen für die
+            Medizin der Zukunft?
+          </p>
+        </section>
+
+        <h2>WIE ALLES BEGANN</h2>
+        <section class="container home-section">
+          <img
+            src="assets/img/wie-alles-begann.jpeg"
+            alt="Entstehung des Podcasts"
+            class="wie-image"
+          />
+          <p>
+            Jann war selbst von Long Covid betroffen und ist mithilfe eines
+            neuen Krankheitsverständnisses und daraus abgeleiteter
+            Therapieansätze wieder genesen. Da wir diese Ressourcen damals eher
+            zufällig entdeckt hatten und sie mehrheitlich auf Englisch verfügbar
+            waren, wollten wir dazu beitragen, dieses Wissen für mehr Menschen
+            zugänglich zu machen. Auf einer Velotour im Spätsommer 2024 in der
+            Bretagne, als Jann auf bestem Weg war, seine Long-Covid- Erkrankung
+            vollständig zu überwinden, hörten wir den Story-Telling-Podcast
+            <a href="https://wondery.com/shows/hysterical/" target="_blank"
+              >Hysterical</a
+            >
+            von Dan Taberski. Wir waren begeistert! Ein brisantes Thema so
+            packend erzählt, hautnah an den Protagonist:innen und mit
+            eingängiger Musik, die uns immer wieder positiv erschaudern liess.
+            Leicht grössenwahnsinnig, war uns klar: Wir wollen unsere Geschichte
+            so erzählen. Auf einen Yatzy-Zettel kritzelten wir in diesen Ferien
+            einen ersten Entwurf.
+          </p>
+          <br />
+          <p>
+            <img
+              src="assets/img/pc1.jpg"
+              alt="Konzeption des Podcasts"
+              class="wie-image-L"
+            />
+            Es folgte eine intensive Phase der Recherche: Wir führten zahlreiche
+            Gespräche mit Betroffenen, Ärzt:innen, Therapeut:innen und
+            Forschenden. Parallel dazu begannen wir, unser gesammeltes Wissen zu
+            teilen und andere Betroffene zu unterstützen, zunächst im privaten
+            Umfeld, später zunehmend auch darüber hinaus. Immer wieder meldeten
+            sich Menschen bei uns, die erfahren hatten, dass Jann wieder gesund
+            geworden war. Jann begann, seine persönliche Genesungsgeschichte als
+            <a href="genesung-jann.html" target="_blank">Erfahrungsbericht</a>
+            aufzuschreiben und erhielt darauf viele berührende Rückmeldungen-am
+            schönsten natürlich von Menschen, die mit diesem neuen Wissen nun
+            ebenfalls genesen konnten.
+          </p>
+          <br />
+          <p>
+            Gleichzeitig wurde uns die Tragweite dieses neuen
+            Krankheitsverständnisses immer mehr bewusst. Es betrifft nicht nur
+            Long Covid, sondern auch viele andere chronische Erkrankungen, die
+            bislang als unheilbar galten. Jann konnte mit den gleichen Techniken
+            der Symptom-Neuverarbeitung auch seine chronischen Nackenschmerzen
+            loswerden, an denen über Jahre hinweg unzählige Physiotherapeutinnen
+            und Osteopathen scheiterten. Das Gleiche gilt für seine
+            wiederkehrenden Magenbeschwerden, die sich weder durch die Befunde
+            von Magenspiegelungen erklären, noch durch Ernährungsberatung und
+            ergänzende Lebensmittel lindern liessen. Und auch das
+            Restless-Legs-Syndrom, für welches Jann mitgeteilt wurde,
+            <img
+              src="assets/img/pc2.jpg"
+              alt="Schnittprogramm"
+              class="wie-image"
+            />
+            dass es keine Heilung gibt und sich die Beschwerden mit dem Alter
+            eher verschlimmern werden, ist mittlerweile kein Thema mehr. Anders
+            in unserem Umfeld: Wir kennen so viele Menschen, die an chronischen
+            Rückenschmerzen, chronischen Blasenentzündungen (Interstitielle
+            Zystitis), Migräne, Fibromyalgie und weiteren Beschwerden ohne klare
+            strukturelle Ursache leiden. Von vielen weiteren haben wir während
+            unserer Arbeit am Podcast erfahren. Und gleichzeitig lernten wir
+            viele Menschen kennen, die mit den gleichen Techniken ihre
+            chronischen Beschwerden deutlich lindern oder sogar vollständig
+            loswerden konnten. Diese Geschichten ähneln sich meistens stark:
+            Nach einer langen Odyssee durch das Gesundheitssystem, mit
+            unzähligen Therapieversuchen und zunehmender Verzweiflung, entdecken
+            sie eher durch Zufall dieses neue Wissen.
+          </p>
+          <br />
+          <p>
+            Auch die Ärzt:innen in unserem Umfeld waren interessiert an Janns
+            Genesungsgeschichte und dem neuroplastischen Ansatz. Viele haben
+            selber Patient:innen mit Long Covid oder anderen chronischen
+            Erkrankungen und erfahren die Hilflosigkeit und Ratlosigkeit aus
+            erster Hand. Das neuroplastische Verständnis von chronifizierten
+            Symptomen stellt in diesem Zusammenhang einen grundlegenden
+            Perspektivenwechsel dar. Jann nahm auch Kontakt mit der Klinik Gais
+            auf, die er während seiner Long-Covid-Erkrankung besucht hatte, und
+            teilt nun dort seine Erfahrungen mit Betroffenen. Gleichzeitig
+            erfuhren wir, dass das Universitätsspital Basel in diesem Bereich
+            Pionierarbeit leistet: Basierend auf dem neuroplastischen Ansatz
+            arbeitet ein interdisziplinäres Team ganzheitlich mit Patient:innen,
+            nicht nur im Kontext von Long Covid, sondern auch bei anderen
+            persistierenden Beschwerden. Janns Genesungsbericht wird dort
+            regelmässig an Patient:innen weitergegeben.
+          </p>
+          <img
+            src="assets/img/pc5.jpg"
+            alt="Schnittprogramm"
+            class="wie-image-L"
+          />
+          <br />
+          <p>
+            All diese Erfahrungen flossen in dieses Podcast-Projekt, mit welchem
+            wir diese unglaublichen Genesungsgeschichten und diese kleine
+            Revolution in der Medizin hörbar machen wollen. Nahbar und
+            hoffentlich mit vielen Gänsehaut-Momenten, und gleichzeitg präzise
+            und hilfreich. Ein Projekt, das sich von der Idee auf dem
+            Yatzy-Zettel zu einem Vollzeitjob für Zita und einem wachsenden
+            <a href="team.html" target="_blank">Team</a> entwickelt hat. SO LONG
+            COVID wuchs zu einem mehrjährigen, unabhängigen Recherche-Podcast
+            mit eigens dafür komponierter Musik, eigener visueller Identität und
+            Webpräsenz sowie professionellem Sounddesign, Beratung und
+            Kommunikation. Es ist ein Herzensprojekt, das wir mit viel
+            Leidenschaft und Engagement verfolgen. Denn wir sind überzeugt:
+            Diese Geschichten und dieses Wissen verdienen es, erzählt zu werden.
+          </p>
+        </section>
+        <h2>WARUM ES WICHTIG IST</h2>
+        <section class="container home-section">
+          <p>
+            Medien und Fachpersonen berichten weitgehend einseitig über Long
+            Covid: Im Fokus stehen bleibende Schäden, mögliche dauerhafte
+            Einschränkungen und schwere Schicksale. Es ist wichtig, auf die
+            belastenden Lebensrealitäten Betroffener und bestehende
+            Versorgungslücken hinzuweisen sowie den Handlungsbedarf aufzuzeigen.
+          </p>
+          <br />
+          <p>
+            Gleichzeitig gibt es vermehrt Menschen, die auch nach sehr
+            schwerwiegenden Krankheitsverläufen wieder genesen. Mit dieser
+            Podcast-Serie erweitern wir den aktuellen Diskurs und erzählen die
+            Geschichten von Menschen, die aufgrund eines neuen
+            Erklärungsansatzes die Krankheit vollständig überwinden konnten.
+            Dabei tauchen wir ein in faszinierende Erkenntnisse aus der
+            Neurobiologie und neuestes Wissen aus der modernen Schmerztherapie.
+          </p>
+          <br />
+          <p>
+            Wir wollen diese vielversprechenden Ansätze sichtbar machen, denn in
+            der Komplexität der Krankheit erreichen sie Betroffene, ihr Umfeld,
+            aber auch Ärzt:innen und medizinisches Personal nur teilweise. Und
+            wir wissen aus Forschung und eigener Erfahrung, dass ein
+            mehrheitlich negatives Narrativ eine Genesung von Betroffenen
+            massgeblich erschweren kann.
+          </p>
+          <br />
+          <p>
+            Die Relevanz wird duch die grosse Anzahl Betroffener erhöht. Nicht
+            nur der vielen Menschen die in der Schweiz mit Long Covid leben,
+            sondern auch die schätzungsweise 1.5 Millionen Menschen mit
+            chronischen Schmerzen, die
+            <a
+              href="https://www.srf.ch/audio/input/chronische-schmerzen-wie-betroffene-den-alltag-meistern?id=AUDI20260225_NR_0078"
+              target="_blank"
+              >"Volkskrankheit Nr. 1"</a
+            >
+            in unserer auf Leistung und Produktivität ausgerichteten
+            Gesellschaft. Mit dem neuroplastischen Ansatz eröffnen sich neue
+            Perspektiven.
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-heading">Kontakt</p>
+
+        <a href="mailto:solongcovid@proton.me" class="footer-link">
+          solongcovid@proton.me
+        </a>
+
+        <p class="footer-note">
+          Folge uns auf Instagram und deiner liebsten Podcast-Plattform!
+        </p>
+        <div class="footer-social">
+          <a
+            href="https://www.instagram.com/so.long.covid/"
+            target="_blank"
+            rel="noopener"
+            class="footer-link"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <span class="footer-separator">|</span>
+
+          <a
+            href="https://open.spotify.com/show/7ohnJlQQznvnSiCzD8qpfz?si=a09149bd7f284868"
+            target="_blank"
+            rel="noopener"
+            class="footer-link"
+            aria-label="Spotify"
+          >
+            <i class="fab fa-spotify"></i>
+          </a>
+
+          <a
+            href="https://www.youtube.com/@SOLONGCOVID"
+            target="_blank"
+            rel="noopener"
+            class="footer-link"
+            aria-label="YouTube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+
+          <a
+            href="https://podcasts.apple.com/ch/podcast/so-long-covid/id1874681051"
+            target="_blank"
+            rel="noopener"
+            class="footer-link"
+            aria-label="Apple Podcasts"
+          >
+            <i class="fas fa-podcast"></i>
+          </a>
+        </div>
+        <p>&copy; 2026 SO LONG COVID</p>
+        <a href="impressum.html" class="footer-link footer-impressum">
+          Impressum
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
