@@ -524,19 +524,6 @@ section {
    PODCAST EPISODES
 ========================= */
 
-.episode-widget-wrap {
-  width: 100%;
-  overflow: hidden;
-  border-radius: 18px;
-}
-
-.episode-iframe {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  border: 0;
-}
-
 .podcast-episodes {
   max-width: 1100px;
   margin: 0 auto 100px;
@@ -687,6 +674,137 @@ section {
 
   .episode-player {
     padding: 8px;
+  }
+}
+
+/* =========================
+   LIVE EPISODE WIDGETS
+========================= */
+
+.episode-card {
+  background: var(--slc-blue);
+  color: #fff;
+  border-radius: 28px;
+  padding: 26px 24px 24px;
+  text-align: left;
+  min-width: 0;
+}
+
+.episode-card-live {
+  overflow: hidden;
+}
+
+/* Desktop / tablet: normal centered iframe */
+.episode-widget-shell {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.episode-iframe {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: 292px;
+  border: 0;
+  background: #fff;
+}
+
+/* =========================
+   EPISODES – SMALL SCREENS
+========================= */
+
+@media (max-width: 800px) {
+  .episodes-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .podcast-episodes {
+    padding: 0 10px;
+    margin-bottom: 70px;
+  }
+
+  .episode-card {
+    padding: 20px 18px 18px;
+    border-radius: 22px;
+  }
+
+  .episode-card h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+
+  .episode-label {
+    font-size: 0.75rem;
+    margin-bottom: 6px;
+  }
+
+  .episode-date {
+    font-size: 0.86rem;
+    margin-bottom: 14px;
+    line-height: 1.4;
+  }
+
+  .episode-card-placeholder {
+    min-height: 140px;
+  }
+}
+
+/* Smaller phones: scale iframe without stretching card */
+@media (max-width: 620px) {
+  .episode-card-live {
+    padding: 18px 14px 14px;
+  }
+
+  .episode-widget-shell {
+    position: relative;
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+    display: block;
+  }
+
+  .episode-iframe {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 560px;
+    max-width: none;
+    height: 292px;
+    margin-left: -280px; /* half of 560 */
+    transform: scale(0.58);
+    transform-origin: top center;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 420px) {
+  .episode-widget-shell {
+    height: 152px;
+  }
+
+  .episode-iframe {
+    transform: scale(0.52);
+  }
+
+  .episode-card {
+    padding: 18px 14px 16px;
+    border-radius: 18px;
+  }
+
+  .episode-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .episode-label {
+    font-size: 0.72rem;
+  }
+
+  .episode-date {
+    font-size: 0.82rem;
   }
 }
 
