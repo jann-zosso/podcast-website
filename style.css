@@ -559,10 +559,10 @@ section {
 }
 
 .episode-desktop-widget {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .episode-mobile-player {
@@ -648,11 +648,11 @@ section {
   }
 
   .episode-desktop-widget {
-    display: none;
+    display: none !important;
   }
 
   .episode-mobile-player {
-    display: block;
+    display: block !important;
   }
 
   .episode-card-placeholder {
