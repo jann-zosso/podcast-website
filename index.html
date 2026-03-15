@@ -156,6 +156,75 @@
       });
     });
   </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const liveCards = document.querySelectorAll(".episode-card-live");
+
+      if (!liveCards.length) return;
+
+      function updateWidget(card) {
+        const shell = card.querySelector(".episode-widget-shell");
+        const inner = card.querySelector(".episode-widget-inner");
+        if (!shell || !inner) return;
+
+        const naturalWidth = inner.scrollWidth;
+        const naturalHeight = inner.scrollHeight;
+        const availableWidth = shell.clientWidth;
+
+        if (!naturalWidth || !naturalHeight || !availableWidth) return;
+
+        /* allow mild upscale on desktop, stronger downscale on mobile */
+        const safeFactor = window.innerWidth < 600 ? 0.96 : 0.99;
+        const maxScale = window.innerWidth > 1000 ? 1.22 : 1.12;
+
+        let scale = (availableWidth / naturalWidth) * safeFactor;
+        scale = Math.min(scale, maxScale);
+
+        inner.style.transform = `scale(${scale})`;
+        shell.style.height = `${Math.ceil(naturalHeight * scale)}px`;
+      }
+
+      const resizeObserver = new ResizeObserver((entries) => {
+        entries.forEach((entry) => {
+          const card = entry.target.closest(".episode-card-live");
+          if (card) updateWidget(card);
+        });
+      });
+
+      liveCards.forEach((card) => {
+        const shell = card.querySelector(".episode-widget-shell");
+        const inner = card.querySelector(".episode-widget-inner");
+        if (!shell || !inner) return;
+
+        resizeObserver.observe(shell);
+
+        const mutationObserver = new MutationObserver(() => {
+          updateWidget(card);
+        });
+
+        mutationObserver.observe(inner, {
+          childList: true,
+          subtree: true,
+        });
+
+        let tries = 0;
+        function poll() {
+          updateWidget(card);
+          tries += 1;
+          if (tries < 90) requestAnimationFrame(poll);
+        }
+        poll();
+
+        window.addEventListener("load", () => updateWidget(card), {
+          once: true,
+        });
+        setTimeout(() => updateWidget(card), 300);
+        setTimeout(() => updateWidget(card), 900);
+        setTimeout(() => updateWidget(card), 1800);
+        setTimeout(() => updateWidget(card), 3000);
+      });
+    });
+  </script>
   <body>
     <header>
       <nav class="navbar">
@@ -279,8 +348,8 @@
                 ></iframe>
               </div>
             </article> -->
-            <article class="episode-card">
-              <div class="episode-widget-wrap">
+            <article class="episode-card episode-card-live">
+              <div class="episode-widget-shell">
                 <div class="episode-widget-inner">
                   <script
                     id="letscast-player-5f9cdf82"
@@ -303,8 +372,8 @@
                 ></iframe>
               </div>
             </article> -->
-            <article class="episode-card">
-              <div class="episode-widget-wrap">
+            <article class="episode-card episode-card-live">
+              <div class="episode-widget-shell">
                 <div class="episode-widget-inner">
                   <script
                     id="letscast-player-09831830"

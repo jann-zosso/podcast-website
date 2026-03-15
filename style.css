@@ -537,7 +537,7 @@ section {
 
 .episodes-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 28px;
 }
 
@@ -545,8 +545,23 @@ section {
   background: var(--slc-blue);
   color: #fff;
   border-radius: 28px;
-  padding: 26px 24px 24px;
   text-align: left;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* live cards */
+.episode-card-live {
+  padding: 22px 20px;
+}
+
+/* placeholder cards */
+.episode-card-placeholder {
+  padding: 26px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 180px;
 }
 
 .episode-label {
@@ -569,35 +584,37 @@ section {
   margin-bottom: 18px;
 }
 
-.episode-player {
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 18px;
-  padding: 14px;
-}
-
-/* Placeholder cards */
-.episode-card-placeholder {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 180px;
-}
-
 .episode-card-placeholder h3 {
   margin-bottom: 10px;
 }
 
-/* Mobile */
+/* script widget shell */
+.episode-widget-shell {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.episode-widget-inner {
+  display: block;
+  width: max-content;
+  max-width: none;
+  transform-origin: top center;
+  will-change: transform;
+}
+
+/* =========================
+   PODCAST EPISODES – RESPONSIVE
+========================= */
+
 @media (max-width: 900px) {
   .home-section,
   .podcast-trailer,
   .podcast-episodes {
     max-width: 92%;
-  }
-}
-@media (max-width: 800px) {
-  .episodes-grid {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -612,9 +629,15 @@ section {
     gap: 20px;
   }
 
-  .episode-card {
+  .episode-card-live {
+    padding: 18px 12px 14px;
+    border-radius: 22px;
+  }
+
+  .episode-card-placeholder {
     padding: 20px 18px 18px;
     border-radius: 22px;
+    min-height: 140px;
   }
 
   .episode-card h3 {
@@ -632,21 +655,6 @@ section {
     font-size: 0.86rem;
     margin-bottom: 14px;
     line-height: 1.4;
-  }
-
-  .episode-player {
-    padding: 10px;
-    border-radius: 14px;
-  }
-
-  .episode-player audio {
-    width: 100%;
-    max-width: 100%;
-    height: 38px;
-  }
-
-  .episode-card-placeholder {
-    min-height: 140px;
   }
 }
 
@@ -655,142 +663,12 @@ section {
     margin-bottom: 24px;
   }
 
-  .episode-card {
-    padding: 18px 14px 16px;
+  .episode-card-live {
+    padding: 14px 8px 12px;
     border-radius: 18px;
   }
 
-  .episode-card h3 {
-    font-size: 0.95rem;
-  }
-
-  .episode-label {
-    font-size: 0.72rem;
-  }
-
-  .episode-date {
-    font-size: 0.82rem;
-  }
-
-  .episode-player {
-    padding: 8px;
-  }
-}
-
-/* =========================
-   LIVE EPISODE WIDGETS
-========================= */
-
-.episode-card {
-  background: var(--slc-blue);
-  color: #fff;
-  border-radius: 28px;
-  padding: 26px 24px 24px;
-  text-align: left;
-  min-width: 0;
-}
-
-.episode-card-live {
-  overflow: hidden;
-}
-
-/* Desktop / tablet: normal centered iframe */
-.episode-widget-shell {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.episode-iframe {
-  display: block;
-  width: 100%;
-  max-width: 560px;
-  height: 292px;
-  border: 0;
-  background: #fff;
-}
-
-/* =========================
-   EPISODES – SMALL SCREENS
-========================= */
-
-@media (max-width: 800px) {
-  .episodes-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .podcast-episodes {
-    padding: 0 10px;
-    margin-bottom: 70px;
-  }
-
-  .episode-card {
-    padding: 20px 18px 18px;
-    border-radius: 22px;
-  }
-
-  .episode-card h3 {
-    font-size: 1rem;
-    margin-bottom: 6px;
-    line-height: 1.3;
-  }
-
-  .episode-label {
-    font-size: 0.75rem;
-    margin-bottom: 6px;
-  }
-
-  .episode-date {
-    font-size: 0.86rem;
-    margin-bottom: 14px;
-    line-height: 1.4;
-  }
-
   .episode-card-placeholder {
-    min-height: 140px;
-  }
-}
-
-/* Smaller phones: scale iframe without stretching card */
-@media (max-width: 620px) {
-  .episode-card-live {
-    padding: 18px 14px 14px;
-  }
-
-  .episode-widget-shell {
-    position: relative;
-    width: 100%;
-    height: 170px;
-    overflow: hidden;
-    display: block;
-  }
-
-  .episode-iframe {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 560px;
-    max-width: none;
-    height: 292px;
-    margin-left: -280px; /* half of 560 */
-    transform: scale(0.58);
-    transform-origin: top center;
-  }
-}
-
-/* Very small phones */
-@media (max-width: 420px) {
-  .episode-widget-shell {
-    height: 152px;
-  }
-
-  .episode-iframe {
-    transform: scale(0.52);
-  }
-
-  .episode-card {
     padding: 18px 14px 16px;
     border-radius: 18px;
   }
