@@ -401,8 +401,17 @@ main {
   background: var(--slc-blue);
   color: #fff;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 22px;
   font-weight: bold;
+  border: 2px solid var(--slc-blue);
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.btn:hover {
+  background: #fff;
+  color: var(--slc-blue);
 }
 
 .btn-team-section {
@@ -559,7 +568,7 @@ section {
 }
 
 .episode-desktop-widget {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -733,13 +742,7 @@ section {
   border-radius: 12px;
 }
 
-.about-section::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.home-section a {
+.about-content a {
   color: var(--slc-orange);
   text-decoration: none;
 }
