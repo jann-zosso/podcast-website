@@ -1438,6 +1438,159 @@ section {
 }
 
 /* =========================
+   RESONANZ
+========================= */
+
+.resonanz-wrapper {
+  max-width: 1100px;
+  margin: 120px auto 120px;
+}
+
+.resonanz-block {
+  margin-top: 110px;
+}
+
+/* Masonry-like quote field */
+.resonanz-masonry {
+  column-count: 3;
+  column-gap: 26px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Quote cards */
+.resonanz-card {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 26px;
+  break-inside: avoid;
+
+  padding: 30px 34px;
+  border: 3px solid var(--slc-orange);
+  border-radius: 52px;
+
+  background: #fff;
+  color: #111;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.resonanz-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--slc-blue);
+}
+
+/* Filled orange emphasis cards */
+.resonanz-card-filled {
+  background: var(--slc-orange);
+  color: var(--slc-blue);
+  border-color: var(--slc-orange);
+}
+
+.resonanz-card-filled:hover {
+  border-color: var(--slc-orange);
+}
+
+/* Quote typography */
+.resonanz-card blockquote {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.65;
+  font-weight: 500;
+}
+
+/* Poster-like typography for filled cards */
+.resonanz-card-filled blockquote {
+  font-size: 1.2rem;
+  line-height: 1.35;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+/* Inversion on filled orange cards */
+.resonanz-card-filled mark {
+  background: var(--slc-blue);
+  color: var(--slc-orange);
+  padding: 0 0.18em;
+  border-radius: 2px;
+  font: inherit;
+}
+
+/* Author */
+.resonanz-author {
+  margin-top: 18px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  opacity: 0.75;
+}
+
+/* Sender name on filled cards */
+.resonanz-card-filled .resonanz-author {
+  color: var(--slc-blue);
+  opacity: 1;
+  font-size: 0.85rem;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .resonanz-wrapper {
+    margin-top: 70px;
+  }
+
+  .resonanz-masonry {
+    column-count: 2;
+    column-gap: 22px;
+  }
+
+  .resonanz-card {
+    padding: 26px 28px;
+    border-radius: 44px;
+  }
+
+  .resonanz-card-filled blockquote {
+    font-size: 1.15rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .resonanz-wrapper {
+    margin-top: 60px;
+  }
+
+  .resonanz-block {
+    margin-top: 80px;
+  }
+
+  .resonanz-masonry {
+    column-count: 1;
+  }
+
+  .resonanz-card {
+    padding: 24px 24px;
+    border-radius: 34px;
+  }
+
+  .resonanz-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .resonanz-card blockquote {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .resonanz-card-filled blockquote {
+    font-size: 1.05rem;
+    line-height: 1.35;
+  }
+}
+
+/* =========================
    QR CODE Einzahlungsschein
 ========================= */
 

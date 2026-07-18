@@ -34,6 +34,14 @@
     <priority>0.85</priority>
   </url>
 
+  <!-- Resonanz -->
+  <url>
+    <loc>https://solongcovid.ch/resonanz.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Team -->
   <url>
     <loc>https://solongcovid.ch/team.html</loc>
