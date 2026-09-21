@@ -530,6 +530,196 @@ section {
 }
 
 /* =========================
+   HOME – RESONANZ TEASER
+========================= */
+
+.home-resonanz-teaser {
+  max-width: 900px;
+  margin: 55px auto 70px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* NUMBERS */
+
+.home-resonanz-stats {
+  max-width: 520px;
+  margin: 0 auto 34px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.home-resonanz-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2px 20px;
+}
+
+.home-resonanz-stat + .home-resonanz-stat {
+  border-left: 1px solid #ddd;
+}
+
+.home-resonanz-stat strong {
+  color: var(--slc-blue);
+
+  font-size: 2rem;
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.home-resonanz-stat span {
+  margin-top: 6px;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.home-resonanz-stat small {
+  margin-top: 2px;
+
+  font-size: 0.7rem;
+  color: #777;
+}
+
+/* QUOTES */
+
+.home-resonanz-quotes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+
+  max-width: 850px;
+  margin: 0 auto 28px;
+}
+
+.home-resonanz-quotes blockquote {
+  margin: 0;
+  padding: 0;
+
+  color: #222;
+
+  font-size: 0.84rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.home-resonanz-quotes cite {
+  display: block;
+  margin-top: 8px;
+
+  color: #777;
+
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* LINK */
+
+.home-resonanz-link {
+  display: inline-block;
+
+  padding: 8px 17px;
+
+  border: 2px solid var(--slc-blue);
+  border-radius: 22px;
+
+  color: var(--slc-blue);
+  background: transparent;
+
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.home-resonanz-link:hover {
+  background: var(--slc-blue);
+  color: #fff;
+}
+
+/* TABLET / MOBILE */
+
+@media (max-width: 700px) {
+  .home-resonanz-teaser {
+    margin: 45px auto 60px;
+  }
+
+  .home-resonanz-quotes {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    max-width: 430px;
+  }
+
+  .home-resonanz-quotes blockquote {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .home-resonanz-quotes cite {
+    font-size: 0.66rem;
+    line-height: 1.35;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-resonanz-teaser {
+    padding: 0 24px;
+  }
+
+  .home-resonanz-stats {
+    max-width: 320px;
+    margin-bottom: 28px;
+  }
+
+  .home-resonanz-stat {
+    padding: 0 8px;
+  }
+
+  .home-resonanz-stat strong {
+    font-size: 1.4rem;
+    line-height: 1.05;
+  }
+
+  .home-resonanz-stat span {
+    font-size: 0.68rem;
+    line-height: 1.25;
+    margin-top: 5px;
+  }
+
+  .home-resonanz-stat small {
+    font-size: 0.6rem;
+    line-height: 1.25;
+    margin-top: 2px;
+  }
+
+  .home-resonanz-quotes {
+    gap: 16px;
+    max-width: 360px;
+  }
+
+  .home-resonanz-quotes blockquote {
+    font-size: 0.7rem;
+    line-height: 1.45;
+  }
+
+  .home-resonanz-quotes cite {
+    font-size: 0.58rem;
+    line-height: 1.3;
+    margin-top: 6px;
+  }
+}
+
+/* =========================
    PODCAST EPISODES
 ========================= */
 
@@ -1535,6 +1725,12 @@ section {
   font-size: 0.85rem;
 }
 
+.resonanz-review-title {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
 /* Tablet */
 @media (max-width: 900px) {
   .resonanz-wrapper {
@@ -1587,6 +1783,124 @@ section {
   .resonanz-card-filled blockquote {
     font-size: 1.05rem;
     line-height: 1.35;
+  }
+}
+
+/* RESONANZ – AUSFÜHRLICHE RÜCKMELDUNGEN */
+
+.resonanz-depth-block {
+  margin-top: 110px;
+}
+
+.resonanz-depth-intro {
+  max-width: 850px;
+  margin: 0 0 38px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.resonanz-depth-list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+/*
+  Reuses the visual language of .article-item:
+  light background + left orange line + blue hover.
+*/
+.resonanz-depth-card {
+  padding: 30px 34px;
+  margin-bottom: 0;
+
+  cursor: default;
+
+  border-left-width: 5px;
+  background: #f8f8f8;
+}
+
+/* Important opening quote */
+.resonanz-depth-quote {
+  margin: 0 0 22px;
+
+  color: var(--slc-blue);
+
+  font-size: 1.08rem;
+  line-height: 1.6;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Main text */
+.resonanz-depth-text {
+  max-width: 900px;
+
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #333;
+}
+
+.resonanz-depth-text p {
+  margin: 0 0 18px;
+}
+
+.resonanz-depth-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Author + PDF */
+.resonanz-depth-meta {
+  margin-top: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  font-size: 0.84rem;
+}
+
+.resonanz-depth-meta span {
+  color: #555;
+  font-weight: 500;
+}
+
+.resonanz-depth-link {
+  color: var(--slc-orange);
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: color 0.2s ease;
+}
+
+.resonanz-depth-link:hover {
+  color: var(--slc-blue);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .resonanz-depth-block {
+    margin-top: 80px;
+  }
+
+  .resonanz-depth-card {
+    padding: 24px 22px;
+  }
+
+  .resonanz-depth-quote {
+    font-size: 1rem;
+  }
+
+  .resonanz-depth-text {
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .resonanz-depth-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 }
 
