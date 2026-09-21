@@ -1906,7 +1906,7 @@ section {
 
 .resonanz-share-story {
   margin-top: 28px;
-  padding-left: 39px; /* 5px Kartenlinie + 34px Innenabstand */
+  padding-left: 39px; /* Count: 5px Kartenlinie + 34px Innenabstand */
 
   font-size: 0.9rem;
   line-height: 1.5;
@@ -1928,7 +1928,7 @@ section {
 @media (max-width: 600px) {
   .resonanz-share-story {
     margin-top: 22px;
-    padding-left: 29px; /* 5px Linie + 24px Card-Padding */
+    padding-left: 29px; /* Count: 5px Linie + 24px Card-Padding */
     font-size: 0.85rem;
   }
 }
