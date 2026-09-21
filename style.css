@@ -1904,6 +1904,35 @@ section {
   }
 }
 
+.resonanz-share-story {
+  margin-top: 28px;
+  padding-left: 39px; /* 5px Kartenlinie + 34px Innenabstand */
+
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.resonanz-share-link {
+  color: var(--slc-orange);
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: color 0.2s ease;
+}
+
+.resonanz-share-link:hover {
+  color: var(--slc-blue);
+}
+
+@media (max-width: 600px) {
+  .resonanz-share-story {
+    margin-top: 22px;
+    padding-left: 29px; /* 5px Linie + 24px Card-Padding */
+    font-size: 0.85rem;
+  }
+}
+
 /* =========================
    QR CODE Einzahlungsschein
 ========================= */
