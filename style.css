@@ -720,6 +720,72 @@ section {
 }
 
 /* =========================
+   HOME – TRANSKRIPTE / UNTERTITEL
+========================= */
+
+.episode-access-card {
+  display: flex;
+  max-width: 620px;
+  margin: 20px auto 34px;
+
+  background: var(--slc-blue);
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.episode-access-card a {
+  flex: 1;
+
+  padding: 11px 20px;
+
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+
+  font-size: 0.82rem;
+  font-weight: 600;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.episode-access-card a + a {
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.episode-access-card a:hover {
+  background: var(--slc-orange);
+  color: #fff;
+}
+
+.episode-access-card a:focus-visible {
+  outline: 3px solid var(--slc-orange);
+  outline-offset: -3px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .episode-access-card {
+    flex-direction: column;
+
+    max-width: 290px;
+    margin: 18px auto 28px;
+
+    border-radius: 24px;
+  }
+
+  .episode-access-card a {
+    padding: 10px 16px;
+    font-size: 0.78rem;
+  }
+
+  .episode-access-card a + a {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
+  }
+}
+/* =========================
    PODCAST EPISODES
 ========================= */
 
