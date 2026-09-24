@@ -110,6 +110,14 @@
           mobileMenu.classList.remove("open");
         });
       });
+      const reneInfoOpen = document.getElementById("rene-info-open");
+      const reneInfoDialog = document.getElementById("rene-info-dialog");
+
+      if (reneInfoOpen && reneInfoDialog) {
+        reneInfoOpen.addEventListener("click", () => {
+          reneInfoDialog.showModal();
+        });
+      }
     });
   </script>
 
@@ -489,16 +497,59 @@
               <div class="resonanz-depth-meta">
                 <span>- René</span>
 
-                <span class="resonanz-depth-contact">
-                  <a
-                    href="mailto:rene.meier@redens-art.ch"
-                    class="resonanz-depth-link"
-                  >
-                    Kontakt
-                  </a>
-                </span>
+                <button
+                  type="button"
+                  class="resonanz-more-info"
+                  id="rene-info-open"
+                >
+                  Mehr Infos
+                </button>
               </div>
             </article>
+            <dialog
+              class="resonanz-info-dialog"
+              id="rene-info-dialog"
+              aria-labelledby="rene-info-title"
+            >
+              <div class="resonanz-info-dialog-content">
+                <form method="dialog">
+                  <button
+                    type="submit"
+                    class="resonanz-info-close"
+                    aria-label="Fenster schliessen"
+                  >
+                    ×
+                  </button>
+                </form>
+
+                <h3 id="rene-info-title">Mehr Infos zu Renés Geschichte</h3>
+
+                <p>
+                  René hat seine Erfahrungen in einer 32-seitigen Broschüre
+                  verarbeitet. Gegen Fr. 7.- inkl Porto kannst du sie per Mail
+                  bei ihm bestellen:
+                </p>
+
+                <a
+                  href="mailto:rene.meier@redens-art.ch?subject=Anfrage%20vollst%C3%A4ndiger%20Bericht"
+                  class="resonanz-info-link"
+                >
+                  rene.meier@redens-art.ch
+                </a>
+
+                <!-- 
+    <a
+      href="YOUTUBE-LINK"
+      target="_blank"
+      rel="noopener"
+      class="resonanz-info-link"
+    >
+      Video auf YouTube ansehen
+    </a>
+    -->
+              </div>
+            </dialog>
+
             <article class="article-item resonanz-depth-card">
               <blockquote class="resonanz-depth-quote">
                 „[Der Podcast] zeigt auf eindrucksvolle Weise, dass Heilung
@@ -1167,7 +1218,7 @@
             </article>
 
             <article class="resonanz-card">
-              <blockquote>„Danke, so hilfreich</mark>“</blockquote>
+              <blockquote>„Danke, so hilfreich“</blockquote>
               <p class="resonanz-author">– Anonym</p>
             </article>
 
@@ -1184,9 +1235,12 @@
 
             <article class="resonanz-card resonanz-card-filled">
               <blockquote>
-                „<mark>Ein sorgfältig gemachter, fachlich hochspannender Podcast</mark> -
-                Long Covid als Ausgangspunkt, der weit in die Welt des Schmerzes
-                führt. Sehr empfehlenswert.“
+                „<mark
+                  >Ein sorgfältig gemachter, fachlich hochspannender
+                  Podcast</mark
+                >
+                - Long Covid als Ausgangspunkt, der weit in die Welt des
+                Schmerzes führt. Sehr empfehlenswert.“
               </blockquote>
               <p class="resonanz-author">– Alice</p>
             </article>
@@ -1203,10 +1257,11 @@
 
             <article class="resonanz-card resonanz-card-filled">
               <blockquote>
-                „Ein Podcast, der Hoffnung gibt! <mark>Ich empfehle ihn
-                in der Praxis weiter.</mark> Mit medizinischer Hypnose wird durch
-                Immagination und Neuroplastizität vieles möglich gemacht. Merci
-                vielmals für das tolle Projekt!“
+                „Ein Podcast, der Hoffnung gibt!
+                <mark>Ich empfehle ihn in der Praxis weiter.</mark> Mit
+                medizinischer Hypnose wird durch Immagination und
+                Neuroplastizität vieles möglich gemacht. Merci vielmals für das
+                tolle Projekt!“
               </blockquote>
               <p class="resonanz-author">– Eva-Maria</p>
             </article>
