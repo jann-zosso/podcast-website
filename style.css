@@ -1706,7 +1706,7 @@ section {
 
 .resonanz-wrapper {
   max-width: 1100px;
-  margin: 120px auto 120px;
+  margin: 52px auto 120px;
 }
 
 .resonanz-block {
@@ -1806,10 +1806,6 @@ section {
 
 /* Tablet */
 @media (max-width: 900px) {
-  .resonanz-wrapper {
-    margin-top: 70px;
-  }
-
   .resonanz-masonry {
     column-count: 2;
     column-gap: 22px;
@@ -1828,7 +1824,7 @@ section {
 /* Mobile */
 @media (max-width: 600px) {
   .resonanz-wrapper {
-    margin-top: 60px;
+    margin-top: 38px;
   }
 
   .resonanz-block {
@@ -2148,6 +2144,69 @@ section {
   }
 
   .resonanz-info-link {
+    font-size: 0.84rem;
+  }
+}
+
+/*  RESONANZ – SPRUNGLINK */
+
+.resonanz-jump-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.resonanz-jump-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 24px;
+
+  background: var(--slc-blue);
+  border: 2px solid var(--slc-blue);
+  border-radius: 24px;
+
+  color: #fff;
+  text-decoration: none;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.2;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.resonanz-jump-link:hover {
+  background: var(--slc-orange);
+  border-color: var(--slc-orange);
+  color: #fff;
+
+  transform: translateY(-2px);
+}
+
+#medienberichte {
+  scroll-margin-top: 105px;
+}
+
+.resonanz-jump-nav + .resonanz-depth-block {
+  margin-top: 52px;
+}
+
+@media (max-width: 600px) {
+  .resonanz-jump-nav {
+    padding-top: 32px;
+  }
+
+  .resonanz-jump-nav + .resonanz-depth-block {
+    margin-top: 38px;
+  }
+
+  .resonanz-jump-link {
+    padding: 9px 20px;
     font-size: 0.84rem;
   }
 }
