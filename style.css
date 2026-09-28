@@ -898,6 +898,9 @@ section {
   .podcast-episodes {
     max-width: 92%;
   }
+  .english-home-section .podcast-english-intro p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 800px) {
