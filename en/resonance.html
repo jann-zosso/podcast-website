@@ -1,0 +1,1427 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Resonance | SO LONG COVID</title>
+    <meta
+      content="Media coverage, responses and messages about SO LONG COVID: voices on the podcast, recovery from Long Covid and a neuroplastic understanding of persistent symptoms."
+      name="description"
+    />
+    <!-- Favicon -->
+    <link href="/assets/favicon/favicon-48.png" rel="icon" sizes="48x48" />
+    <link href="/assets/favicon/favicon-96.png" rel="icon" sizes="96x96" />
+    <link href="/assets/favicon/favicon-192.png" rel="icon" sizes="192x192" />
+    <!-- Apple Touch Icon -->
+    <link href="/assets/favicon/favicon-192.png" rel="apple-touch-icon" />
+    <link href="https://solongcovid.ch/en/resonance.html" rel="canonical" />
+    <link
+      href="https://solongcovid.ch/resonanz.html"
+      hreflang="de"
+      rel="alternate"
+    />
+    <link
+      href="https://solongcovid.ch/en/resonance.html"
+      hreflang="en"
+      rel="alternate"
+    />
+    <link
+      href="https://solongcovid.ch/resonanz.html"
+      hreflang="x-default"
+      rel="alternate"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      as="style"
+      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+      rel="preload"
+    />
+    <noscript>
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        rel="stylesheet"
+      />
+    </noscript>
+    <link href="/style.css" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://solongcovid.ch/#organization",
+        "name": "SO LONG COVID",
+        "url": "https://solongcovid.ch/",
+        "logo": "https://solongcovid.ch/assets/img/SLCLogo.png",
+        "sameAs": [
+          "https://www.instagram.com/so.long.covid/",
+          "https://open.spotify.com/show/7ohnJlQQznvnSiCzD8qpfz",
+          "https://www.youtube.com/@SOLONGCOVID",
+          "https://podcasts.apple.com/ch/podcast/so-long-covid/id1874681051"
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "general inquiries",
+            "email": "solongcovid@proton.me",
+            "availableLanguage": ["de", "en", "fr"]
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://solongcovid.ch/en/resonance.html#webpage",
+        "url": "https://solongcovid.ch/en/resonance.html",
+        "name": "Resonance | SO LONG COVID",
+        "description": "Media coverage, responses and messages about SO LONG COVID.",
+        "isPartOf": {
+          "@id": "https://solongcovid.ch/#website"
+        },
+        "publisher": {
+          "@id": "https://solongcovid.ch/#organization"
+        },
+        "inLanguage": "en"
+      }
+    </script>
+  </head>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburgerBtn = document.getElementById("hamburgerBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const closeMenu = document.getElementById("closeMenu");
+
+      if (hamburgerBtn && mobileMenu) {
+        hamburgerBtn.addEventListener("click", () => {
+          mobileMenu.classList.add("open");
+        });
+      }
+
+      if (closeMenu && mobileMenu) {
+        closeMenu.addEventListener("click", () => {
+          mobileMenu.classList.remove("open");
+        });
+      }
+
+      document.querySelectorAll(".mobile-nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          if (mobileMenu) {
+            mobileMenu.classList.remove("open");
+          }
+        });
+      });
+
+      const reneInfoOpen = document.getElementById("rene-info-open");
+      const reneInfoDialog = document.getElementById("rene-info-dialog");
+
+      if (reneInfoOpen && reneInfoDialog) {
+        reneInfoOpen.addEventListener("click", () => {
+          reneInfoDialog.showModal();
+        });
+      }
+    });
+  </script>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-area">
+          <a class="logo-link" href="/en/">
+            <img
+              alt="SO LONG COVID"
+              class="brain-logo logo-orange"
+              src="/assets/img/SLCLogoOrange.png"
+            />
+            <img
+              alt="SO LONG COVID"
+              class="brain-logo logo-blue"
+              src="/assets/img/SLCLogoBlue.png"
+            />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/en/">Home</a></li>
+          <li><a href="/en/about.html">About</a></li>
+          <li><a href="/en/resources.html">Resources</a></li>
+          <li><a class="active" href="/en/resonance.html">Resonance</a></li>
+          <li><a href="/en/team.html">Team</a></li>
+          <li class="nav-lang">
+            <div aria-label="Language selection" class="language-switcher">
+              <a href="/resonanz.html" lang="de">DE</a>
+              <span>|</span>
+              <a class="active-lang" href="/en/resonance.html" lang="en">EN</a>
+            </div>
+          </li>
+        </ul>
+        <button aria-label="Open menu" class="hamburger-btn" id="hamburgerBtn">
+          <img alt="" src="/assets/img/SLCHamburger.png" />
+        </button>
+      </nav>
+      <div class="mobile-menu" id="mobileMenu">
+        <button aria-label="Close menu" class="close-btn" id="closeMenu">
+          ×
+        </button>
+        <ul class="mobile-nav-links">
+          <li><a href="/en/">Home</a></li>
+          <li><a href="/en/about.html">About</a></li>
+          <li><a href="/en/resources.html">Resources</a></li>
+          <li><a class="active" href="/en/resonance.html">Resonance</a></li>
+          <li><a href="/en/team.html">Team</a></li>
+          <li class="mobile-lang">
+            <div aria-label="Language selection" class="language-switcher">
+              <a href="/resonanz.html" lang="de">DE</a>
+              <span>|</span>
+              <a class="active-lang" href="/en/resonance.html" lang="en">EN</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1 class="visually-hidden-h1">
+        Resonance to SO LONG COVID: media coverage, responses and messages
+      </h1>
+      <!-- HERO -->
+      <section class="hero-blue resources-hero">
+        <div class="hero-content">
+          <blockquote class="hero-quote">
+            <p>
+              We are deeply moved by the responses, questions and stories that
+              reach us.
+            </p>
+          </blockquote>
+          <p class="hero-intro-ressourcen">
+            SO LONG COVID grew out of a personal recovery story. Since then, we
+            have received many messages from people affected by chronic illness,
+            their families, health professionals and journalists. This page
+            brings together media coverage and a selection of voices from people
+            engaging with the podcast, a neuroplastic understanding of
+            persistent symptoms and the possibility of recovery. Most of the
+            responses shown here were originally written in German or Swiss
+            German and have been translated into English.
+          </p>
+        </div>
+      </section>
+      <!-- RESONANZ -->
+      <br />
+      <section class="resources-wrapper resonanz-wrapper">
+        <nav aria-label="Page navigation" class="resonanz-jump-nav">
+          <a class="resonanz-jump-link" href="#medienberichte"
+            >Media coverage</a
+          >
+        </nav>
+        <div class="resource-block resonanz-depth-block">
+          <h2>Personal accounts</h2>
+          <div class="resonanz-depth-list">
+            <article class="article-item resonanz-depth-card">
+              <blockquote class="resonanz-depth-quote">
+                “Your podcast changed my life.”
+              </blockquote>
+              <div class="resonanz-depth-text">
+                <p>Dear podcast team, dear fellow sufferers,</p>
+                <p>
+                  Two years ago, as a young, athletic woman, I developed ME/CFS.
+                  It kept getting worse, and in the end I spent more than half a
+                  year almost entirely in bed and completely dependent on help.
+                  <b
+                    >I tried countless medications and approaches and researched
+                    endlessly until I came across your podcast.</b
+                  >
+                  Even as a sceptic, it immediately made sense to me. That was
+                  four weeks ago. From being bedridden, experiencing the worst
+                  crashes and being admitted to hospital, I am now back to a
+                  slow-paced everyday life: I exercise at home, read, listen to
+                  music and meet friends. Your podcast changed my life. Thank
+                  you from the bottom of my heart! 💛
+                </p>
+                <p>
+                  And to everyone who is where I was:
+                  <b>Don’t give up! Recovery is possible</b>, and I am well on
+                  my way.
+                </p>
+              </div>
+              <div class="resonanz-depth-meta">
+                <span>- Louise</span>
+              </div>
+            </article>
+            <article class="article-item resonanz-depth-card">
+              <blockquote class="resonanz-depth-quote">
+                “So long Covid – so long, migraine!”
+              </blockquote>
+              <div class="resonanz-depth-text">
+                <p>
+                  I lived with migraine for 40 years. My GPs and neurologists
+                  had taught me that migraine was inherited, chronic and
+                  incurable.
+                  <b
+                    >I simply had to live with it with the help of acute
+                    medication (triptans).</b
+                  >
+                  But after treatment, the migraine kept returning at ever
+                  shorter intervals. Over the last five years, I had migraine
+                  almost every day, eventually every 15–20 hours. So I was
+                  taking not only the permitted maximum of 15 triptans per
+                  month, but up to 40 triptans per month.
+                </p>
+                <p>
+                  In spring 2026, Tabea told me about the podcast “So Long
+                  Covid”.
+                  <b
+                    >My first thought was: this has nothing to do with me – I
+                    don’t have Long Covid.</b
+                  >
+                  I even forwarded the podcast to an acquaintance with Long
+                  Covid without listening to it myself. It was only when she
+                  told me about the good progress she was making, and another
+                  acquaintance also described the podcast as very helpful, that
+                  I listened to two episodes.
+                  <b>That was when it clicked for me.</b> For the first time, I
+                  was given an explanation of how learned alarm patterns in the
+                  brain can also play a role in chronic symptoms – and that we
+                  can influence them. This information fundamentally changed how
+                  I dealt with 40 years of migraine. For the first time in my
+                  life, I had a concrete strategy that convinced me.
+                </p>
+                <p>
+                  At 4 a.m. on 15 May 2026, after another migraine attack, I
+                  decided: “<b>Enough is enough!</b> I’m going to stop the
+                  medication cold turkey.” Eighteen weeks later, I had not taken
+                  a single triptan. Headaches still occurred every two to four
+                  days, but most of the time they resolved within one or two
+                  hours with breathing exercises and other techniques. The idea
+                  of taking a triptan, as I would long since have done in the
+                  past, did not even cross my mind.
+                </p>
+                <p>
+                  “So Long Covid” grew out of Jann’s own recovery story. He and
+                  his partner, journalist Zita Bauer, turned it into a six-part
+                  podcast after extensive research with people affected and
+                  experts. For me, the podcast was far more than an interesting
+                  story.
+                  <b
+                    >At exactly the right moment, it gave me the crucial new
+                    information and the courage to take a different path.</b
+                  >
+                </p>
+                <p>Thank you, Zita and Jann!</p>
+              </div>
+              <div class="resonanz-depth-meta">
+                <span>- René</span>
+                <button
+                  class="resonanz-more-info"
+                  id="rene-info-open"
+                  type="button"
+                >
+                  More info
+                </button>
+              </div>
+            </article>
+            <dialog
+              aria-labelledby="rene-info-title"
+              class="resonanz-info-dialog"
+              id="rene-info-dialog"
+            >
+              <div class="resonanz-info-dialog-content">
+                <form method="dialog">
+                  <button
+                    aria-label="Close window"
+                    class="resonanz-info-close"
+                    type="submit"
+                  >
+                    ×
+                  </button>
+                </form>
+                <h3 id="rene-info-title">More about René’s story</h3>
+                <p>
+                  René has documented his experience in a 32-page brochure. You
+                  can order it from him by email for CHF 7, including postage:
+                </p>
+                <a
+                  class="resonanz-info-link"
+                  href="mailto:rene.meier@redens-art.ch?subject=Request%20for%20full%20report"
+                >
+                  rene.meier@redens-art.ch
+                </a>
+                <!--
+    <a
+      href="YOUTUBE-LINK"
+      target="_blank"
+      rel="noopener"
+      class="resonanz-info-link"
+    >
+      Watch video on YouTube
+    </a>
+    -->
+              </div>
+            </dialog>
+            <article class="article-item resonanz-depth-card">
+              <blockquote class="resonanz-depth-quote">
+                “So fascinating. And helpful. Thank you, thank you for your
+                immense work.”
+              </blockquote>
+              <div class="resonanz-depth-text">
+                <p>
+                  Thank you, you two lovely people 🥰
+                  <b
+                    >Your podcast came at exactly the right moment to help me
+                    keep going and not lose the certainty that recovery is
+                    possible.</b
+                  >
+                  Aha – I now realise that fear has me in its grip too.
+                  <b
+                    >So! ... Long Covid! A friendly declaration of war on
+                    you.</b
+                  >
+                </p>
+                <p>
+                  Although I have made huge progress over the course of a year
+                  thanks to craniosacral therapy and acupuncture, I keep getting
+                  stuck with fatigue, tingling sensations and brain fog. Now I
+                  know why. Of course, the fear of crashes. But I didn’t know
+                  the remarkable story of the neurobiological mechanisms. So
+                  fascinating. And helpful. Thank you, thank you for your
+                  immense work.
+                </p>
+                <p>
+                  I’m going to learn more and continue along this path. The
+                  University of Basel is unfortunately “a bit far away”.
+                  <b
+                    >But I’ll find ways with the help of your many tips and
+                    links.</b
+                  >
+                  A thousand thanks from the Grisons … where everything only
+                  arrives ten years later. 😅 I wish you both lots of joy in
+                  your new sense of life.
+                </p>
+              </div>
+              <div class="resonanz-depth-meta">
+                <span>- Ingrid</span>
+              </div>
+            </article>
+            <article class="article-item resonanz-depth-card">
+              <blockquote class="resonanz-depth-quote">
+                “[The podcast] shows in an impressive way that recovery is
+                possible.”
+              </blockquote>
+              <div class="resonanz-depth-text">
+                <p>
+                  As someone affected by Long Covid myself,
+                  <b
+                    >this podcast gives me confirmation, courage and confidence
+                    that I am on the right path to recovery for ME.</b
+                  >
+                </p>
+                <p>
+                  It offers a fascinating insight into the neuroplastic approach
+                  and shows in an impressive way that recovery is possible. It
+                  takes an incredible amount of patience and time, but step by
+                  step things move forward. However, it is important to me to
+                  emphasise that this approach will not be the solution for
+                  everyone.
+                </p>
+                <p>
+                  An excellent podcast all round – very professionally produced
+                  and at the same time
+                  <b
+                    >characterised by sensitivity and that all-important touch
+                    of humour.</b
+                  >
+                </p>
+                <p>
+                  Thank you to Zita and Jann for this valuable contribution!
+                </p>
+              </div>
+              <div class="resonanz-depth-meta">
+                <span>- Monika</span>
+              </div>
+            </article>
+          </div>
+          <div class="resonanz-share-story">
+            <span
+              >Would you like to share your story here too? Write to us at
+            </span>
+            <a
+              class="resonanz-share-link"
+              href="mailto:solongcovid@proton.me?subject=My%20story%20for%20SO%20LONG%20COVID"
+            >
+              solongcovid@proton.me
+            </a>
+          </div>
+        </div>
+        <!-- FEEDBACK -->
+        <div class="resource-block resonanz-block">
+          <h2>More public responses</h2>
+          <div class="resonanz-masonry">
+            <article class="resonanz-card">
+              <blockquote>
+                “I finally managed to listen to all the episodes. Really well
+                done!!! And I think my brain has laid down a few little neural
+                pathways for Swiss German 😂”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card resonanz-card-filled">
+              <blockquote>
+                “Wow. Thank you for the <mark>change in perspective</mark>.”
+              </blockquote>
+              <p class="resonanz-author">– Sibylle</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “1,000 ❤️-felt thanks to Zita and Jann!!!”
+              </blockquote>
+              <p class="resonanz-author">– Marcel 4.0</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Dear Zita and Jann, thank you so, so much for this wonderful
+                podcast. I’m currently in rehabilitation and I’m so grateful for
+                all the stories and insights you share with us. For the first
+                time in months, I feel hope and confidence that things can get
+                better – and, even more importantly, that I can influence it
+                myself. One sentence I’m taking with me is: ‘If you have to
+                prove that you are ill, you cannot get well.’ Thank you for all
+                the little moments of insight 🧡”
+              </blockquote>
+              <p class="resonanz-author">– Rina</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you from the bottom of my heart for your podcast ❤️ New
+                hope is here 😀 ☀️🌻”
+              </blockquote>
+              <p class="resonanz-author">– Alba</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Moved and hopeful. I myself became severely affected by
+                post-COVID with progression to ME/CFS. Thank you for making this
+                accessible and giving people courage. Thank you for your
+                commitment. Wonderful, and a gift to every soul that has
+                recovered through this knowledge that was new to me. All the
+                very best 😊💝”
+              </blockquote>
+              <p class="resonanz-author">– Marion</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you so much. Great – I will very, very gladly recommend
+                it!”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card resonanz-card-filled">
+              <blockquote>
+                “Congratulations! This podcast series is a
+                <mark>masterpiece</mark>. I’m a doctor, I’ve been working with
+                this approach for about a year and I’m also completely convinced
+                by it. It’s good to hear that more and more doctors in
+                Switzerland are seeing it in the same way. I sometimes still
+                struggle to explain this approach to my patients in the limited
+                time available. I will definitely recommend this podcast as a
+                good introduction in future.”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Wonderful. I’m so glad to have support and confirmation for my
+                own path through this podcast. The insights of Dr Joe Dispenza
+                and similar approaches have already helped me a lot, as has the
+                programme Fascination, which covers recovery stories and
+                treatments for CFS. With its clarity, this podcast has given me
+                another powerful push forward. And yes, I too am convinced that
+                a revolution in our understanding of illness and recovery is
+                already under way. Thank you.”
+              </blockquote>
+              <p class="resonanz-author">– Christian</p>
+            </article>
+            <article class="resonanz-card resonanz-card-filled">
+              <blockquote>
+                “Bravo to you for doing what can only be called
+                <mark>pioneering work</mark>. Our healthcare system needs people
+                like you!”
+              </blockquote>
+              <p class="resonanz-author">– Sanja</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Dear Zita and Jann, thank you for the valuable work you have
+                done with this podcast! It can help so many people, and I myself
+                have already benefited a lot – not least from the Curable app
+                you recommended, Jann. Thank you as well for travelling all the
+                way to Gais to visit us and tell your story. That was very
+                valuable and I truly appreciate it. All the best for the
+                future!”
+              </blockquote>
+              <p class="resonanz-author">– Lara</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “So much love to you for doing this! I’m looking forward to the
+                next episode 🤩”
+              </blockquote>
+              <p class="resonanz-author">– Victoria</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “❤️ Thank you for giving me courage. I’m still on the way, but I
+                believe I will recover.”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you for this podcast 😍 I’ve had Long Covid since the
+                beginning of 2024. I recognise myself in every single word of
+                Jann’s story. Sporting background, symptoms, everything! … I’m
+                looking forward to the next episodes.”
+              </blockquote>
+              <p class="resonanz-author">– Vincent</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you for the podcast. Your helpful information about this
+                topic helps give me the strength and courage to cope with this
+                illness more easily each day. At the end of December 2023, I had
+                the physical and mental crash. In September 2024 came the ME/CFS
+                diagnosis. Thank you for this podcast! 🙏🍀❤️”
+              </blockquote>
+              <p class="resonanz-author">– Cornelia</p>
+            </article>
+            <article class="resonanz-card resonanz-card-filled">
+              <blockquote>
+                “Thank you – you give me <mark>hope and knowledge</mark>!”
+              </blockquote>
+              <p class="resonanz-author">– Sabi</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “I’ve had post-COVID for around four years and ME/CFS for around
+                three. I have tried almost every treatment approach. Many things
+                are one piece of the puzzle, but not really a game changer. For
+                a year now I have been working with brain retraining and
+                knowledge about neuroplastic symptoms, and I have made many
+                improvements. With your podcast, you are making an incredibly
+                valuable contribution to making this approach better known,
+                giving people tools and offering genuine hope for life. THANK
+                YOU 💚”
+              </blockquote>
+              <p class="resonanz-author">– Domenica</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Top podcast – it gave me courage and confidence.”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “A great podcast; it really gives me new hope. I would love to
+                hear even more about how the people who recovered approached it.
+                The examples of changing your thinking – the ‘Jacuzzi feeling’ –
+                have already inspired me a lot.”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card resonanz-card-filled">
+              <blockquote>
+                “Congratulations!
+                <mark>Insights that can help many people.</mark> Exciting and
+                compellingly produced. Waiting for the next episode.”
+              </blockquote>
+              <p class="resonanz-author">– Andre</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you very much for this podcast! It is so important that
+                people are informed about this topic.”
+              </blockquote>
+              <p class="resonanz-author">– Barbara</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you for this important and courageous contribution. I’m
+                sure your work will save lives!”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “A very successful podcast, handling an important topic with
+                great sensitivity. Thank you!”
+              </blockquote>
+              <p class="resonanz-author">– Melanie</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thanks to an online documentary about Dr Schubiner I had an aha
+                moment. I started using his technique three weeks ago and it’s
+                working. Be brave and give it a try too.”
+              </blockquote>
+              <p class="resonanz-author">– Nathalie</p>
+            </article>
+            <article class="resonanz-card resonanz-card-filled">
+              <blockquote>
+                “Soooo good! <mark>And soooo important!</mark> Finally this kind
+                of pain therapy is being spread here too! 💛”
+              </blockquote>
+              <p class="resonanz-author">– Janine</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you, a valuable contribution. It’s wonderful that all the
+                many people suffering from this serious illness and diagnosis
+                can have hope and a future again.”
+              </blockquote>
+              <p class="resonanz-author">– Trixi</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you very much for your important information. It means a
+                lot to me.”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Excellent work. I listened to the podcasts over the weekend and
+                watched some Schubiner videos on YouTube. Really fascinating.
+                Thank you.”
+              </blockquote>
+              <p class="resonanz-author">– Bettina</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you so much … for this great podcast! What I heard gives
+                me hope 💪😊”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card resonanz-card-filled">
+              <blockquote>
+                “Such an exciting, <mark>informative</mark> and hopeful
+                podcast!”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you so much for your commitment and your energy! As
+                someone affected for almost four years, listening to you is a
+                ray of hope. And thank you for giving us language to explain to
+                the people around us what we experience when we ourselves cannot
+                find the words. You give hope. THANK YOU, and wishing you all
+                the very best from the bottom of my heart ❤️”
+              </blockquote>
+              <p class="resonanz-author">– Gabriella</p>
+            </article>
+            <article class="resonanz-card resonanz-card-filled">
+              <blockquote>
+                “After two years of ME/CFS – an aha moment – and your podcast,
+                I’m now on day 22 ✨ with hardly any symptoms and an incredible
+                feeling of <mark>self-efficacy</mark>! A thousand thanks 💜✨”
+              </blockquote>
+              <p class="resonanz-author">– Mirjam</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you for this podcast! Valuable and interesting – and
+                likeable voices. The topic of nervous-system regulation isn’t
+                entirely new in the ME/CFS podcast landscape.”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Wow, great work. Finally this important topic of ‘chronic’
+                illnesses with their many different symptoms is being made
+                accessible to a wider audience through this podcast. I studied
+                medicine in order to practise exactly this kind of medicine,
+                after having been ill myself for a long time and finding that no
+                treatment plans existed. Unfortunately, structures are still
+                lacking in the system. This podcast gives me hope that together
+                we can take new paths in this important field.”
+              </blockquote>
+              <p class="resonanz-author">– Pascal</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Excellent work with the podcast and thank you for the English
+                subs, much appreciated!!”
+              </blockquote>
+              <p class="resonanz-author">– Thomas</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>“Thank you for the interesting podcast!”</blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “I am deeply moved by this podcast. I too recovered after two
+                years of at times severe illness. I spent a lot of money on
+                therapies, but in the end – and I only realised this afterwards
+                – it was exactly this approach that brought me into recovery.
+                There was a turning point, and from then on there was no other
+                thought in me than: I am going to get well. Not a trace of doubt
+                that I would leave this illness behind. And that is what
+                happened.”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “I feel exactly the same – thank you so much for your work 🙏 –
+                we hope that through your story we too will find the right
+                approach!”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Such an important topic, and the podcast is really well
+                produced! Thank you ❤️”
+              </blockquote>
+              <p class="resonanz-author">– Nula</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you very much for the extremely well-researched podcast!
+                I’d like to add one piece of constructive criticism: in the
+                example with the shower, it can sound as though you simply have
+                to push through and do it. From my perspective, with this
+                approach it is incredibly important to stay within your baseline
+                (or only go deliberately a little beyond it). That is precisely
+                what creates the sense of safety the system needs. So: small
+                steps outside the comfort zone. But we also know that many roads
+                lead to Rome 😉”
+              </blockquote>
+              <p class="resonanz-author">– Alaska</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you so much for the podcast! It’s incredible how much
+                depth and work has gone into these episodes, while at the same
+                time covering such a wide range. Words can hardly express what
+                this means to me right now, how much hope and self-efficacy it
+                gives me AND how much change I can already feel in such a short
+                time. I’m endlessly grateful to you ❤️”
+              </blockquote>
+              <p class="resonanz-author">– Rachel</p>
+            </article>
+            <article class="resonanz-card resonanz-card-filled">
+              <blockquote>
+                “Great podcast! ❤️ I have ME/CFS myself, have been doing a
+                programme (brain retraining) for a year, and it is getting
+                better! 💝🤍
+                <mark
+                  >The path takes patience, it isn’t linear, but IT DOES get
+                  better.</mark
+                >
+                😊🥳”
+              </blockquote>
+              <p class="resonanz-author">– Ramona</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>“So valuable. Thank you very much 😊”</blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “A good, important and relatively new perspective here. I find
+                it terrible when people such as Marlen Reusser, who experience
+                improvement or recovery through this approach, are attacked or
+                not believed. At the same time, we really must not lose sight of
+                the fact that there are people diagnosed with ME/CFS who have
+                actual structural damage. You say that again and again too.”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you so much for your fascinating podcasts. I look forward
+                to every new episode. 🫶💛 Warmly, Paula”
+              </blockquote>
+              <p class="resonanz-author">– Paula</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you for this important podcast. I’ve had headaches for 50
+                years and various other physical symptoms that change over time.
+                I’m convinced these are neuroplastic pains. I’m now starting to
+                treat myself and am currently training as a PRT therapist. I’m
+                already a psychologist and coach with my own practice in Baden.
+                I hope this will allow me to help many people. Thank you, Petra
+                Freund.”
+              </blockquote>
+              <p class="resonanz-author">– Petra</p>
+            </article>
+            <article class="resonanz-card resonanz-card-filled">
+              <blockquote>
+                “A thousand thanks for this valuable podcast and for sharing
+                your experiences. <mark>It gives me so much hope!</mark>”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “A hopeful new approach that could help many people affected.
+                Bravissimo!”
+              </blockquote>
+              <p class="resonanz-author">– Andre</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you so much for the podcast. Your information gives hope.
+                We don’t yet fully understand how the path works. I’m hoping for
+                more information in the final episode, or information on where
+                help is available in Switzerland. I’m a family member, like you,
+                Zita. I feel understood when I listen to you.”
+              </blockquote>
+              <p class="resonanz-author">– Gabriela</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you for your podcast 💚. While listening, I realised for
+                the first time that I had gone down this path myself.”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you from the bottom of my heart for the podcast ❤️”
+              </blockquote>
+              <p class="resonanz-author">– Shania</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>“Endless thanks 🙏💗”</blockquote>
+              <p class="resonanz-author">– Astrid</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you for your work, Zita. I send the podcast to people
+                around me so they can better understand neuroplasticity. You
+                managed to put this complex topic into simple words, and the
+                perspective of a family member makes it especially engaging for
+                those around us. Wow, thank you! I do think the podcast mainly
+                presents ‘high flyers’. For everyone affected who is reading
+                this: recovering this quickly is usually not realistic. It’s
+                worth sticking with it even when it takes longer. Take care, and
+                compare yourself with others as little as possible ✨”
+              </blockquote>
+              <p class="resonanz-author">– Susi</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Really great podcast, very informative and real.”
+              </blockquote>
+              <p class="resonanz-author">– Elina</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you so much! You are speaking straight from my ❤️. I
+                realised 25 years ago that body and mind influence one another.
+                As a psychotherapist and sports therapist, I have worked with
+                this understanding for years – at a time when there were hardly
+                any studies – and it worked. THANK YOU for your brilliant
+                contribution: a) as practical help and hope for people affected,
+                and b) for helping ensure that ‘non-structural’ illnesses are no
+                longer stigmatised. Thank you so much and all the best! Rahel
+                🌿”
+              </blockquote>
+              <p class="resonanz-author">– Rahel</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you for your work. It gives me enormous hope again – and
+                I can already see small improvements 🙏”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “A very interesting podcast; I’m looking forward to the
+                remaining episodes. I have been severely affected for four years
+                and have been following the nervous-system approach for three
+                years through courses and so on. Recovery is unfortunately still
+                a long way off. Your podcast is very interesting and
+                professionally structured. [...] Thank you for your work.”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you very much for the work and commitment!! It is very
+                interesting and informative!”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “A highly recommendable podcast. Beautifully produced and very
+                seriously researched in terms of content! Congratulations!
+                Looking forward to the next episodes!”
+              </blockquote>
+              <p class="resonanz-author">– Kathrin</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you! As someone affected and almost recovered (with PRT /
+                nervous-system regulation), I was very moved by the podcast. ❤️”
+              </blockquote>
+              <p class="resonanz-author">– Sandra</p>
+            </article>
+            <article class="resonanz-card resonanz-card-filled">
+              <blockquote>
+                “Brilliant. So well researched, compiled and structured.
+                <mark>As someone affected myself, it is hugely valuable.</mark>”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Dear Zita, I binged the first episodes and from then on waited
+                eagerly for every Sunday. Rarely have I listened to such a
+                professional and enriching podcast. Kudos to you and Jann!”
+              </blockquote>
+              <p class="resonanz-author">– Nicole</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>“Thank you, so helpful.”</blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Congratulations on this fascinating, moving and beautifully
+                crafted podcast! The insights I gained from it enrich me even
+                though I have not had Long Covid myself. I hope it reaches many
+                people who need that crucial spark of hope.”
+              </blockquote>
+              <p class="resonanz-author">– Marlene</p>
+            </article>
+            <article class="resonanz-card resonanz-card-filled">
+              <blockquote>
+                “<mark
+                  >A carefully produced and professionally fascinating
+                  podcast</mark
+                >
+                – Long Covid as the starting point, leading far into the world
+                of pain. Highly recommended.”
+              </blockquote>
+              <p class="resonanz-author">– Alice</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Really well done! Fascinating for all of us in pain medicine
+                too ... thank you. May the podcast reach many more people and
+                connect neuroplastically minded professionals with people who
+                are open to this approach 🤩🌸🌷”
+              </blockquote>
+              <p class="resonanz-author">– Bettina</p>
+            </article>
+            <article class="resonanz-card resonanz-card-filled">
+              <blockquote>
+                “A podcast that gives hope!
+                <mark>I recommend it in my practice.</mark> With medical
+                hypnosis, imagination and neuroplasticity can make many things
+                possible. Thank you very much for this great project!”
+              </blockquote>
+              <p class="resonanz-author">– Eva-Maria</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                <span class="resonanz-review-title"
+                  >Impressive, thoughtful, solid</span
+                >“An impressive, excellently researched and extremely compelling
+                podcast series: sensitively told accounts from people affected;
+                skilful interviews with experienced and convincing experts;
+                scientifically careful, richly supported exploration; always
+                thoughtful in its terminology and argumentation, always
+                cautious, never sweeping, always precise.”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card resonanz-card-filled">
+              <blockquote>
+                “This podcast is a <mark>gift</mark> for everyone affected,
+                their families, and those who may be affected in future. Thank
+                you!”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you for pointing this out. I’m affected too, and for me
+                it is definitely taking longer. I’ve been doing PRT for 4.5
+                months now, but the progress is tiny. I think the podcast could
+                have addressed this more, although otherwise I think it is
+                excellent.”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you for this podcast!! I too recovered with this approach
+                over the past three years and did many similar exercises – first
+                so-called brain-retraining exercises and later a lot of
+                trauma-work exercises, all from the English-speaking world. I’m
+                now delighted that this knowledge is reaching the
+                German-speaking world too.”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                <span class="resonanz-review-title"
+                  >Found the missing piece!</span
+                >“An inspiring and thoroughly researched podcast – the missing
+                link for me in treating patients with chronic complaints or
+                functional symptoms. Thank you very much!”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thanks again for the podcast! Three other options on Spotify –
+                among countless others – for exploring neuroplastic symptoms
+                further: audiobook: <i>The Way Out</i> in English by Alan Gordon
+                (very well narrated by the author himself); podcast:
+                <i>Superhelden ohne Cape</i> – about recovery from chronic
+                illness; podcast: <i>Muss das so weh tun?</i>”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “It really is a great podcast. A friend with Long Covid
+                recommended it to me; I have Long Covid myself. It had me
+                thinking after just the third episode. I learned far more from
+                it than after seven weeks of rehabilitation on the Hasliberg,
+                where there is a special Long Covid programme. Health insurers
+                could save a lot of money if everyone listened to your podcast
+                before doing an expensive rehabilitation programme – one that
+                does not help in the long term and may even worsen their
+                condition.”
+              </blockquote>
+              <p class="resonanz-author">– Nessi</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Fascinating, informative and easy to follow.”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card resonanz-card-filled">
+              <blockquote>
+                “Thank you very much for this podcast. Finally, LC / ME/CFS and
+                recovery are being viewed from
+                <mark>a different perspective</mark>. I began my own recovery
+                journey almost two years ago and know the aha moment. I
+                consciously and unconsciously implemented many of the aspects
+                discussed in the podcast and am healthy today. Thank you for
+                this valuable work!”
+              </blockquote>
+              <p class="resonanz-author">– Dominique</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you as well for your commitment! I was ‘lucky’ that my
+                ME/CFS was only diagnosed relatively recently, at a time when so
+                much knowledge from patients was already available and I did not
+                believe the prevailing narrative. So thank you to you and to
+                everyone who shares their stories and knowledge. Unfortunately I
+                find it difficult to listen to the podcast because there is
+                background music most of the time. But it’s great that there is
+                a website too.”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you very much for the work and for giving people hope 👍🏻”
+              </blockquote>
+              <p class="resonanz-author">– Tobias</p>
+            </article>
+            <article class="resonanz-card">
+              <blockquote>
+                “Thank you, thank you, thank you for your encouraging
+                contributions. Even though I’m still experiencing more setbacks,
+                I’m not giving up and I take pleasure in small things: more
+                light in the room, eating while sitting up, watching TV on my
+                phone, reading and remembering what I have read, creative
+                painting on the sofa ... My energy is used up, but I still
+                wanted to thank you again for your completely new approach. As
+                Zita said, I am also aware that it does not help everyone. My
+                faith in God also helps me on extremely difficult days.
+                💚🤝🙏🦋🌻 Not giving up hope and trusting in another miracle
+                from God. I’m so happy for those who have recovered.”
+              </blockquote>
+              <p class="resonanz-author">– Warm regards, Marion 🦋😊</p>
+            </article>
+            <article class="resonanz-card resonanz-card-filled">
+              <blockquote>
+                “<mark>This really gives hope!</mark> I have fatigue after
+                cancer, but it gives us new possibilities too. Of course I’m
+                going to try it, and I finally feel hopeful again. A thousand
+                thanks 💗 🌻 🌻 🌻”
+              </blockquote>
+              <p class="resonanz-author">– Anonymous</p>
+            </article>
+          </div>
+        </div>
+        <!-- MEDIA -->
+        <div class="resource-block" id="medienberichte">
+          <h2>Media coverage</h2>
+          <!--<p class="resonanz-depth-intro">
+            The titles and summaries below have been translated into English.
+            The links lead to the original German-language publications.
+          </p>-->
+          <a
+            class="article-item"
+            href="https://www.tagesanzeiger.ch/long-covid-streit-um-neuroplastischen-therapieansatz-210957237541"
+            hreflang="de"
+            rel="noopener"
+            target="_blank"
+          >
+            <strong
+              >Reprogramming the brain against Long Covid – hope or
+              danger?</strong
+            >
+            <small>24.08.2026 - Tamedia</small>
+            <blockquote>
+              The so-called neuroplastic approach to Long Covid is sparking
+              heated debate. While people who have recovered swear by it,
+              organisations warn of irreversible harm.
+            </blockquote>
+          </a>
+          <a
+            class="article-item"
+            href="https://www.woz.ch/2627/erfahrungsbericht/die-angst-stand-der-heilung-im-weg/!MTW5PEF060VS"
+            hreflang="de"
+            rel="noopener"
+            target="_blank"
+          >
+            <strong>“Fear stood in the way of recovery”</strong>
+            <small>02.07.2026 - WOZ</small>
+            <blockquote>
+              Patricia Purtschert, professor of gender studies at the University
+              of Bern, talks about her recovery.
+            </blockquote>
+          </a>
+          <a
+            class="article-item"
+            href="https://www.welt.de/gesundheit/plus6a33a3c07e682fc37fbfee87/long-covid-raubte-dieser-aerztin-die-lebensfreude-dann-wagte-sie-eine-umstrittene-therapie.html"
+            hreflang="de"
+            rel="noopener"
+            target="_blank"
+          >
+            <strong
+              >Long Covid robbed Jasna Cotting of her joy in life – then she
+              tried a controversial therapy</strong
+            >
+            <small>26.06.2026 - Die Welt</small>
+            <blockquote>
+              Doctor Jasna Cotting completely collapsed after being diagnosed
+              with Long Covid. She did not want to go on living like that. Then
+              she heard about a controversial therapy – and tried it.
+            </blockquote>
+          </a>
+          <a
+            class="article-item"
+            href="https://www.schweizheute.ch/leben/kann-long-covid-ueber-das-gehirn-beeinflusst-werden-ld.4179092"
+            hreflang="de"
+            rel="noopener"
+            target="_blank"
+          >
+            <strong
+              >Is Long Covid curable after all? A new theory divides those
+              affected into two camps</strong
+            >
+            <small>20.06.2026 - Schweiz am Wochenende</small>
+            <blockquote>
+              Training is intended to teach patients’ brains that physical
+              activity is not dangerous. What is behind this promise of a cure?
+            </blockquote>
+          </a>
+          <a
+            class="article-item"
+            href="https://www.derbund.ch/long-covid-neuroplastische-methode-hilft-patienten-989792021268"
+            hreflang="de"
+            rel="noopener"
+            target="_blank"
+          >
+            <strong>Back on the summit after Long Covid therapy</strong>
+            <small>15.06.2026 - Tages-Anzeiger | Der Bund</small>
+            <blockquote>
+              Doctor and avid mountaineer Jasna Cotting could do little but lie
+              in bed after work. She recovered using the controversial
+              neuroplastic method. And she is not the only one.
+            </blockquote>
+          </a>
+          <a
+            class="article-item"
+            href="/assets/Stellungnahme_WOZ-Artikel_SLC.pdf"
+            hreflang="de"
+          >
+            <strong>Statement on the article “Recovery in three days?”</strong>
+            <small>21.05.2026 - WOZ</small>
+            <blockquote>
+              This article contains false statements and misleading
+              representations and breaches basic journalistic principles. The
+              WOZ editorial team acknowledged errors in the article’s production
+              to us. We argue for investing energy not in either-or thinking,
+              but in constructive debate. The aim should be to examine all
+              possible paths to improvement openly and responsibly.
+            </blockquote>
+          </a>
+          <div class="article-list">
+            <a
+              class="article-item"
+              href="https://www.srf.ch/news/gesellschaft/sechsteiliger-podcast-wie-ein-junger-freiburger-long-covid-ueberwand"
+              hreflang="de"
+              rel="noopener"
+              target="_blank"
+            >
+              <strong>How a young man from Fribourg overcame Long Covid</strong>
+              <small>29.04.2026 - SRF</small>
+              <blockquote>
+                Jann Zosso developed Long Covid. Today he is healthy again. In a
+                podcast, he explains how he found out for himself what helped
+                him.
+              </blockquote>
+            </a>
+            <a
+              class="article-item"
+              href="/assets/img/surprise-624_24.pdf"
+              hreflang="de"
+            >
+              <strong>Listening your way back to health</strong>
+              <small
+                >24.04. - 07.05.2026 - SURPRISE Street Magazine no. 624</small
+              >
+              <blockquote>
+                In the podcast “So Long Covid”, journalist Zita Bauer and
+                physicist Jann Zosso tell stories of recovery that place the
+                nervous system at the centre.
+              </blockquote>
+            </a>
+            <a
+              class="article-item"
+              href="https://www.tagblatt.ch/ostschweiz/stgallen/long-covid-tuebacherin-startet-podcast-ld.4152482"
+              hreflang="de"
+              rel="noopener"
+              target="_blank"
+            >
+              <strong
+                >Woman from Tübach wants to give people with Long Covid hope
+                with a new podcast</strong
+              >
+              <small>21.04.2026 - Tagblatt</small>
+              <blockquote>
+                Zita Bauer witnessed what Long Covid meant for her partner – and
+                how recovery could happen. Now the two want to use a podcast to
+                show other people affected a still little-known path out of the
+                illness.
+              </blockquote>
+            </a>
+            <a
+              class="article-item"
+              href="https://freiburger-nachrichten.ch/story/258241/so-long-covid-zwei-genesene-erz%C3%A4hlen"
+              hreflang="de"
+              rel="noopener"
+              target="_blank"
+            >
+              <strong
+                >“So long, Covid!”: Two people who recovered tell their
+                stories</strong
+              >
+              <small>16.03.2026 - Freiburger Nachrichten</small>
+              <blockquote>
+                Jann Zosso’s and Jasna Cotting’s Long Covid became progressively
+                worse – until they came across a new treatment approach. For
+                them, it changed everything.
+              </blockquote>
+            </a>
+            <a
+              class="article-item"
+              href="https://rabe.ch/beitrag/13-03-2026/so-long-covid-wir-wollen-den-diskurs-ergaenzen"
+              hreflang="de"
+              rel="noopener"
+              target="_blank"
+            >
+              <strong>Long Covid – “We want to broaden the debate”</strong>
+              <small>13.03.2026 - Radio Rabe</small>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-heading">Contact</p>
+        <a class="footer-link" href="mailto:solongcovid@proton.me">
+          solongcovid@proton.me
+        </a>
+        <p class="footer-note">
+          Follow us on Instagram and on your favourite podcast platform.
+        </p>
+        <div class="footer-social">
+          <a
+            aria-label="Instagram"
+            class="footer-link"
+            href="https://www.instagram.com/so.long.covid/"
+            rel="noopener"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <span class="footer-separator">|</span>
+          <a
+            aria-label="Spotify"
+            class="footer-link"
+            href="https://open.spotify.com/show/7ohnJlQQznvnSiCzD8qpfz?si=a09149bd7f284868"
+            rel="noopener"
+            target="_blank"
+          >
+            <i class="fab fa-spotify"></i>
+          </a>
+          <a
+            aria-label="YouTube"
+            class="footer-link"
+            href="https://www.youtube.com/@SOLONGCOVID"
+            rel="noopener"
+            target="_blank"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            aria-label="Apple Podcasts"
+            class="footer-link"
+            href="https://podcasts.apple.com/ch/podcast/so-long-covid/id1874681051"
+            rel="noopener"
+            target="_blank"
+          >
+            <i class="fas fa-podcast"></i>
+          </a>
+        </div>
+        <a class="footer-support-btn" href="/en/qrcode.html" target="_blank"
+          >support us</a
+        >
+        <p class="footer-copyright">© 2026 SO LONG COVID</p>
+        <a class="footer-link footer-impressum" href="/en/impressum.html"
+          >Imprint</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

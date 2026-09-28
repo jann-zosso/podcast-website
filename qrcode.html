@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crowdfunding | SO LONG COVID</title>
+    <title>Unterstützen | SO LONG COVID</title>
     <meta
       name="description"
       content="Unterstütze den Podcast SO LONG COVID und hilf mit, Aufklärung, Austausch und neue Perspektiven zur Heilung von Long Covid möglich zu machen."
@@ -15,6 +15,21 @@
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" href="/assets/favicon/favicon-192.png" />
     <link rel="canonical" href="https://solongcovid.ch/qrcode.html" />
+    <link
+      rel="alternate"
+      hreflang="de"
+      href="https://solongcovid.ch/qrcode.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://solongcovid.ch/en/qrcode.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://solongcovid.ch/qrcode.html"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -73,28 +88,28 @@
         "inLanguage": "de"
       }
     </script>
-  </head>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const hamburgerBtn = document.getElementById("hamburgerBtn");
-      const mobileMenu = document.getElementById("mobileMenu");
-      const closeMenu = document.getElementById("closeMenu");
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburgerBtn = document.getElementById("hamburgerBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const closeMenu = document.getElementById("closeMenu");
 
-      hamburgerBtn.addEventListener("click", () => {
-        mobileMenu.classList.add("open");
-      });
+        hamburgerBtn.addEventListener("click", () => {
+          mobileMenu.classList.add("open");
+        });
 
-      closeMenu.addEventListener("click", () => {
-        mobileMenu.classList.remove("open");
-      });
-
-      document.querySelectorAll(".mobile-nav-links a").forEach((link) => {
-        link.addEventListener("click", () => {
+        closeMenu.addEventListener("click", () => {
           mobileMenu.classList.remove("open");
         });
+
+        document.querySelectorAll(".mobile-nav-links a").forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileMenu.classList.remove("open");
+          });
+        });
       });
-    });
-  </script>
+    </script>
+  </head>
   <body>
     <header>
       <nav class="navbar">
@@ -121,6 +136,13 @@
           <li><a href="resonanz.html">Resonanz</a></li>
           <li><a href="team.html">Team</a></li>
           <li><a class="active" href="qrcode.html">Unterstützen</a></li>
+          <li class="nav-lang">
+            <div class="language-switcher" aria-label="Sprachauswahl">
+              <a href="/qrcode.html" lang="de" class="active-lang">DE</a>
+              <span>|</span>
+              <a href="/en/qrcode.html" lang="en">EN</a>
+            </div>
+          </li>
         </ul>
         <!-- Hamburger Button (mobile only) -->
         <button class="hamburger-btn" id="hamburgerBtn">
@@ -140,6 +162,13 @@
           <li><a href="resonanz.html">Resonanz</a></li>
           <li><a href="team.html">Team</a></li>
           <li><a class="active" href="qrcode.html">Unterstützen</a></li>
+          <li class="mobile-lang">
+            <div class="language-switcher" aria-label="Sprachauswahl">
+              <a href="/qrcode.html" lang="de" class="active-lang">DE</a>
+              <span>|</span>
+              <a href="/en/qrcode.html" lang="en">EN</a>
+            </div>
+          </li>
         </ul>
       </div>
     </header>

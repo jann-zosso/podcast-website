@@ -1,20 +1,17 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Team | SO LONG COVID</title>
+
     <meta
       name="description"
-      content="Das Team hinter SO LONG COVID geleitet von Zita Bauer und Jann Zosso, sowie Unterstützer:innen des Podcasts."
+      content="Meet the team behind SO LONG COVID, led by Zita Bauer and Jann Zosso, along with the contributors and supporters who made the podcast possible."
     />
-    <!-- Favicon -->
-    <link rel="icon" href="/assets/favicon/favicon-48.png" sizes="48x48" />
-    <link rel="icon" href="/assets/favicon/favicon-96.png" sizes="96x96" />
-    <link rel="icon" href="/assets/favicon/favicon-192.png" sizes="192x192" />
-    <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" href="/assets/favicon/favicon-192.png" />
-    <link rel="canonical" href="https://solongcovid.ch/team.html" />
+
+    <link rel="canonical" href="https://solongcovid.ch/en/team.html" />
     <link
       rel="alternate"
       hreflang="de"
@@ -30,12 +27,20 @@
       hreflang="x-default"
       href="https://solongcovid.ch/team.html"
     />
+
+    <link rel="icon" href="/assets/favicon/favicon-48.png" sizes="48x48" />
+    <link rel="icon" href="/assets/favicon/favicon-96.png" sizes="96x96" />
+    <link rel="icon" href="/assets/favicon/favicon-192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/assets/favicon/favicon-192.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -54,7 +59,8 @@
       />
     </noscript>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -63,7 +69,12 @@
         "name": "SO LONG COVID",
         "url": "https://solongcovid.ch/",
         "logo": "https://solongcovid.ch/assets/img/SLCLogo.png",
-        "sameAs": ["https://www.instagram.com/so.long.covid/"],
+        "sameAs": [
+          "https://www.instagram.com/so.long.covid/",
+          "https://open.spotify.com/show/7ohnJlQQznvnSiCzD8qpfz",
+          "https://www.youtube.com/@SOLONGCOVID",
+          "https://podcasts.apple.com/ch/podcast/so-long-covid/id1874681051"
+        ],
         "contactPoint": [
           {
             "@type": "ContactPoint",
@@ -74,102 +85,110 @@
         ]
       }
     </script>
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "AboutPage",
-        "@id": "https://solongcovid.ch/team.html#about",
-        "url": "https://solongcovid.ch/team.html",
+        "@id": "https://solongcovid.ch/en/team.html#about",
+        "url": "https://solongcovid.ch/en/team.html",
         "name": "Team | SO LONG COVID",
-        "description": "Team, Mitwirkende und Unterstützer:innen des Podcasts SO LONG COVID.",
+        "description": "The team, contributors and supporters behind the SO LONG COVID podcast.",
         "isPartOf": {
           "@id": "https://solongcovid.ch/#website"
         },
         "publisher": {
           "@id": "https://solongcovid.ch/#organization"
         },
-        "inLanguage": "de"
+        "inLanguage": "en"
       }
     </script>
-  </head>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const hamburgerBtn = document.getElementById("hamburgerBtn");
-      const mobileMenu = document.getElementById("mobileMenu");
-      const closeMenu = document.getElementById("closeMenu");
 
-      hamburgerBtn.addEventListener("click", () => {
-        mobileMenu.classList.add("open");
-      });
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburgerBtn = document.getElementById("hamburgerBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const closeMenu = document.getElementById("closeMenu");
 
-      closeMenu.addEventListener("click", () => {
-        mobileMenu.classList.remove("open");
-      });
+        if (hamburgerBtn && mobileMenu) {
+          hamburgerBtn.addEventListener("click", () => {
+            mobileMenu.classList.add("open");
+          });
+        }
 
-      document.querySelectorAll(".mobile-nav-links a").forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenu.classList.remove("open");
+        if (closeMenu && mobileMenu) {
+          closeMenu.addEventListener("click", () => {
+            mobileMenu.classList.remove("open");
+          });
+        }
+
+        document.querySelectorAll(".mobile-nav-links a").forEach((link) => {
+          link.addEventListener("click", () => {
+            if (mobileMenu) {
+              mobileMenu.classList.remove("open");
+            }
+          });
         });
       });
-    });
-  </script>
+    </script>
+  </head>
+
   <body>
     <header>
       <nav class="navbar">
         <div class="logo-area">
-          <a href="index.html" class="logo-link">
+          <a href="/en/" class="logo-link">
             <img
-              src="assets/img/SLCLogoOrange.png"
+              src="/assets/img/SLCLogoOrange.png"
               alt="SO LONG COVID"
               class="brain-logo logo-orange"
             />
             <img
-              src="assets/img/SLCLogoBlue.png"
+              src="/assets/img/SLCLogoBlue.png"
               alt="SO LONG COVID"
               class="brain-logo logo-blue"
             />
           </a>
         </div>
+
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li><a href="ressourcen.html">Ressourcen</a></li>
-          <li><a href="resonanz.html">Resonanz</a></li>
-          <li><a class="active" href="team.html">Team</a></li>
-          <li><a href="qrcode.html">Unterstützen</a></li>
+          <li><a href="/en/">Home</a></li>
+          <li><a href="/en/about.html">About</a></li>
+          <li><a href="/en/resources.html">Resources</a></li>
+          <li><a href="/en/resonance.html">Resonance</a></li>
+          <li><a class="active" href="/en/team.html">Team</a></li>
+
           <li class="nav-lang">
-            <div class="language-switcher" aria-label="Sprachauswahl">
-              <a href="/team.html" lang="de" class="active-lang">DE</a>
+            <div class="language-switcher" aria-label="Language selection">
+              <a href="/team.html" lang="de">DE</a>
               <span>|</span>
-              <a href="/en/team.html" lang="en">EN</a>
+              <a href="/en/team.html" lang="en" class="active-lang">EN</a>
             </div>
           </li>
         </ul>
-        <!-- Hamburger Button (mobile only) -->
-        <button class="hamburger-btn" id="hamburgerBtn">
-          <img src="assets/img/SLCHamburger.png" alt="Menu" />
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu">
+          <img src="/assets/img/SLCHamburger.png" alt="" />
         </button>
       </nav>
-      <!-- Mobile Overlay Menu -->
+
       <div class="mobile-menu" id="mobileMenu">
-        <button class="close-btn" id="closeMenu">×</button>
+        <button class="close-btn" id="closeMenu" aria-label="Close menu">
+          ×
+        </button>
 
         <ul class="mobile-nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li><a href="ressourcen.html">Ressourcen</a></li>
-          <li><a href="resonanz.html">Resonanz</a></li>
-          <li><a class="active" href="team.html">Team</a></li>
-          <li><a href="qrcode.html">Unterstützen</a></li>
+          <li><a href="/en/">Home</a></li>
+          <li><a href="/en/about.html">About</a></li>
+          <li><a href="/en/resources.html">Resources</a></li>
+          <li><a href="/en/resonance.html">Resonance</a></li>
+          <li><a class="active" href="/en/team.html">Team</a></li>
+
           <li class="mobile-lang">
-            <div class="language-switcher" aria-label="Sprachauswahl">
-              <a href="/team.html" lang="de" class="active-lang">DE</a>
+            <div class="language-switcher" aria-label="Language selection">
+              <a href="/team.html" lang="de">DE</a>
               <span>|</span>
-              <a href="/en/team.html" lang="en">EN</a>
+              <a href="/en/team.html" lang="en" class="active-lang">EN</a>
             </div>
           </li>
         </ul>
@@ -177,25 +196,26 @@
     </header>
 
     <main>
-      <h1 class="visually-hidden-h1">Team von SO LONG COVID</h1>
+      <h1 class="visually-hidden-h1">The team behind SO LONG COVID</h1>
 
       <section class="hero-orange team-section">
         <div class="hero-intro">
-          Wir danken allen, die dieses Podcast-Abenteuer ermöglicht haben: Unser
-          unglaubliches Team, welches sich mit viel Engagement für SO LONG COVID
-          einsetzt. Unsere finanziellen Unterstützer:innen, die an uns und das
-          Projekt glauben. Unsere Familien und Freund:innen, die uns ermutigen,
-          mitfiebern und mitfeiern. All unseren Inspirationsquellen: Hysterical,
-          Oklou, Sauna-Gus und Velofahren in Kopenhagen und vieles mehr. Und
-          ganz besonders allen Interviewpartner:innen, die ihre Geschichten und
-          Expertise so grosszügig mit uns teilen - ohne euch alle wäre dieses
-          Projekt nicht möglich!
+          We would like to thank everyone who made this podcast adventure
+          possible: our incredible team, who have put so much dedication into SO
+          LONG COVID. Our financial supporters, who believe in us and in the
+          project. Our families and friends, who encourage us, cheer us on and
+          celebrate with us. All our sources of inspiration: Hysterical, Oklou,
+          Sauna-Gus, cycling in Copenhagen and much more. And above all, all our
+          interviewees, who so generously shared their stories and expertise
+          with us — without all of you, this project would not have been
+          possible!
         </div>
       </section>
+
       <section class="partner-section">
-        <!-- MAIN TEAM -->
         <h2>TEAM</h2>
         <br />
+
         <div class="container main-team-row">
           <a
             href="https://www.linkedin.com/in/zita-bauer-1b3b01200/?originalSubdomain=ch"
@@ -203,11 +223,11 @@
             rel="noopener"
             class="team-card team-card-horizontal"
           >
-            <img src="assets/img/zita.jpg" alt="Zita Bauer" />
+            <img src="/assets/img/zita.jpg" alt="Zita Bauer" />
             <div class="team-card-text">
               <h3>Zita Bauer</h3>
               <p>
-                Konzept, Produktion, Redaktion, Schnitt, Host, Kommunikation.
+                Concept, production, editorial, editing, host, communications.
               </p>
             </div>
           </a>
@@ -218,15 +238,14 @@
             rel="noopener"
             class="team-card team-card-horizontal"
           >
-            <img src="assets/img/jann.jpg" alt="Jann Zosso" />
+            <img src="/assets/img/jann.jpg" alt="Jann Zosso" />
             <div class="team-card-text">
               <h3>Jann Zosso</h3>
-              <p>Konzept, Redaktion, Webdesign, Kommunikation.</p>
+              <p>Concept, editorial, web design, communications.</p>
             </div>
           </a>
         </div>
 
-        <!-- SECONDARY TEAM -->
         <div class="container team-grid-secondary">
           <a
             href="https://www.mrotiz.com/"
@@ -235,7 +254,7 @@
             class="team-card team-card-simple"
           >
             <h3>Moritz Widrig</h3>
-            <p>Originalmusik</p>
+            <p>Original music</p>
           </a>
 
           <a
@@ -245,11 +264,11 @@
             class="team-card team-card-simple"
           >
             <h3>Janos Mijnssen</h3>
-            <p>Originalmusik</p>
+            <p>Original music</p>
           </a>
 
           <a
-            href="https://hoerbaron.ch/ "
+            href="https://hoerbaron.ch/"
             target="_blank"
             rel="noopener"
             class="team-card team-card-simple"
@@ -257,6 +276,7 @@
             <h3>Christina Baron</h3>
             <p>Mastering</p>
           </a>
+
           <a
             href="https://www.digezz.ch/author/stella-bollinger/"
             target="_blank"
@@ -264,8 +284,9 @@
             class="team-card team-card-simple"
           >
             <h3>Stella Bollinger</h3>
-            <p>Redaktionelle Mitarbeit</p>
+            <p>Editorial support</p>
           </a>
+
           <a
             href="https://www.franziskaengelhardt.ch/"
             target="_blank"
@@ -273,12 +294,14 @@
             class="team-card team-card-simple"
           >
             <h3>Franziska Engelhardt</h3>
-            <p>Dramaturgische Beratung</p>
+            <p>Story consulting</p>
           </a>
-          <a rel="noopener" class="team-card team-card-simple">
+
+          <div class="team-card team-card-simple">
             <h3>Irene Müller</h3>
-            <p>Sprachregie</p>
-          </a>
+            <p>Voice direction</p>
+          </div>
+
           <a
             href="https://www.linkedin.com/in/silio-keiser/"
             target="_blank"
@@ -286,8 +309,9 @@
             class="team-card team-card-simple"
           >
             <h3>Silio Keiser</h3>
-            <p>Visuelle Identität</p>
+            <p>Visual identity</p>
           </a>
+
           <a
             href="https://jakubsvehla.com/"
             target="_blank"
@@ -295,8 +319,9 @@
             class="team-card team-card-simple"
           >
             <h3>Jakub Svehla</h3>
-            <p>Logoanimation</p>
+            <p>Logo animation</p>
           </a>
+
           <a
             href="https://njufer.cargo.site/"
             target="_blank"
@@ -304,7 +329,7 @@
             class="team-card team-card-simple"
           >
             <h3>Nathalie Jufer</h3>
-            <p>Kommunikation und Fotos</p>
+            <p>PR and photography</p>
           </a>
 
           <a
@@ -314,13 +339,13 @@
             class="team-card team-card-simple"
           >
             <h3>Martina Waldis</h3>
-            <p>Kommunikation</p>
+            <p>PR</p>
           </a>
         </div>
       </section>
 
       <section class="partner-section">
-        <h2>Unterstützer:innen</h2>
+        <h2>SUPPORTERS</h2>
 
         <div class="partner-grid">
           <a
@@ -330,8 +355,8 @@
             class="partner-card"
           >
             <img
-              src="assets/img/BGB_Logo_Screen_S.png"
-              alt="Burger Gemeinde Bern"
+              src="/assets/img/BGB_Logo_Screen_S.png"
+              alt="Burgergemeinde Bern"
             />
           </a>
 
@@ -341,18 +366,21 @@
             rel="noopener"
             class="partner-card"
           >
-            <img src="assets/img/StadtBern.jpg" alt="Stadt Bern" />
+            <img src="/assets/img/StadtBern.jpg" alt="City of Bern" />
           </a>
+
           <a
             href="https://www.ting.community/de/ueber-uns"
             target="_blank"
             rel="noopener"
             class="partner-card"
           >
-            <img src="assets/img/ting-logo.jpeg" alt="Ting" />
+            <img src="/assets/img/ting-logo.jpeg" alt="Ting" />
           </a>
         </div>
+
         <br />
+
         <div class="partner-grid">
           <a
             href="https://marlenreusser.com/"
@@ -363,6 +391,7 @@
             <span>Marlen</span>
             <span>Reusser</span>
           </a>
+
           <a
             href="https://www.ernst-goehner-stiftung.ch/"
             target="_blank"
@@ -370,10 +399,11 @@
             class="partner-card"
           >
             <img
-              src="assets/img/EGS_Schriftzug_schwarz.jpg"
-              alt="Ernst Göhner Stiftung"
+              src="/assets/img/EGS_Schriftzug_schwarz.jpg"
+              alt="Ernst Göhner Foundation"
             />
           </a>
+
           <a
             href="https://ober-gerwern.ch/"
             target="_blank"
@@ -381,16 +411,17 @@
             class="partner-card"
           >
             <img
-              src="assets/img/OberGerwern.jpg"
-              alt="Gesellschaft Zu Ober-Gerwern"
+              src="/assets/img/OberGerwern.jpg"
+              alt="Gesellschaft zu Ober-Gerwern"
             />
           </a>
         </div>
+
         <section class="container">
-          Und ein grosses Merci an die vielen Menschen, die über das
-          Crowdfunding und den Unterstützungs-Link am Podcast-Projekt
-          beigetragen haben!
+          And a big thank you to the many people who contributed to the podcast
+          project through crowdfunding and the support link!
         </section>
+
         <div class="partner-grid-S">
           <a
             href="https://wemakeit.com/projects/so-long-covid"
@@ -398,7 +429,7 @@
             rel="noopener"
             class="partner-card partner-card-text"
           >
-            <img src="assets/img/wemadeit_black.png" alt="WeMakeIt" />
+            <img src="/assets/img/wemadeit_black.png" alt="WeMakeIt" />
           </a>
         </div>
       </section>
@@ -406,14 +437,16 @@
 
     <footer class="site-footer">
       <div class="footer-content">
-        <p class="footer-heading">Kontakt</p>
+        <p class="footer-heading">Contact</p>
 
         <a href="mailto:solongcovid@proton.me" class="footer-link">
           solongcovid@proton.me
         </a>
+
         <p class="footer-note">
-          Folge uns auf Instagram und deiner liebsten Podcast-Plattform!
+          Follow us on Instagram and on your favourite podcast platform.
         </p>
+
         <div class="footer-social">
           <a
             href="https://www.instagram.com/so.long.covid/"
@@ -457,12 +490,15 @@
             <i class="fas fa-podcast"></i>
           </a>
         </div>
-        <a href="qrcode.html" target="_blank" class="footer-support-btn">
-          unterstütze uns
+
+        <a href="/en/qrcode.html" target="_blank" class="footer-support-btn">
+          support us
         </a>
+
         <p class="footer-copyright">&copy; 2026 SO LONG COVID</p>
-        <a href="impressum.html" class="footer-link footer-impressum">
-          Impressum
+
+        <a href="/en/impressum.html" class="footer-link footer-impressum">
+          Imprint
         </a>
       </div>
     </footer>

@@ -1,0 +1,731 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SO LONG COVID | Recovery from Long Covid</title>
+
+    <meta
+      name="description"
+      content="SO LONG COVID is a six-part Swiss German documentary podcast about recovery from Long Covid and other neuroplastic symptoms, with English subtitles and English transcripts available."
+    />
+
+    <link rel="canonical" href="https://solongcovid.ch/en/" />
+
+    <link rel="alternate" hreflang="de" href="https://solongcovid.ch/" />
+
+    <link rel="alternate" hreflang="en" href="https://solongcovid.ch/en/" />
+
+    <link rel="alternate" hreflang="x-default" href="https://solongcovid.ch/" />
+
+    <!-- Favicon -->
+
+    <link rel="icon" href="/assets/favicon/favicon-48.png" sizes="48x48" />
+
+    <link rel="icon" href="/assets/favicon/favicon-96.png" sizes="96x96" />
+
+    <link rel="icon" href="/assets/favicon/favicon-192.png" sizes="192x192" />
+
+    <!-- Apple Touch Icon -->
+
+    <link rel="apple-touch-icon" href="/assets/favicon/favicon-192.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      as="style"
+      crossorigin="anonymous"
+      onload="
+        this.onload = null;
+
+        this.rel = 'stylesheet';
+      "
+    />
+
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      />
+    </noscript>
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+
+        "@graph": [
+          {
+            "@type": "Organization",
+
+            "@id": "https://solongcovid.ch/#organization",
+
+            "name": "SO LONG COVID",
+
+            "url": "https://solongcovid.ch/",
+
+            "logo": "https://solongcovid.ch/assets/img/SLCLogo.png",
+
+            "sameAs": [
+              "https://www.instagram.com/so.long.covid/",
+
+              "https://www.youtube.com/@SOLONGCOVID",
+
+              "https://open.spotify.com/show/7ohnJlQQznvnSiCzD8qpfz?si=a09149bd7f284868",
+
+              "https://podcasts.apple.com/ch/podcast/so-long-covid/id1874681051"
+            ],
+
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+
+                "contactType": "general inquiries",
+
+                "email": "mailto:solongcovid@proton.me",
+
+                "availableLanguage": ["de", "en", "fr"]
+              }
+            ]
+          },
+
+          {
+            "@type": "WebSite",
+
+            "@id": "https://solongcovid.ch/#website",
+
+            "url": "https://solongcovid.ch/",
+
+            "name": "SO LONG COVID",
+
+            "publisher": {
+              "@id": "https://solongcovid.ch/#organization"
+            }
+          },
+
+          {
+            "@type": "WebPage",
+
+            "@id": "https://solongcovid.ch/en/#webpage",
+
+            "url": "https://solongcovid.ch/en/",
+
+            "name": "SO LONG COVID | Recovery from Long Covid",
+
+            "description": "English-language landing page for SO LONG COVID, a Swiss German documentary podcast about recovery from Long Covid with English subtitles and transcripts.",
+
+            "isPartOf": {
+              "@id": "https://solongcovid.ch/#website"
+            },
+
+            "publisher": {
+              "@id": "https://solongcovid.ch/#organization"
+            },
+
+            "inLanguage": "en"
+          },
+
+          {
+            "@type": "PodcastSeries",
+
+            "@id": "https://solongcovid.ch/#podcast",
+
+            "name": "SO LONG COVID",
+
+            "description": "A documentary podcast about recovery from Long Covid.",
+
+            "url": "https://solongcovid.ch/",
+
+            "publisher": {
+              "@id": "https://solongcovid.ch/#organization"
+            },
+
+            "inLanguage": ["gsw-CH", "de-CH"],
+
+            "author": [
+              {
+                "@type": "Person",
+
+                "name": "Zita Bauer"
+              },
+
+              {
+                "@type": "Person",
+
+                "name": "Jann Zosso"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
+      defer
+    ></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburgerBtn = document.getElementById("hamburgerBtn");
+
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        const closeMenu = document.getElementById("closeMenu");
+
+        if (hamburgerBtn && mobileMenu) {
+          hamburgerBtn.addEventListener("click", () => {
+            mobileMenu.classList.add("open");
+          });
+        }
+
+        if (closeMenu && mobileMenu) {
+          closeMenu.addEventListener("click", () => {
+            mobileMenu.classList.remove("open");
+          });
+        }
+
+        document.querySelectorAll(".mobile-nav-links a").forEach((link) => {
+          link.addEventListener("click", () => {
+            if (mobileMenu) {
+              mobileMenu.classList.remove("open");
+            }
+          });
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const container = document.getElementById("heroLogoAnimation");
+
+        if (!container || typeof lottie === "undefined") return;
+
+        const animation = lottie.loadAnimation({
+          container: container,
+
+          renderer: "svg",
+
+          loop: false,
+
+          autoplay: false,
+
+          path: "/assets/video/SLC_logo.json",
+        });
+
+        const pauseDuration = 3000;
+
+        function scheduleNextPlay() {
+          setTimeout(() => {
+            animation.goToAndPlay(0, true);
+          }, pauseDuration);
+        }
+
+        animation.addEventListener("DOMLoaded", () => {
+          animation.goToAndStop(0, true);
+
+          scheduleNextPlay();
+        });
+
+        animation.addEventListener("complete", () => {
+          animation.goToAndStop(animation.totalFrames - 1, true);
+
+          setTimeout(() => {
+            animation.goToAndStop(0, true);
+
+            animation.play();
+          }, pauseDuration);
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-area">
+          <a href="/en/" class="logo-link">
+            <img
+              src="/assets/img/SLCLogoOrange.png"
+              alt="SO LONG COVID"
+              class="brain-logo logo-orange"
+            />
+
+            <img
+              src="/assets/img/SLCLogoBlue.png"
+              alt="SO LONG COVID"
+              class="brain-logo logo-blue"
+            />
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a class="active" href="/en/">Home</a></li>
+
+          <li><a href="/en/about.html">About</a></li>
+
+          <li><a href="/en/resources.html">Resources</a></li>
+
+          <li><a href="/en/resonance.html">Resonance</a></li>
+
+          <li><a href="/en/team.html">Team</a></li>
+
+          <li class="nav-lang">
+            <div class="language-switcher" aria-label="Language selection">
+              <a href="/" lang="de">DE</a>
+
+              <span>|</span>
+
+              <a href="/en/" lang="en" class="active-lang">EN</a>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Hamburger Button (mobile only) -->
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu">
+          <img src="/assets/img/SLCHamburger.png" alt="" />
+        </button>
+      </nav>
+
+      <!-- Mobile Overlay Menu -->
+
+      <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn" id="closeMenu" aria-label="Close menu">
+          ×
+        </button>
+
+        <ul class="mobile-nav-links">
+          <li><a class="active" href="/en/">Home</a></li>
+
+          <li><a href="/en/about.html">About</a></li>
+
+          <li><a href="/en/resources.html">Resources</a></li>
+
+          <li><a href="/en/resonance.html">Resonance</a></li>
+
+          <li><a href="/en/team.html">Team</a></li>
+
+          <li class="mobile-lang">
+            <div class="language-switcher" aria-label="Language selection">
+              <a href="/" lang="de">DE</a>
+
+              <span>|</span>
+
+              <a href="/en/" lang="en" class="active-lang">EN</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-orange index-hero">
+        <h1 class="visually-hidden-h1">
+          <span class="sr-only">
+            SO LONG COVID - A podcast series about recovery from Long Covid
+          </span>
+        </h1>
+
+        <div id="heroLogoContainer" class="hero-logo">
+          <div id="heroLogoAnimation" class="hero-logo-animation"></div>
+        </div>
+
+        <p class="hero-subtitle">
+          <b>
+            <span class="hero-line-1">
+              <span class="hero-break">A podcast series</span>
+
+              <span class="hero-rest hero-rest-desktop">
+                by Zita Bauer and Jann Zosso
+              </span>
+
+              <span class="hero-rest hero-rest-mobile">
+                by Zita Bauer and Jann Zosso
+              </span>
+            </span>
+
+            <span class="hero-line-2">About recovery from Long Covid</span>
+          </b>
+        </p>
+      </section>
+
+      <br />
+      <br />
+      <br />
+
+      <section class="container home-section english-home-section">
+        <section class="podcast-english-intro">
+          <h2>A six-part Swiss German documentary podcast</h2>
+
+          <p>
+            The series follows personal recovery stories and explores new
+            perspectives from modern pain science, neurobiology and mind-body
+            medicine. Expert voices include Paul Garner, Howard Schubiner, Silje
+            Endresen Reme and Monica Greco, who speak in English.
+          </p>
+        </section>
+
+        <!-- RESONANCE TEASER -->
+        <section
+          class="home-resonanz-teaser"
+          aria-label="Reception of the podcast"
+        >
+          <div class="home-resonanz-stats">
+            <div class="home-resonanz-stat">
+              <strong>110,000+</strong>
+              <span>Downloads</span>
+            </div>
+
+            <div class="home-resonanz-stat">
+              <strong>#4</strong>
+              <span>Apple Podcast Charts</span>
+            </div>
+          </div>
+
+          <div class="home-resonanz-quotes">
+            <blockquote>
+              “You have, in a way, truly saved my life.”
+              <cite>– C.</cite>
+            </blockquote>
+
+            <blockquote>
+              “The new debate in Switzerland was sparked above all by a
+              podcast.”
+              <cite>– CH-Media, 20 June 2026</cite>
+            </blockquote>
+
+            <blockquote>
+              “One of the best things I’ve ever heard!”
+              <cite>– T.</cite>
+            </blockquote>
+          </div>
+
+          <!--<a href="/en/resonance.html" class="home-resonanz-link">
+            More feedback & media coverage
+          </a>-->
+        </section>
+        <br />
+        <br />
+        <section class="podcast-episodes podcast-episodes-en">
+          <h2>Listen to the episodes with English subtitles</h2>
+
+          <div class="episodes-grid episode-video-grid">
+            <!-- EPISODE 1 -->
+
+            <article class="episode-card episode-video-card">
+              <p class="episode-label">So Long Covid</p>
+
+              <h3>Incurably Ill | 1</h3>
+
+              <p class="episode-video-note">
+                In spring 2020, Covid changed all of our lives. But for some
+                people, the pandemic never really ends. Jasna and Jann become
+                seriously ill with Long Covid, facing fatigue, brain fog, and
+                major limitations in everyday life. The illness pushes them to
+                their limits. Again and again, the question arises: how can life
+                go on like this? But is the situation really as hopeless as it
+                seems?
+              </p>
+
+              <div class="episode-video-actions">
+                <a
+                  href="https://www.youtube.com/watch?v=oSD5h1Zpm1A"
+                  target="_blank"
+                  rel="noopener"
+                  class="episode-youtube-btn"
+                >
+                  <i class="fab fa-youtube"></i>
+
+                  Subtitles on YouTube
+                </a>
+
+                <a
+                  href="/assets/transcripts/SO_LONG_COVID_Episode_1_English_Transcript.pdf"
+                  class="episode-transcript-btn"
+                  download
+                >
+                  Download transcript
+                </a>
+              </div>
+            </article>
+
+            <!-- EPISODE 2 -->
+
+            <article class="episode-card episode-video-card">
+              <p class="episode-label">So Long Covid</p>
+
+              <h3>Aha Moment | 2</h3>
+
+              <p class="episode-video-note">
+                Jann is seriously ill when Zita comes across a new explanation
+                for Long Covid: what if the symptoms are not caused by
+                irreversible damage, but by a dysregulated nervous system? The
+                trail leads to surprising recovery stories, to new approaches
+                from pain therapy, and to the crucial question: can recovery be
+                possible?
+              </p>
+
+              <div class="episode-video-actions">
+                <a
+                  href="https://www.youtube.com/watch?v=SkaD3zd5DMc"
+                  target="_blank"
+                  rel="noopener"
+                  class="episode-youtube-btn"
+                >
+                  <i class="fab fa-youtube"></i>
+
+                  Subtitles on YouTube
+                </a>
+
+                <a
+                  href="/assets/transcripts/SO_LONG_COVID_Episode_2_English_Transcript.pdf"
+                  class="episode-transcript-btn"
+                  download
+                >
+                  Download transcript
+                </a>
+              </div>
+            </article>
+
+            <!-- EPISODE 3 -->
+
+            <article class="episode-card episode-video-card">
+              <p class="episode-label">So Long Covid</p>
+
+              <h3>Science Fiction | 3</h3>
+
+              <p class="episode-video-note">
+                An Instagram video by Marlen Reusser and Jann's story spark an
+                aha moment for Jasna. What lies behind the idea that our brain
+                and nervous system can learn symptoms? We dive into the world of
+                pain research and neuroplasticity. What sounds almost
+                unbelievable at first becomes a powerful source of hope.
+              </p>
+
+              <div class="episode-video-actions">
+                <a
+                  href="https://www.youtube.com/watch?v=qoqr1hK5av0"
+                  target="_blank"
+                  rel="noopener"
+                  class="episode-youtube-btn"
+                >
+                  <i class="fab fa-youtube"></i>
+
+                  Subtitles on YouTube
+                </a>
+
+                <a
+                  href="/assets/transcripts/SO_LONG_COVID_Episode_3_English_Transcript.pdf"
+                  class="episode-transcript-btn"
+                  download
+                >
+                  Download transcript
+                </a>
+              </div>
+            </article>
+
+            <!-- EPISODE 4 -->
+
+            <article class="episode-card episode-video-card">
+              <p class="episode-label">So Long Covid</p>
+
+              <h3>One, Two, Three | 4</h3>
+
+              <p class="episode-video-note">
+                What are concrete techniques for unlearning neuroplastic
+                symptoms? Jann, Jasna, and Patricia begin to understand their
+                symptoms in a new way and to respond to them differently. At the
+                centre are approaches such as somatic tracking, visualization,
+                and nervous system regulation. This path is demanding and
+                requires courage and patience. On top of that, people affected
+                are often left to cope on their own. And yet, something is
+                beginning to change.
+              </p>
+
+              <div class="episode-video-actions">
+                <a
+                  href="https://www.youtube.com/watch?v=JVncnvPN6ro"
+                  target="_blank"
+                  rel="noopener"
+                  class="episode-youtube-btn"
+                >
+                  <i class="fab fa-youtube"></i>
+
+                  Subtitles on YouTube
+                </a>
+
+                <a
+                  href="/assets/transcripts/SO_LONG_COVID_Episode_4_English_Transcript.pdf"
+                  class="episode-transcript-btn"
+                  download
+                >
+                  Download transcript
+                </a>
+              </div>
+            </article>
+
+            <!-- EPISODE 5 -->
+
+            <article class="episode-card episode-video-card">
+              <p class="episode-label">So Long Covid</p>
+
+              <h3>So long, Cohen | 5</h3>
+
+              <p class="episode-video-note">
+                Based on research, international exchange, and clinical
+                experience, University Hospital Basel now works both
+                interdisciplinarily and with a primarily neuroplastic
+                understanding of Long Covid — with success. In doing so, the
+                team is pioneering this approach in Switzerland. But why is this
+                promising knowledge spreading only slowly, and why does it
+                sometimes even meet with resistance? About medical paradigms,
+                cultural norms, and change emerging in the spaces in between.
+              </p>
+
+              <div class="episode-video-actions">
+                <a
+                  href="https://www.youtube.com/watch?v=KsDw8wUtooE"
+                  target="_blank"
+                  rel="noopener"
+                  class="episode-youtube-btn"
+                >
+                  <i class="fab fa-youtube"></i>
+
+                  Subtitles on YouTube
+                </a>
+
+                <a
+                  href="/assets/transcripts/SO_LONG_COVID_Episode_5_English_Transcript.pdf"
+                  class="episode-transcript-btn"
+                  download
+                >
+                  Download transcript
+                </a>
+              </div>
+            </article>
+
+            <!-- EPISODE 6 -->
+
+            <article class="episode-card episode-video-card">
+              <p class="episode-label">So Long Covid</p>
+
+              <h3>Status post | 6</h3>
+
+              <p class="episode-video-note">
+                What remains after the experience of falling ill with Long Covid
+                and recovering from it? And: what would need to change so that
+                many more people can recover — or not become so seriously ill in
+                the first place? The potential of the neuroplastic approach
+                reaches far beyond Long Covid. A shift in the treatment of
+                chronic illness is long overdue — and it has already begun.
+              </p>
+
+              <div class="episode-video-actions">
+                <a
+                  href="https://www.youtube.com/watch?v=gjs2OWqNqSc"
+                  target="_blank"
+                  rel="noopener"
+                  class="episode-youtube-btn"
+                >
+                  <i class="fab fa-youtube"></i>
+
+                  Subtitles on YouTube
+                </a>
+
+                <a
+                  href="/assets/transcripts/SO_LONG_COVID_Episode_6_English_Transcript.pdf"
+                  class="episode-transcript-btn"
+                  download
+                >
+                  Download transcript
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-heading">Contact</p>
+
+        <a href="mailto:solongcovid@proton.me" class="footer-link">
+          solongcovid@proton.me
+        </a>
+
+        <p class="footer-note">
+          Follow us on Instagram and on your favourite podcast platform.
+        </p>
+
+        <div class="footer-social">
+          <a
+            href="https://www.instagram.com/so.long.covid/"
+            target="_blank"
+            rel="noopener"
+            class="footer-link"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <span class="footer-separator">|</span>
+
+          <a
+            href="https://open.spotify.com/show/7ohnJlQQznvnSiCzD8qpfz?si=a09149bd7f284868"
+            target="_blank"
+            rel="noopener"
+            class="footer-link"
+            aria-label="Spotify"
+          >
+            <i class="fab fa-spotify"></i>
+          </a>
+
+          <a
+            href="https://www.youtube.com/@SOLONGCOVID"
+            target="_blank"
+            rel="noopener"
+            class="footer-link"
+            aria-label="YouTube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+
+          <a
+            href="https://podcasts.apple.com/ch/podcast/so-long-covid/id1874681051"
+            target="_blank"
+            rel="noopener"
+            class="footer-link"
+            aria-label="Apple Podcasts"
+          >
+            <i class="fas fa-podcast"></i>
+          </a>
+        </div>
+
+        <a href="/en/qrcode.html" target="_blank" class="footer-support-btn">
+          support us
+        </a>
+
+        <p class="footer-copyright">&copy; 2026 SO LONG COVID</p>
+
+        <a href="/en/impressum.html" class="footer-link footer-impressum">
+          Imprint
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
