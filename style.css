@@ -1814,6 +1814,10 @@ section {
     column-gap: 22px;
   }
 
+  .resonanz-wrapper .resonanz-jump-nav {
+    margin-bottom: 74px;
+  }
+
   .resonanz-card {
     padding: 26px 28px;
     border-radius: 44px;
