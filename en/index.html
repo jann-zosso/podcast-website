@@ -66,106 +66,273 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-
         "@graph": [
           {
             "@type": "Organization",
-
             "@id": "https://solongcovid.ch/#organization",
-
             "name": "SO LONG COVID",
-
             "url": "https://solongcovid.ch/",
-
             "logo": "https://solongcovid.ch/assets/img/SLCLogo.png",
-
             "sameAs": [
               "https://www.instagram.com/so.long.covid/",
-
               "https://www.youtube.com/@SOLONGCOVID",
-
-              "https://open.spotify.com/show/7ohnJlQQznvnSiCzD8qpfz?si=a09149bd7f284868",
-
+              "https://open.spotify.com/show/7ohnJlQQznvnSiCzD8qpfz",
               "https://podcasts.apple.com/ch/podcast/so-long-covid/id1874681051"
             ],
-
             "contactPoint": [
               {
                 "@type": "ContactPoint",
-
                 "contactType": "general inquiries",
-
                 "email": "mailto:solongcovid@proton.me",
-
                 "availableLanguage": ["de", "en", "fr"]
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://solongcovid.ch/#website",
+            "url": "https://solongcovid.ch/",
+            "name": "SO LONG COVID",
+            "publisher": {
+              "@id": "https://solongcovid.ch/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://solongcovid.ch/en/#webpage",
+            "url": "https://solongcovid.ch/en/",
+            "name": "SO LONG COVID | Recovery from Long Covid",
+            "description": "English-language landing page for SO LONG COVID, a Swiss German documentary podcast about recovery from Long Covid with English subtitles and transcripts.",
+            "isPartOf": {
+              "@id": "https://solongcovid.ch/#website"
+            },
+            "publisher": {
+              "@id": "https://solongcovid.ch/#organization"
+            },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "PodcastSeries",
+            "@id": "https://solongcovid.ch/#podcast",
+            "name": "SO LONG COVID",
+            "description": "A documentary podcast about recovery from Long Covid.",
+            "url": "https://solongcovid.ch/",
+            "publisher": {
+              "@id": "https://solongcovid.ch/#organization"
+            },
+            "inLanguage": ["gsw-CH", "de-CH"],
+            "author": [
+              {
+                "@type": "Person",
+                "name": "Zita Bauer"
+              },
+              {
+                "@type": "Person",
+                "name": "Jann Zosso"
+              }
+            ],
+            "hasPart": [
+              {
+                "@id": "https://solongcovid.ch/en/#episode-1"
+              },
+              {
+                "@id": "https://solongcovid.ch/en/#episode-2"
+              },
+              {
+                "@id": "https://solongcovid.ch/en/#episode-3"
+              },
+              {
+                "@id": "https://solongcovid.ch/en/#episode-4"
+              },
+              {
+                "@id": "https://solongcovid.ch/en/#episode-5"
+              },
+              {
+                "@id": "https://solongcovid.ch/en/#episode-6"
               }
             ]
           },
 
           {
-            "@type": "WebSite",
-
-            "@id": "https://solongcovid.ch/#website",
-
-            "url": "https://solongcovid.ch/",
-
-            "name": "SO LONG COVID",
-
-            "publisher": {
-              "@id": "https://solongcovid.ch/#organization"
-            }
+            "@type": "Person",
+            "@id": "https://solongcovid.ch/#person-iris-katharina-penner",
+            "name": "Iris-Katharina Penner",
+            "honorificPrefix": "Prof."
+          },
+          {
+            "@type": "Person",
+            "@id": "https://solongcovid.ch/#person-paul-garner",
+            "name": "Paul Garner",
+            "honorificPrefix": "Prof."
+          },
+          {
+            "@type": "Person",
+            "@id": "https://solongcovid.ch/#person-antje-kallweit",
+            "name": "Antje Kallweit",
+            "honorificPrefix": "Dr."
+          },
+          {
+            "@type": "Person",
+            "@id": "https://solongcovid.ch/#person-howard-schubiner",
+            "name": "Howard Schubiner",
+            "honorificPrefix": "Prof."
+          },
+          {
+            "@type": "Person",
+            "@id": "https://solongcovid.ch/#person-silje-endresen-reme",
+            "name": "Silje Endresen Reme",
+            "honorificPrefix": "Prof."
+          },
+          {
+            "@type": "Person",
+            "@id": "https://solongcovid.ch/#person-andreas-immel",
+            "name": "Andreas Immel"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://solongcovid.ch/#person-katrin-bopp",
+            "name": "Katrin Bopp",
+            "honorificPrefix": "Dr."
+          },
+          {
+            "@type": "Person",
+            "@id": "https://solongcovid.ch/#person-rainer-schaefert",
+            "name": "Rainer Schäfert",
+            "honorificPrefix": "Prof."
+          },
+          {
+            "@type": "Person",
+            "@id": "https://solongcovid.ch/#person-monica-greco",
+            "name": "Monica Greco",
+            "honorificPrefix": "Prof."
           },
 
           {
-            "@type": "WebPage",
-
-            "@id": "https://solongcovid.ch/en/#webpage",
-
-            "url": "https://solongcovid.ch/en/",
-
-            "name": "SO LONG COVID | Recovery from Long Covid",
-
-            "description": "English-language landing page for SO LONG COVID, a Swiss German documentary podcast about recovery from Long Covid with English subtitles and transcripts.",
-
-            "isPartOf": {
-              "@id": "https://solongcovid.ch/#website"
-            },
-
-            "publisher": {
-              "@id": "https://solongcovid.ch/#organization"
-            },
-
-            "inLanguage": "en"
-          },
-
-          {
-            "@type": "PodcastSeries",
-
-            "@id": "https://solongcovid.ch/#podcast",
-
-            "name": "SO LONG COVID",
-
-            "description": "A documentary podcast about recovery from Long Covid.",
-
-            "url": "https://solongcovid.ch/",
-
-            "publisher": {
-              "@id": "https://solongcovid.ch/#organization"
-            },
-
+            "@type": "PodcastEpisode",
+            "@id": "https://solongcovid.ch/en/#episode-1",
+            "url": "https://solongcovid.ch/en/#episode-1",
+            "sameAs": "https://solongcovid.ch/#episode-1",
+            "name": "Incurably Ill",
+            "episodeNumber": 1,
             "inLanguage": ["gsw-CH", "de-CH"],
-
-            "author": [
+            "partOfSeries": {
+              "@id": "https://solongcovid.ch/#podcast"
+            },
+            "contributor": [
               {
-                "@type": "Person",
-
-                "name": "Zita Bauer"
+                "@id": "https://solongcovid.ch/#person-iris-katharina-penner"
+              }
+            ]
+          },
+          {
+            "@type": "PodcastEpisode",
+            "@id": "https://solongcovid.ch/en/#episode-2",
+            "url": "https://solongcovid.ch/en/#episode-2",
+            "sameAs": "https://solongcovid.ch/#episode-2",
+            "name": "Aha Moment",
+            "episodeNumber": 2,
+            "inLanguage": ["gsw-CH", "de-CH"],
+            "partOfSeries": {
+              "@id": "https://solongcovid.ch/#podcast"
+            },
+            "contributor": [
+              {
+                "@id": "https://solongcovid.ch/#person-paul-garner"
               },
-
               {
-                "@type": "Person",
-
-                "name": "Jann Zosso"
+                "@id": "https://solongcovid.ch/#person-antje-kallweit"
+              }
+            ]
+          },
+          {
+            "@type": "PodcastEpisode",
+            "@id": "https://solongcovid.ch/en/#episode-3",
+            "url": "https://solongcovid.ch/en/#episode-3",
+            "sameAs": "https://solongcovid.ch/#episode-3",
+            "name": "Science Fiction",
+            "episodeNumber": 3,
+            "inLanguage": ["gsw-CH", "de-CH"],
+            "partOfSeries": {
+              "@id": "https://solongcovid.ch/#podcast"
+            },
+            "contributor": [
+              {
+                "@id": "https://solongcovid.ch/#person-howard-schubiner"
+              },
+              {
+                "@id": "https://solongcovid.ch/#person-antje-kallweit"
+              },
+              {
+                "@id": "https://solongcovid.ch/#person-silje-endresen-reme"
+              }
+            ]
+          },
+          {
+            "@type": "PodcastEpisode",
+            "@id": "https://solongcovid.ch/en/#episode-4",
+            "url": "https://solongcovid.ch/en/#episode-4",
+            "sameAs": "https://solongcovid.ch/#episode-4",
+            "name": "One, Two, Three",
+            "episodeNumber": 4,
+            "inLanguage": ["gsw-CH", "de-CH"],
+            "partOfSeries": {
+              "@id": "https://solongcovid.ch/#podcast"
+            },
+            "contributor": [
+              {
+                "@id": "https://solongcovid.ch/#person-silje-endresen-reme"
+              },
+              {
+                "@id": "https://solongcovid.ch/#person-andreas-immel"
+              }
+            ]
+          },
+          {
+            "@type": "PodcastEpisode",
+            "@id": "https://solongcovid.ch/en/#episode-5",
+            "url": "https://solongcovid.ch/en/#episode-5",
+            "sameAs": "https://solongcovid.ch/#episode-5",
+            "name": "So long, Cohen",
+            "episodeNumber": 5,
+            "inLanguage": ["gsw-CH", "de-CH"],
+            "partOfSeries": {
+              "@id": "https://solongcovid.ch/#podcast"
+            },
+            "contributor": [
+              {
+                "@id": "https://solongcovid.ch/#person-katrin-bopp"
+              },
+              {
+                "@id": "https://solongcovid.ch/#person-rainer-schaefert"
+              },
+              {
+                "@id": "https://solongcovid.ch/#person-monica-greco"
+              },
+              {
+                "@id": "https://solongcovid.ch/#person-howard-schubiner"
+              }
+            ]
+          },
+          {
+            "@type": "PodcastEpisode",
+            "@id": "https://solongcovid.ch/en/#episode-6",
+            "url": "https://solongcovid.ch/en/#episode-6",
+            "sameAs": "https://solongcovid.ch/#episode-6",
+            "name": "Status post",
+            "episodeNumber": 6,
+            "inLanguage": ["gsw-CH", "de-CH"],
+            "partOfSeries": {
+              "@id": "https://solongcovid.ch/#podcast"
+            },
+            "contributor": [
+              {
+                "@id": "https://solongcovid.ch/#person-katrin-bopp"
+              },
+              {
+                "@id": "https://solongcovid.ch/#person-rainer-schaefert"
+              },
+              {
+                "@id": "https://solongcovid.ch/#person-iris-katharina-penner"
               }
             ]
           }
@@ -366,25 +533,11 @@
       <br />
       <br />
       <br />
-
-      <section class="container home-section english-home-section">
-        <section class="podcast-english-intro">
-          <h2>A six-part Swiss German documentary podcast</h2>
-
-          <p>
-            The series follows personal recovery stories and explores new
-            perspectives from modern pain science, neurobiology and the
-            mind-body connection. Expert voices include Paul Garner, Howard
-            Schubiner, Silje Endresen Reme and Monica Greco, who speak in
-            English.
-          </p>
-        </section>
-        <!-- RESONANCE TEASER -->
-        <section
-          class="home-resonanz-teaser"
-          aria-label="Reception of the podcast"
-        >
-          <!--<div class="home-resonanz-stats">
+      <section
+        class="home-resonanz-teaser"
+        aria-label="Reception of the podcast"
+      >
+        <!--<div class="home-resonanz-stats">
             <div class="home-resonanz-stat">
               <strong>110,000+</strong>
               <span>Downloads</span>
@@ -395,29 +548,59 @@
               <span>Apple Podcast Charts</span>
             </div>
           </div>-->
+        <div class="home-resonanz-quotes">
+          <blockquote>
+            “You have, in a way, truly saved my life.”
+            <cite>– C.</cite>
+          </blockquote>
 
-          <div class="home-resonanz-quotes">
-            <blockquote>
-              “You have, in a way, truly saved my life.”
-              <cite>– C.</cite>
-            </blockquote>
+          <blockquote>
+            “The new debate in Switzerland was sparked above all by a podcast.”
+            <cite>– CH-Media, 20 June 2026</cite>
+          </blockquote>
 
-            <blockquote>
-              “The new debate in Switzerland was sparked above all by a
-              podcast.”
-              <cite>– CH-Media, 20 June 2026</cite>
-            </blockquote>
-
-            <blockquote>
-              “One of the best things I’ve ever heard!”
-              <cite>– T.</cite>
-            </blockquote>
-          </div>
-
-          <!--<a href="/en/resonance.html" class="home-resonanz-link">
+          <blockquote>
+            “One of the best things I’ve ever heard!”
+            <cite>– T.</cite>
+          </blockquote>
+        </div>
+        <!--<a href="/en/resonance.html" class="home-resonanz-link">
             More feedback & media coverage
           </a>-->
+      </section>
+
+      <section class="container home-section english-home-section">
+        <section class="podcast-english-intro">
+          <h2>A six-part Swiss German documentary podcast</h2>
+
+          <p>
+            The series follows personal recovery stories and explores new
+            perspectives from modern pain science, neurobiology and the
+            mind-body connection. Expert voices include
+            <a href="https://paulgarner.co.uk/" target="_blank" rel="noopener"
+              >Prof. Paul Garner</a
+            >,
+            <a
+              href="https://unlearnyourpain.com/"
+              target="_blank"
+              rel="noopener"
+              >Prof. Howard Schubiner</a
+            >,
+            <a
+              href="https://www.mindbodylab.no/home-eng"
+              target="_blank"
+              rel="noopener"
+              >Prof. Silje Endresen Reme</a
+            >
+            and
+            <a
+              href="https://www.bath.ac.uk/profiles/professor-monica-greco-head-of-department-of-social-policy-sciences-monica-greco/"
+              target="_blank"
+              >Prof. Monica Greco</a
+            >, who speak in English.
+          </p>
         </section>
+        <!-- RESONANCE TEASER -->
 
         <br />
         <section class="podcast-episodes podcast-episodes-en">
@@ -426,7 +609,7 @@
           <div class="episodes-grid episode-video-grid">
             <!-- EPISODE 1 -->
 
-            <article class="episode-card episode-video-card">
+            <article class="episode-card episode-video-card" id="episode-1">
               <p class="episode-label">So Long Covid</p>
 
               <h3>Incurably Ill | 1</h3>
@@ -440,6 +623,7 @@
                 go on like this? But is the situation really as hopeless as it
                 seems?
               </p>
+              <p class="episode-guests">With Prof. Iris-Katharina Penner</p>
 
               <div class="episode-video-actions">
                 <a
@@ -465,7 +649,7 @@
 
             <!-- EPISODE 2 -->
 
-            <article class="episode-card episode-video-card">
+            <article class="episode-card episode-video-card" id="episode-2">
               <p class="episode-label">So Long Covid</p>
 
               <h3>Aha Moment | 2</h3>
@@ -477,6 +661,9 @@
                 trail leads to surprising recovery stories, to new approaches
                 from pain therapy, and to the crucial question: can recovery be
                 possible?
+              </p>
+              <p class="episode-guests">
+                With Prof. Paul Garner and Dr. Antje Kallweit
               </p>
 
               <div class="episode-video-actions">
@@ -503,7 +690,7 @@
 
             <!-- EPISODE 3 -->
 
-            <article class="episode-card episode-video-card">
+            <article class="episode-card episode-video-card" id="episode-3">
               <p class="episode-label">So Long Covid</p>
 
               <h3>Science Fiction | 3</h3>
@@ -514,6 +701,10 @@
                 and nervous system can learn symptoms? We dive into the world of
                 pain research and neuroplasticity. What sounds almost
                 unbelievable at first becomes a powerful source of hope.
+              </p>
+              <p class="episode-guests">
+                With Prof. Howard Schubiner, Dr. Antje Kallweit and Prof. Silje
+                Endresen Reme
               </p>
 
               <div class="episode-video-actions">
@@ -540,7 +731,7 @@
 
             <!-- EPISODE 4 -->
 
-            <article class="episode-card episode-video-card">
+            <article class="episode-card episode-video-card" id="episode-4">
               <p class="episode-label">So Long Covid</p>
 
               <h3>One, Two, Three | 4</h3>
@@ -554,6 +745,9 @@
                 requires courage and patience. On top of that, people affected
                 are often left to cope on their own. And yet, something is
                 beginning to change.
+              </p>
+              <p class="episode-guests">
+                With Prof. Silje Endresen Reme and Andreas Immel
               </p>
 
               <div class="episode-video-actions">
@@ -580,7 +774,7 @@
 
             <!-- EPISODE 5 -->
 
-            <article class="episode-card episode-video-card">
+            <article class="episode-card episode-video-card" id="episode-5">
               <p class="episode-label">So Long Covid</p>
 
               <h3>So long, Cohen | 5</h3>
@@ -594,6 +788,10 @@
                 promising knowledge spreading only slowly, and why does it
                 sometimes even meet with resistance? About medical paradigms,
                 cultural norms, and change emerging in the spaces in between.
+              </p>
+              <p class="episode-guests">
+                With Dr. Katrin Bopp, Prof. Rainer Schäfert, Prof. Monica Greco
+                and Prof. Howard Schubiner
               </p>
 
               <div class="episode-video-actions">
@@ -620,7 +818,7 @@
 
             <!-- EPISODE 6 -->
 
-            <article class="episode-card episode-video-card">
+            <article class="episode-card episode-video-card" id="episode-6">
               <p class="episode-label">So Long Covid</p>
 
               <h3>Status post | 6</h3>
@@ -632,6 +830,10 @@
                 the first place? The potential of the neuroplastic approach
                 reaches far beyond Long Covid. A shift in the treatment of
                 chronic illness is long overdue — and it has already begun.
+              </p>
+              <p class="episode-guests">
+                With Dr. Katrin Bopp, Prof. Rainer Schäfert and Prof.
+                Iris-Katharina Penner
               </p>
 
               <div class="episode-video-actions">

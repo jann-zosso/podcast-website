@@ -9,7 +9,7 @@
   <!-- Home -->
   <url>
     <loc>https://solongcovid.ch/</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -17,7 +17,7 @@
   <!-- About -->
   <url>
     <loc>https://solongcovid.ch/about.html</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -78,7 +78,7 @@
   <!-- Home -->
   <url>
     <loc>https://solongcovid.ch/en/</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -86,7 +86,7 @@
   <!-- About -->
   <url>
     <loc>https://solongcovid.ch/en/about.html</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
